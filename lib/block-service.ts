@@ -1,7 +1,6 @@
 import {db} from "@/lib/db";
 import { getSelf } from "@/lib/authservice";
 import { getUserById } from "./user-service";
-import { error } from "console";
 
 export const isBlockedByUser = async (id: string) => {
     try {
@@ -15,7 +14,7 @@ export const isBlockedByUser = async (id: string) => {
             where: {
                 blockerId: otherUser.id,
                 blockedId: self.id,
-            } 
+            },
         })
 
         return !!amIBlocked;

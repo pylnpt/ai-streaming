@@ -4,12 +4,9 @@ import "./globals.css";
 import { dark } from '@clerk/themes';
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
 } from '@clerk/nextjs'
 import { ThemeProvider } from "next-themes";
+import { Toaster } from "sonner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,6 +33,7 @@ export default function RootLayout({
     <ClerkProvider appearance={{baseTheme:dark}}>
       <html lang="en">
         <body>
+          
           <ThemeProvider
               attribute="class"
               forcedTheme="dark"
@@ -43,6 +41,8 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
+              <Toaster theme="light"
+                position="bottom-right"/>
               {children}
             </ThemeProvider>
           </body>

@@ -1,13 +1,37 @@
 import { db } from "./db";
 import { getSelf } from "./authservice";
+import { User } from "@clerk/nextjs/server";
 
 export const getRecomended = async () => {
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    const users = await db.user.findMany({
-        orderBy: {
-            createdAt: "desc"
-        },
-    });
+    await new Promise(resolve => setTimeout(resolve, 2000)) // TODO: REMOVE THIS  
+    let userId;
+    
+    try {
+        const self = await getSelf();
+        userId = self.id;
+    } catch {
+        userId = null;
+    }
 
-    return users;
+    let userArray = []
+    if(userId) {
+        userArray = await db.user.findMany({
+            where: {
+                NOT:  {
+                    id: userId
+                }
+            },
+            orderBy: {
+                createdAt: "desc"
+            },
+        })
+    } else {
+        userArray = await db.user.findMany({
+            orderBy: {
+                createdAt: "desc"
+            },
+        });
+    }
+
+    return userArray;
 }

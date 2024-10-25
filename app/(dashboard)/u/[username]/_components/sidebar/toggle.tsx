@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useDashboardSideBar } from "@/store/use-dashboard-sidebar";
 import { ArrowLeftFromLine, ArrowRightFromLine } from "lucide-react";
 
-const Toggle = () => {
+export const Toggle = () => {
     const {
         collapsed,
         onExpand,
@@ -28,7 +28,9 @@ const Toggle = () => {
         )}
         {!collapsed && (
         <div className="p-3 pl-6 mb-2 hidden lg:flex items-center w-full">
-            <p className="font-semibold text-primary">Dashboard</p>
+            <p className="font-semibold text-primary">
+                Dashboard
+            </p>
             <Hint label={label} side="right" asChild>
                 <Button onClick={onCollapse}
                     variant="ghost"
@@ -41,5 +43,3 @@ const Toggle = () => {
         </>
       );
 }
- 
-export default Toggle;

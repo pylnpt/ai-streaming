@@ -1,4 +1,5 @@
-import Toggle from "./toggle";
+import { Navigation } from "./navigation";
+import { Toggle } from "./toggle";
 import { Wrapper } from "./wrapper";
 
 const Sidebar = () => {
@@ -6,6 +7,7 @@ const Sidebar = () => {
     <>
     <Wrapper>
         <Toggle />
+        <Navigation />
     </Wrapper>
     </>
     );

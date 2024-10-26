@@ -1,7 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { UrlCard } from "./_components/url-cards";
 import { getSelf } from "@/lib/authservice";
 import { getStreamByUserId } from "@/lib/stream-service";
+import { KeyCard } from "./_components/key-card";
+import { ConnectionModal } from "./_components/connection-modal";
 
 const KeySettings = async () => {
     const self = await getSelf();
@@ -17,12 +18,11 @@ const KeySettings = async () => {
                 <h1 className="text-2xl font-bold">
                     Key Settings
                 </h1>
-                <Button variant="primary">
-                    Generate
-                </Button>
+                <ConnectionModal />
             </div>
             <div className="space-y-4">
                 <UrlCard value={stream.serverUrl}/>
+                <KeyCard value={stream.streamKey}/>
             </div>
         </div>
     );

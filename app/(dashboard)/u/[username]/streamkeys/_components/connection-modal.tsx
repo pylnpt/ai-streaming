@@ -1,4 +1,5 @@
 "use client"
+
 import {
     Dialog,
     DialogClose,
@@ -20,14 +21,36 @@ import {
     SelectValue
 } from "@/components/ui/select"
 
-interface ConnectionModalProps {
-
-}
+import { IngressInput } from "livekit-server-sdk"
 
 import { Button } from "@/components/ui/button"
 import { AlertTriangle } from "lucide-react"
+import { useState, useTransition, useRef, ElementRef } from "react"
+import { createIngress } from "@/actions/ingress"
+import { toast } from "sonner"
 
-export const ConnectionModal = ({} : ConnectionModalProps) => {
+const RTMP = String(IngressInput.RTMP_INPUT);
+const WHIP = String(IngressInput.WHIP_INPUT);
+
+type IngressType = typeof RTMP | typeof WHIP; 
+
+
+export const ConnectionModal = () => {
+    const closeRef = useRef<ElementRef<"button">>(null)
+    const [ingressType, setIngressType] = useState<IngressType>(RTMP);
+    const [isPending, startTransition] = useTransition();
+
+    const onSubmit = () => {
+        startTransition(() => {
+            createIngress(parseInt(ingressType))
+            .then(() => {
+                toast.success("Ingress successfully created");
+                closeRef?.current?.click();
+            })
+            .catch((error) => {toast.error("Something went wrong"); console.log(error)})
+        })
+    }
+
     return(
         <Dialog>
             <DialogTrigger asChild>
@@ -39,12 +62,14 @@ export const ConnectionModal = ({} : ConnectionModalProps) => {
                 <DialogHeader>
                     <DialogTitle>Generate Connection</DialogTitle>
                 </DialogHeader>
-                <Select>
+                <Select value={ingressType}
+                    onValueChange={(value) => setIngressType(value)}
+                    disabled={isPending}>
                     <SelectTrigger className="w-full">
                         <SelectValue placeholder="Ingress Type" />
                         <SelectContent>
-                            <SelectItem value="RTMP">RTMP</SelectItem>
-                            <SelectItem value="WHIP">WHIP</SelectItem>
+                            <SelectItem value={RTMP}>RTMP</SelectItem>
+                            <SelectItem value={WHIP}>WHIP</SelectItem>
                         </SelectContent>
                     </SelectTrigger>
                 </Select>
@@ -57,13 +82,14 @@ export const ConnectionModal = ({} : ConnectionModalProps) => {
                 </Alert>
                 <Alert>
                     <div className="flex justify-between">
-                        <DialogClose>
+                        <DialogClose ref={closeRef} asChild>
                             <Button variant="destructive">
                                 Cancel
                             </Button>
                         </DialogClose>
                         <Button variant="primary"
-                            onClick={() => {}}>
+                            disabled={isPending}
+                            onClick={onSubmit}>
                                 Generate
                         </Button>
                     </div>

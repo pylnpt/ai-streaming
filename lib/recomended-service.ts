@@ -3,7 +3,6 @@ import { getSelf } from "./authservice";
 import { User } from "@clerk/nextjs/server";
 
 export const getRecomended = async () => {
-    await new Promise(resolve => setTimeout(resolve, 2000)) // TODO: REMOVE THIS  
     let userId;
     
     try {
@@ -43,12 +42,20 @@ export const getRecomended = async () => {
                     }
                 ]
             },
-            orderBy: {
-                createdAt: "desc"
+            include: { 
+                stream : {
+                    select: { isStreaming: true }
+                },
             },
+            orderBy: { createdAt: "desc" },
         })
     } else {
         userArray = await db.user.findMany({
+            include: {
+                stream : {
+                    select: { isStreaming: true }
+                },
+            },
             orderBy: {
                 createdAt: "desc"
             },

@@ -42,12 +42,20 @@ export const getRecomended = async () => {
                     }
                 ]
             },
-            include :{ stream: true },
+            include: { 
+                stream : {
+                    select: { isStreaming: true }
+                },
+            },
             orderBy: { createdAt: "desc" },
         })
     } else {
         userArray = await db.user.findMany({
-            include: { stream:true },
+            include: {
+                stream : {
+                    select: { isStreaming: true }
+                },
+            },
             orderBy: {
                 createdAt: "desc"
             },

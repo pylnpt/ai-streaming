@@ -3,11 +3,12 @@
 import { useViewerToken } from "@/hooks/use-viewer-token";
 import { User, Stream } from "@prisma/client"
 import { LiveKitRoom } from "@livekit/components-react" 
-import { Video } from "./video";
+import { Video, VideoSkeleton } from "./video";
 import { useChatSideBar } from "@/store/use-chat-sidebar";
 import { cn } from "@/lib/utils";
-import { Chat } from "./chat";
+import { Chat, ChatSkeleton } from "./chat";
 import { ChatToggle } from "./chat-toggle";
+import { ChatHeaderSkeleton } from "./chat-header";
 
 
 interface StreamPlayerProps {
@@ -32,13 +33,7 @@ export const StreamPlayer = ({
     } = useChatSideBar((state) => state);
     
     if(!token || !name || !identity ) {
-        return (
-            <>
-            <div>
-                You can not watch this stream
-            </div>
-            </>
-        )
+        return <StreamPlayerSkeleton/> 
     }
 
     return (
@@ -76,4 +71,18 @@ export const StreamPlayer = ({
             </LiveKitRoom>
         </>   
         )
+}
+
+export const StreamPlayerSkeleton = () => {
+    return (
+        <div className="grid grid-cols-1 lg:gap-y-0 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-6 h-full">
+            <div className="space-y-4 col-span-1 lg:col-span-2 xl:col-span-2 2xl:col-span-5 lg:overflow-y-auto hidden-scrollbar pb-10">
+                <VideoSkeleton />
+                {/* <HeaderSkeleton /> */}
+            </div>
+            <div className="col-span-1 bg-background">
+                <ChatSkeleton/>
+            </div>
+        </div>
+    )
 }

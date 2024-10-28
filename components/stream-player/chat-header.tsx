@@ -2,6 +2,7 @@
 
 import { Skeleton } from "../ui/skeleton";
 import { ChatToggle } from "./chat-toggle";
+import { ChatTypeToggle } from "./chat-type-toggle";
 
 export const ChatHeader = () => {
     return(
@@ -10,9 +11,11 @@ export const ChatHeader = () => {
                 <ChatToggle />
             </div>
             <p className="font-semibold text-primary text-center">
-                Stream chat header lOl
+                Stream chat header
             </p>
-            {/* TODO: toggle chat community */}
+            <div className="absolute right-2 top-2">
+                <ChatTypeToggle />
+            </div>
         </div>
     )
 }

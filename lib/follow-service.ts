@@ -25,17 +25,13 @@ export const isFollowingUser = async (id: string) => {
     }
 }
 export const checkExistingFollow = async (selfId: string, otherUserId: string ) =>{
-    console.log(selfId);
-    console.log(otherUserId)
-    
     const existingFollow = await db.follow.findFirst({
         where: {
             followerId: selfId,
             followingId: otherUserId
         },
     });
-
-    console.log(otherUserId)
+    
     return existingFollow;
 }
 

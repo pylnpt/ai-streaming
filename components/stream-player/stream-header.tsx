@@ -1,10 +1,11 @@
 "use-client"
 
 import { useParticipants, useRemoteParticipant } from "@livekit/components-react";
-import { UserAvatar } from "../user-avatar";
+import { UserAvartarSkeleton, UserAvatar } from "../user-avatar";
 import { VerifiedBadge } from "../verified";
 import { UserIcon } from "lucide-react";
-import { Actions } from "./actions";
+import { Actions, ActionSkeleton } from "./actions";
+import { Skeleton } from "../ui/skeleton";
 
 interface StreamHeaderProps {
     hostName: string;
@@ -68,5 +69,20 @@ export const StreamHeader = ({
             isHost={isHost}/>
 
     </div>
+    )
+}
+
+export const StreamHeaderSkeleton = () => {
+    return  (
+        <div className="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 items-start justify-between px-4">
+            <div className="flex items-center gap-x-2">
+                <UserAvartarSkeleton size="lg"/>
+                <div className="space-y-2">
+                    <Skeleton className="h-6 w-32"/>
+                    <Skeleton className="h-4 w-24"/>
+                </div>
+            </div>
+            <ActionSkeleton/>
+        </div>
     )
 }

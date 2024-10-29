@@ -52,7 +52,7 @@ export const StreamHeader = ({
                     {name}
                 </p>
                 { isStreaming ? (
-                    <div className="fosnt-semibold flex gap-x-1 items-center text-xs text-rose-500">
+                    <div className="font-semibold flex gap-x-1 items-center text-xs text-rose-500">
                         <UserIcon  className="h-4 w-4"/>
                         <p>
                             {participantCount} {participantCount === 1 ? "Viewer" : "Viewers"}

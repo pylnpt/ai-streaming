@@ -52,12 +52,13 @@ export const StreamerInfoCard = ({
 
                 <div className="p-4 lg:p-6 space-y-4">
                     <div>
-                        <h3 className="text-sm text-muted-foreground mb-2">ThumbNail</h3>
+                        <h3 className="text-sm text-muted-foreground mb-2">Stream Thumbnail</h3>
                         {thumbNailUrl && (
                             <div className="relative aspect-video rounded-md overflow-hidden w-[200px] border border-white/10">
                                 <Image fill
                                     src={thumbNailUrl}
-                                    alt={name} />
+                                    alt={name} 
+                                    className="object-cover"/>
                             </div>
                         )}
                     </div>

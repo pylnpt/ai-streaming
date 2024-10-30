@@ -34,7 +34,7 @@ export const StreamerInfoCard = ({
                 <div className="text-sm text-muted-foreground">
                     <span className="font-semibold text-primary">{followedByNum}</span> {followedByLabel}
                 </div>
-                <p className="text-sm"> { bio || "Thousands upon thousands might be revealed, yet there would always be more that remained hidden. Such as this Users bio. Sad honestly" } </p>
+                <p className="text-sm"> { bio || "Thousands upon thousands might be revealed, yet there would always be more that remained hidden. Such as this Users bio. Sad honestly." } </p>
             </div>
         </div>
       );

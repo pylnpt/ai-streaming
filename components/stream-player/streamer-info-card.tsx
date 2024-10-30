@@ -5,7 +5,7 @@ interface StreamerInfoCardProps {
     hostidentity: string;
     viewerIdentity: string;
     bio: string | null;
-    followedByNum: { follow: number };
+    followedByNum: number;
 }
 
 export const StreamerInfoCard = ({

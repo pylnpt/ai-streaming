@@ -12,7 +12,7 @@ interface StreamerInfoCardProps {
     name: string;
 }
 
-export const StreamerInfoCard = ({
+export const StreamInfoCard = ({
     hostIdentity,
     viewerIdentity,
     thumbNailUrl,

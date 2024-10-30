@@ -34,7 +34,7 @@ export const StreamInfoCard = ({
                         <h2 className="text-sm lg:text-lg font-semibold capitalize">
                             Edit your Stream's info
                         </h2>
-                        <p className="text-muted-foreground text-xs lg:text-sm">Maximize your visibility</p>
+                        <p className="text-muted-foreground text-xs lg:text-sm">Help your Stream to be seen.</p>
                     </div>
                     <StreamerInfoModal 
                         initialName={name}

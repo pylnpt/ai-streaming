@@ -9,11 +9,14 @@ import { cn } from "@/lib/utils";
 import { Chat, ChatSkeleton } from "./chat";
 import { ChatToggle } from "./chat-toggle";
 import { StreamHeader, StreamHeaderSkeleton } from "./stream-header";
-import { StreamerInfoCard } from "./streamer-info";
-
+import { StreamInfoCard } from "./stream-info";
+import { StreamerInfoCard } from "./streamer-info-card";
 
 interface StreamPlayerProps {
-    user: User & { stream: Stream | null };
+    user: User & { 
+        stream: Stream | null,
+        _count: { follow: number }
+     };
     stream: Stream;
     isFollowing: boolean;
 }
@@ -63,11 +66,18 @@ export const StreamPlayer = ({
                             isFollowing={isFollowing}
                             name={stream.name}
                             />
-                        <StreamerInfoCard 
+                        <StreamInfoCard 
                             hostIdentity={user.id}
                             viewerIdentity={identity}
                             thumbNailUrl={user.stream?.thumbnailUrl}
                             name={stream.name}
+                        />
+                        <StreamerInfoCard
+                            hostName={user.username}
+                            hostIdentity={user.id}
+                            viewerIdentity={identity}
+                            bio={user.bio}
+                            followedByNum={user._count.follow}
                         />
 
                     </div>

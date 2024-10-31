@@ -1,10 +1,14 @@
-import { UserButton } from "@clerk/nextjs";
+import { Suspense } from "react";
+import { Feeds, FeedsSkeleton } from "./_components/feeds";
+
 
 export default function Home() {
   return (
     <>
-    <div className="flex flex-col gap-y-4">
-      <h1>Home page</h1>
+    <div className="h-full p-8 max-w-screen-2xl mx-auto">
+      <Suspense fallback={<FeedsSkeleton/>}>
+        <Feeds />
+      </Suspense>
     </div> 
     </> 
   );

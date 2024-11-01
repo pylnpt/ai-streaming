@@ -23,9 +23,9 @@ const UserPage = async ({
     
     return ( 
         <StreamPlayer user={user}
-            stream={user.stream}
+            stream={user.stream}    
             isFollowing={isFollowing}/>
-        )
+        )   
 }
  
 export default UserPage;

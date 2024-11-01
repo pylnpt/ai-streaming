@@ -12,12 +12,28 @@ import { StreamHeader, StreamHeaderSkeleton } from "./stream-header";
 import { StreamInfoCard } from "./stream-info";
 import { StreamerInfoCard } from "./streamer-info-card";
 
+type SecureStreamType = {
+    id: string;
+    isChatEnabled: boolean;
+    isChatDelayed: boolean;
+    isChatFollowersOnly: boolean;
+    isStreaming: boolean;
+    thumbnailUrl: string | null;
+    name: string;  
+}
+
+type NonSensitiveUserDataType = {
+    id: string;
+    username: string;
+    bio: string | null;
+    stream: SecureStreamType | null;
+    imageUrl: string;
+    _count: { follow: number }
+}
+
 interface StreamPlayerProps {
-    user: User & { 
-        stream: Stream | null,
-        _count: { follow: number }
-     };
-    stream: Stream;
+    user: NonSensitiveUserDataType 
+    stream: SecureStreamType,
     isFollowing: boolean;
 }
 

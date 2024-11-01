@@ -18,16 +18,18 @@ export const getStreams = async () =>{
                 user: {
                     NOT: {
                         blocking: {
-                            some: {
-                                blockerId: userId, 
-                            }
+                            some: { blockerId: userId }
                         }
                     }
                 }
             },
-            include: {
-                user: true
-            }, 
+            select: {
+                id: true,
+                thumbnailUrl: true,
+                user: true,
+                name: true,
+                isStreaming: true,
+            },
             orderBy: [
                 { isStreaming: "desc" }, 
                 { updatedAt: "desc" }
@@ -35,8 +37,12 @@ export const getStreams = async () =>{
         })
     } else {
         streams = await db.stream.findMany({
-            include: {
-                user: true
+            select: {
+                id: true,
+                thumbnailUrl: true,
+                user: true,
+                name: true,
+                isStreaming: true,
             },
             orderBy: [
                 { isStreaming: "desc" }, 

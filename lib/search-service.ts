@@ -43,8 +43,13 @@ export const search = async (term?: string) => {
                     { user: { username: { contains: term } }}
                 ]
             },
-            include: {
+            select: {
                 user: true,
+                id: true,
+                isStreaming: true,
+                name: true,
+                thumbnailUrl: true,
+                updatedAt: true
             },
             orderBy: [
                 { isStreaming: "desc" },

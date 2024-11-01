@@ -9,8 +9,8 @@ export const Loading = ({
 }: LoadingProps) => {
     return (
         <div  className="h-full flex flex-col space-y-4 justify-center items-center">
-            <Loader className="h-10 w-10 text-muted-foreground animate-spin" />
-            <p className="text-muted-foreground capitalize">
+            <Loader className="h-10 w-10 text-primary animate-spin" />
+            <p className="text-primary capitalize">
                 {label} 
             </p>
         </div>

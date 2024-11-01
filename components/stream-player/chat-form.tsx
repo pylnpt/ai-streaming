@@ -50,10 +50,9 @@ export const ChatForm = ({
     }
 
     return(
-        <form className="flex flex-col items-center gap-y-4 p-3"
+        <form className="flex flex-col items-center gap-y-4 p-3 border-2 border-primary"
             onSubmit={handleSubmit}>
-            Chat Type form
-            <div className="w-full">
+            <div className="w-full border border-primary">
                 <ChatInfo isDelayed={isDelayed}
                     isFollowersOnly={isFollowersOnly}/>
                 <Input  onChange={(e) => {onChange(e.target.value)}}

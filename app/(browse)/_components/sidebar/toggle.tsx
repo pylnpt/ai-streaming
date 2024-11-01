@@ -20,18 +20,18 @@ const Toggle = () => {
         {collapsed && (
             <div className="hidden lg:flex w-full items-center justify-center pt-4 mb-4">
                 <Hint label={label} side="right" asChild>
-                    <Button variant="ghost" className="h-auto p-2" onClick={onExpand}>
-                        <ArrowRightFromLine className="h-4 w-4"/>
+                    <Button variant="ghost" className="h-auto p-2 border-2 border-primary" onClick={onExpand}>
+                        <ArrowRightFromLine className="h-4 w-4 text-primary"/>
                     </Button>
                 </Hint>                
             </div>
         )}
         {!collapsed && (
-            <div className="p-3 pl-6 mb-2 flex items-center w-full">
-                <p className="font-semibold text-primary">For you</p>
+            <div className="p-3 pl-6 mb-2 flex items-center w-full border border-primary">
+                <p className="font-semibold text-foreground">For you</p>
                 <Hint label={label} side="right" asChild>
                     <Button onClick={onCollapse}
-                        className="h-auto p-2 ml-auto"
+                        className="h-auto p-2 ml-auto border-2 border-primary"
                         variant="ghost">
                         <ArrowLeftFromLine className="h-4 w-4"/> 
                     </Button>

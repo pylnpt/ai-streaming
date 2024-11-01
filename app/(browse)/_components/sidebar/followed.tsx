@@ -24,7 +24,7 @@ const Followed = ({
         <div>
             {!collapsed && (
             <div className="pl-6 mb-4">
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-primary">
                     Followed Users
                 </p>
             </div>

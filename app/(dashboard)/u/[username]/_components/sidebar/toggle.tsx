@@ -20,14 +20,14 @@ export const Toggle = () => {
                 <Hint label={label} side="right" asChild>
                     <Button onClick={onExpand}
                         variant="ghost"
-                        className="h-auto p-2">
+                        className="h-12 w-12  border-2 border-primary">
                             <ArrowRightFromLine className="h-4 w-4"/>
                     </Button>
                 </Hint>
             </div>
         )}
         {!collapsed && (
-        <div className="p-3 pl-6 mb-2 hidden lg:flex items-center w-full">
+        <div className="p-3 pl-6 mb-2 hidden lg:flex items-center w-full border border-primary">
             <p className="font-semibold text-primary">
                 Dashboard
             </p>

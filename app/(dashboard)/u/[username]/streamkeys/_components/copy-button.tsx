@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { CheckCheck, CopyIcon, Ghost } from "lucide-react";
+import { CheckCheck, CopyIcon } from "lucide-react";
 
 import { useState } from "react";
 

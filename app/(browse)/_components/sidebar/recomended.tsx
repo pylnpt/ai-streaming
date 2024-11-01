@@ -1,7 +1,7 @@
 "use client";
 
 import { useSideBar } from "@/store/use-sidebar";
-import { User, Stream } from "@prisma/client";
+import { User } from "@prisma/client";
 import { UserItem, UserItemSkeleton } from "./user-item";
 
 interface RecommendedProps {

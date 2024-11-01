@@ -17,7 +17,7 @@ import { toast } from "sonner";
 import { UploadDropzone } from "@/lib/uploadthing";
 import { useRouter } from "next/navigation";
 import { Hint } from "../hint";
-import { Trash, Trash2 } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import Image from "next/image";
 
 

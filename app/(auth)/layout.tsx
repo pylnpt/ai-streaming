@@ -1,4 +1,3 @@
-import { LogIn } from "lucide-react";
 import { Logo } from "./_components/logo";
 
 const AuthLayout = ({

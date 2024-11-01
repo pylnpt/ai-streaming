@@ -1,7 +1,7 @@
 "use client"
 
 import { useParticipants } from "@livekit/components-react";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useDebounceValue} from "usehooks-ts";
 import { Input } from "../ui/input";
 import { ScrollArea } from "../ui/scroll-area";
@@ -20,13 +20,14 @@ export const ChatCommunity = ({
     isHidden,
 }: ChatCommunityProps) => {
     const participants = useParticipants();
-    const [value, setValue] = useState("");
+    const [debouncedValue, updateDebouncedValue] = useDebounceValue<string>("", 500);
+    // const [value, setValue] = useState("");
    
 
     const onChange = (newValue: string) => {
-        setValue(newValue);
+        updateDebouncedValue(newValue);
     };
-    const [debouncedValue, updateDebouncedValue] = useDebounceValue<string>(value, 500);
+    
     const filteredParticipants = useMemo(() => {
         const deduped = participants.reduce((acc, participant) => {
             const hostAsViewer = `host-${participant.identity}`;

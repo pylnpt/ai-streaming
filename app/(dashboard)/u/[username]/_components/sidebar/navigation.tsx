@@ -49,11 +49,12 @@ export const Navigation = () => {
 
     return (
         <ul className="space-y-2 px-2 pt-4 lg:pt-0">
-            {routes.map((route,key) => (
+            {routes.map((route, i) => (
                 <NavItem href={route.href}
                     label={route.label}
                     icon={route.icon}
                     isActive={pathname === route.href}
+                    key={i}
                     />
             ))}
         </ul>

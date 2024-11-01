@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import { useDashboardSideBar } from "@/store/use-dashboard-sidebar";
-import { Icon, LucideIcon } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import Link from "next/link";
 
 interface NavItemProps {

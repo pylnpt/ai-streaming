@@ -51,10 +51,10 @@ export const Live = ({
         }
     }
 
-    const handleFullscreenChange = () => {
+    const useFullscreenChange = () => {
         const isCurrentlyFullscreen = document.fullscreenElement !== null;
         setIsFullScreen(isCurrentlyFullscreen);
-        useEventListener("fullscreenchange", handleFullscreenChange, wrapperRef);
+        useEventListener("fullscreenchange", useFullscreenChange, wrapperRef);
 
     }
 

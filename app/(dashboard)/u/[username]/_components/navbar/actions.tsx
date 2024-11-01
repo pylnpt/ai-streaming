@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { SignInButton, UserButton } from "@clerk/nextjs";
-import { currentUser } from "@clerk/nextjs/server";
+import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
-import { Clapperboard, LogOut } from "lucide-react";
-import { Logo } from "./logo";
+import { LogOut } from "lucide-react";
 
 const Action = async() => {
 

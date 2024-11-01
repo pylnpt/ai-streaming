@@ -1,13 +1,12 @@
 "use client"
 
 import { toast } from "sonner";
-import { useMemo, useTransition } from "react";
+import { useTransition } from "react";
 import { MinusCircle } from "lucide-react";
 import { Hint } from "../hint";
 import { onBlock } from "@/actions/block";
-import { cn,stringToColor } from "@/lib/utils";
+import { cn, stringToColor } from "@/lib/utils";
 import { Button } from "../ui/button";
-import { Participant } from "livekit-client";
 
 interface CommunityItemProps {
     hostName: string;

@@ -32,7 +32,7 @@ export const StreamInfoCard = ({
                     </div>
                     <div>
                         <h2 className="text-sm lg:text-lg font-semibold capitalize">
-                            Edit your Stream's info
+                            Edit your Stream&apos;s info
                         </h2>
                         <p className="text-muted-foreground text-xs lg:text-sm">Help your Stream to be seen.</p>
                     </div>

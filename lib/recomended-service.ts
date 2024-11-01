@@ -1,6 +1,5 @@
 import { db } from "./db";
 import { getSelf } from "./authservice";
-import { User } from "@clerk/nextjs/server";
 
 export const getRecomended = async () => {
     let userId;

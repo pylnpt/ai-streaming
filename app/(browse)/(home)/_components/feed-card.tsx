@@ -1,8 +1,6 @@
-import { getStreams } from "@/lib/feed-service"
-import { User, Stream } from "@prisma/client";
+import { User } from "@prisma/client";
 import Link from "next/link";
 import { Thumbnail, ThumbNailSkeleton } from "../../_components/thumbnail";
-import { LiveBadge } from "@/components/ui/live-badge";
 import { UserAvartarSkeleton, UserAvatar } from "@/components/user-avatar";
 import { Skeleton } from "@/components/ui/skeleton";
 

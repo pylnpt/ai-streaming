@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { onFollow, onUnFollow } from "@/actions/follow";
 import { useTransition } from "react";
 import { toast } from "sonner";
-import { onBlock, onUnblock } from "@/actions/block";
+import { onUnblock } from "@/actions/block";
 
 interface ActionsProps {
     isFollowing: boolean

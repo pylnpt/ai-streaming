@@ -1,4 +1,3 @@
-import SearchBar from "@/app/(browse)/_components/navbar/search";
 import Action from "./actions";
 import { Logo } from "./logo";
 

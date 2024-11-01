@@ -19,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider appearance={{baseTheme:dark}}>
+      <head><meta name="google-site-verification" content="ptOorYGu0Y3qXA4PMGGc5oYbgBjv4wj8RZTmZNFZ1TY" /></head>
       <html lang="en">
         <body>
           

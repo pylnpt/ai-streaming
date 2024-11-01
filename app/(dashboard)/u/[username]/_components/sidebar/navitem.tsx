@@ -26,9 +26,9 @@ export const NavItem = ({
     <Button asChild 
         variant="ghost"
         className={cn(
-            "w-full h-12",
+            "w-full h-12 border-2 border-primary",
             collapsed ? "justify-center" : "justify-start",
-            isActive && "bg-accent"
+            isActive && "bg-primary-foreground"
         )}>
             <Link href={href}>
                 <div className="flex items-center gap-x-4">

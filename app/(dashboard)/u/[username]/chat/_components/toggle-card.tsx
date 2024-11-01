@@ -5,6 +5,7 @@ import { toast } from "sonner"
 import {  useTransition } from "react"
 import { updateStream } from "@/actions/stream" 
 import { Skeleton } from "@/components/ui/skeleton"
+import { MoonStar, Sun } from 'lucide-react';
 
 type FieldTypes = "isChatEnabled" | "isChatDelayed" | "isChatFollowersOnly"  
 
@@ -30,15 +31,17 @@ export const ToggleCard = ({
     }
 
     return (
-        <div className="rounded-xl bg-muted p-6">
+        <div className="rounded-xl bg-background p-6 border-2 border-primary">
             <div className="flex items-center justify-between">
                 <p className="font-semibold shrink-0">{label}</p>
-                <div className="space-y-2">
-                <Switch checked={value}
-                    onCheckedChange={onChange}
-                    disabled={isPending}>
-                    {value? "On" : "Off"}
-                </Switch>
+                <div className="space-x-2 flex flex-row-auto">
+                    <MoonStar />
+                    <Switch checked={value}
+                        onCheckedChange={onChange}
+                        disabled={isPending}>
+                        {value? "On" : "Off"}
+                    </Switch>
+                    <Sun/>
                 </div>
             </div>
         </div>

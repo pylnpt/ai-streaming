@@ -41,7 +41,7 @@ export const Thumbnail = ({
 
     return (
         <div className="group aspect-video relative rounded-md cursor-pointer">
-            <div className="rounded-md absolute inset-0 bg-blue-800 opacity-0 group-hover:opacity-100
+            <div className="rounded-md absolute inset-0 bg-primary opacity-0 group-hover:opacity-100
                 transition-opacity flex items-center justify-center" />
                  {content}
                  {isStreaming && (

@@ -37,7 +37,7 @@ export const UserAvatar = ({
     return(
         <div className="relative">
             <Avatar className={cn(
-                isStreaming && "ring-2 ring-green-300 border border-background",
+                isStreaming && "ring-2 ring-primary border border-background",
                 avatarSizes({ size })
             )}>
                 <AvatarImage src={imageUrl} className="object-cover"/>

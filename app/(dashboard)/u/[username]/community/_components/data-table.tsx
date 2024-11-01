@@ -59,17 +59,17 @@ export function DataTable<TData, TValue>({
                     onChange={(event) =>
                         table.getColumn("username")?.setFilterValue(event.target.value)
                     }
-                    className="max-w-sm"
+                    className="max-w-sm border border-primary"
                 />
             </div>
             <div className="rounded-md border">
-                <Table>
-                    <TableHeader>
+                <Table className="border-2 border-primary">
+                    <TableHeader >
                         {table.getHeaderGroups().map((headerGroup) => (
                         <TableRow key={headerGroup.id}>
                             {headerGroup.headers.map((header) => {
                                 return (
-                                <TableHead key={header.id}>
+                                <TableHead key={header.id} className="border-2 border-primary text-primary">
                                   {header.isPlaceholder
                                     ? null
                                     : flexRender(
@@ -90,7 +90,7 @@ export function DataTable<TData, TValue>({
                                     data-state={row.getIsSelected() && "selected"}
                                 >
                                 {row.getVisibleCells().map((cell) => (
-                                <TableCell key={cell.id}>
+                                <TableCell key={cell.id} className="border border-primary">
                                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                                 </TableCell>
                                 ))}
@@ -108,13 +108,15 @@ export function DataTable<TData, TValue>({
             </div>
             <div className="flex items-center justify-end space-x-2 py-4">
                 <Button
-                    variant="outline"
+                    variant="primary"
                     size="sm"
                     onClick={() => table.previousPage()}
                     disabled={!table.getCanPreviousPage()}
+                    className="border-2 border-primary text-primary"
                     > Previous</Button>
                 <Button
-                  variant="outline"
+                  variant="primary"
+                  className="border-2 border-primary text-primary"
                   size="sm"
                   onClick={() => table.nextPage()}
                   disabled={!table.getCanNextPage()}

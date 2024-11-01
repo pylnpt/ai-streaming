@@ -21,7 +21,7 @@ const Recommended = ({
         <div>
             {showLabel && (
             <div className="pl-6 mb-4">
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-foreground">
                     Recomended
                 </p>
             </div>

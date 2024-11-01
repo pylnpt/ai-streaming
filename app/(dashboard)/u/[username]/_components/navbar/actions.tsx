@@ -10,7 +10,7 @@ const Action = async() => {
         <div className=" flex items-center justify-end gap-x-2">
             <Button size="sm"
                 variant="ghost"
-                className="text-muted-foreground hover:bg-primary"
+                className="text-primary hover:bg-primary"
                 asChild>
                 <Link href="/">
                     <LogOut className="h-5 w-5 mr-2"/>

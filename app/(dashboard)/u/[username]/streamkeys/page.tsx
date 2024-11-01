@@ -13,14 +13,14 @@ const KeySettings = async () => {
     }
 
     return (  
-        <div className="p-6">
+        <div className="p-20">
             <div className="flex items-center justify-between mb-4">
                 <h1 className="text-2xl font-bold">
                     Key Settings
                 </h1>
                 <ConnectionModal />
             </div>
-            <div className="space-y-4">
+            <div className="space-y-20">
                 <UrlCard value={stream.serverUrl}/>
                 <KeyCard value={stream.streamKey}/>
             </div>

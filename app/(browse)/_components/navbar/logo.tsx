@@ -13,7 +13,7 @@ export const Logo = () => {
     return ( 
         <Link href="/">
             <div className="flex items-center gap-x-4 hover:opacity-75 transition">
-                <div className="bg-white rounded-full p-1 mr-12 shrink-0 lg:mr-0 lg:shrink-0">
+                <div className="bg-primary rounded-full p-1 mr-12 shrink-0 lg:mr-0 lg:shrink-0">
                     <Image src="/logo.png"
                         alt="logoplaceholder"
                         height="32"
@@ -22,8 +22,8 @@ export const Logo = () => {
                 <div className={cn(
                     "hidden lg:block",
                     font.className)}>
-                    <p className="text-lg font font-semibold">Thesis</p>   
-                    <p className="text-xs text-muted-foreground">Streaming page with AI integration</p>   
+                    <p className="text-lg font font-semibold text-foreground">MP-Thesis</p>   
+                    <p className="text-xs">Streaming page with AI integration</p>   
                 </div>
 
             </div>

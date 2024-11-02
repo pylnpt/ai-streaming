@@ -30,3 +30,25 @@ export const updateStream = async (values: Partial<Stream>) => {
         throw new Error("Internal Error");
     }
 }
+
+export const updateEyetrackingStatus = async (values: Partial<Stream>) => {
+    try {
+        const self = await getSelf();
+        const stream = await getStreamByUserId(self.id);
+        
+        if(!stream) {
+            throw new Error("There is no stream to update!")
+        }
+
+        const validData = {
+            eyeIsTracked: values.eyeIsTracked,
+        }
+
+        const streamToUpdate = await updateStreamById(stream.id, validData);
+        revalidatePath(`/u/${self.username}`);
+        revalidatePath(`/${self.username}`);
+
+    } catch {
+        throw new Error("Internal Error");
+    }
+}

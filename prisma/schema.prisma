@@ -65,26 +65,28 @@ model Block {
 }
 
 model Stream {
-  id                    String @id @default(uuid())
-  name                  String  
-  thumbnailUrl          String?
+  id                      String @id @default(uuid())
+  name                    String  
+  thumbnailUrl            String?
   
-  ingressId             String? @unique
-  serverUrl             String?
-  streamKey             String?
+  ingressId               String? @unique
+  serverUrl               String?
+  streamKey               String?
 
-  isStreaming           Boolean @default(false)
-  isChatEnabled         Boolean @default(true)
-  isChatDelayed         Boolean @default(true)
-  isChatFollowersOnly   Boolean @default(false)
-
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  isStreaming             Boolean @default(false)
+  isChatEnabled           Boolean @default(true)
+  isChatDelayed           Boolean @default(true)
+  isChatFollowersOnly     Boolean @default(false)
+  isUsingProfanityFilter  Boolean @default(false)
   
-  userId                String @unique
-  user                  User @relation(fields: [userId], references: [id], onDelete: Cascade) 
+  eyeIsTracked            Boolean @default(false)
+
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+  
+  userId                  String @unique
+  user                    User @relation(fields: [userId], references: [id], onDelete: Cascade) 
 
   @@index([userId])
   @@index([ingressId])
-  // @@fulltext([name])
 }

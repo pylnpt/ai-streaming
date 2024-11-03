@@ -8,7 +8,7 @@ import {
     SelectValue 
 } from "@/components/ui/select"
 import { useEffect, useRef, useState } from "react";
-import { CalibrationModal } from "./calibration-modal";
+import  { CalibrationModal }  from "./calibration-modal";
 
 export const CameraCard = () => {
     const [cameraDevices, setCameraDevices] = useState<MediaDeviceInfo[]>([]);

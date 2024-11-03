@@ -2,7 +2,7 @@
 
 import { Switch } from "@/components/ui/switch"
 import { toast } from "sonner"
-import {  useTransition } from "react"
+import { useTransition } from "react"
 import { updateStream } from "@/actions/stream" 
 import { Skeleton } from "@/components/ui/skeleton"
 import { MoonStar, Sun } from 'lucide-react';

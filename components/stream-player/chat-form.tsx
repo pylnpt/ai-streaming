@@ -9,9 +9,9 @@ import * as toxicity from '@tensorflow-models/toxicity';
 
 
 interface ChatFormProps {
-    onSubmit: (message: Promise<string>) => void;
+    onSubmit: (message: Promise<string> | string) => void;
     value: string;
-    onChange: (value: string) => void;
+    onChange: (value: string | Promise<string>) => void;
     isHidden: boolean;
     isFollowersOnly: boolean;
     isDelayed: boolean;
@@ -55,12 +55,12 @@ export const ChatForm = ({
         return result;
     }
     
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         e.stopPropagation();
 
         if(!value || isDisabled) return;
-        const checkedMessage = checkToxicity(value);
+        const checkedMessage = await checkToxicity(value);
         if(isDelayed && !isDelayedBlocked) {
             setIsDelayedBlocked(true);
             setTimeout(() => {

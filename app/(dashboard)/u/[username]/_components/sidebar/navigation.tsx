@@ -5,7 +5,8 @@ import {
     Fullscreen,
     KeyRound,
     MessageSquare,
-    Users
+    Users,
+    ScanEye
 } from "lucide-react";
 import { NavItem, NavItemSkeleton } from "./navitem";
 
@@ -33,6 +34,11 @@ export const Navigation = () => {
             label: "Community",
             href: `/u/${user?.username}/community`,
             icon: Users
+        },
+        {
+            label: "Eye Tracking",
+            href: `/u/${user?.username}/eyetracking`,
+            icon: ScanEye
         }
     ];
 
@@ -40,7 +46,7 @@ export const Navigation = () => {
     if(!user?.username) {
         return (
         <ul className="space-y-2">
-            {[...Array(4)].map((_,i) => (
+            {[...Array(6)].map((_,i) => (
                 <NavItemSkeleton key={i}/>
             ))}
         </ul>

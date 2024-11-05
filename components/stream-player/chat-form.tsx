@@ -5,10 +5,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ChatInfo } from "./chat-info";
+import * as toxicity from '@tensorflow-models/toxicity';
 
 
 interface ChatFormProps {
-    onSubmit: () => void;
+    onSubmit: (message: Promise<string>) => void;
     value: string;
     onChange: (value: string) => void;
     isHidden: boolean;
@@ -28,22 +29,48 @@ export const ChatForm = ({
     const [isDelayedBlocked, setIsDelayedBlocked] = useState(false);
     const isFollowersOnlyAndNotFollowing = isFollowersOnly && !isFollowing;
     const isDisabled = isHidden || isDelayedBlocked || isFollowersOnlyAndNotFollowing;
+
+    const threshold = 0.9;
+    const toxicityLabels = [
+        'identity_attack', 
+        'insult', 'obscene', 
+        'severe_toxicity', 
+        'sexual_explicit', 
+        'threat', 
+        'toxicity'
+    ]; 
+    
+    const  checkToxicity = async (text: string) => {
+        let result = text;
+        const model = await toxicity.load(threshold, toxicityLabels); // Load the toxicity model with the required labels
+        const predictions = await model.classify(text); // Classify the input text
+    
+        predictions.forEach(prediction => {
+            if (prediction.results[0].match) {
+                result = `This message was deleted because ${prediction.label} was detected in it.`
+                console.log(`Detected ${prediction.label}`);
+            }
+        });
+
+        return result;
+    }
     
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         e.stopPropagation();
 
         if(!value || isDisabled) return;
+        const checkedMessage = checkToxicity(value);
         if(isDelayed && !isDelayedBlocked) {
             setIsDelayedBlocked(true);
             setTimeout(() => {
                 setIsDelayedBlocked(false);
-                onSubmit();
+                onSubmit(checkedMessage);
             }, 50000)
         } else {
-            onSubmit();
+            onSubmit(checkedMessage);
         }
-    }
+    }    
 
     if(isHidden) {
         return null;

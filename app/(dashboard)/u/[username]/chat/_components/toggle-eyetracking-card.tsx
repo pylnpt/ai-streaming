@@ -18,7 +18,13 @@ export const ToggleEyeTracking = ({
     const onChange = () => {
         startTransition(() => {
             updateEyetrackingStatus({eyeIsTracked : !value})
-            .then(() => { !value ? toast.success(`Succesfully turned On.`) :  toast.success(`Succesfully turned Off.`)})
+            .then(() => {
+                if(value){
+                    toast.success(`Succesfully turned Off.`)
+                } else {
+                    toast.success(`Succesfully turned On.`)
+                }
+            })
             .catch(() => toast.error("Eye tracker settings update has failed."))
         });
     }

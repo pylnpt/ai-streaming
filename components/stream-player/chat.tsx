@@ -59,8 +59,8 @@ export const Chat = ({
         setValue("");
     }
 
-    const onChange = (value: string) => {
-        setValue(value);
+    const onChange = (value: Promise<string> | string) => {
+        setValue(value.toString);
     };
 
     return (

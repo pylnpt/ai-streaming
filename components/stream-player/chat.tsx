@@ -53,14 +53,14 @@ export const Chat = ({
         return messages.sort((a,b) => b.timestamp - a.timestamp)
     }, [messages]);
 
-    const onSubmit = (message: string) => {
+    const onSubmit = () => {
         if(!send) return;
-        send(message);
+        send(value);
         setValue("");
     }
 
-    const onChange = (value: Promise<string> | string) => {
-        setValue(value.toString);
+    const onChange = (value: string) => {
+        setValue(value);
     };
 
     return (
@@ -73,7 +73,7 @@ export const Chat = ({
                         messages={reversedMessages}
                         isHidden={isHidden} />
                     <ChatForm 
-                        onSubmit={() => onSubmit(value)}
+                        onSubmit={onSubmit}
                         value={value}
                         onChange={onChange}
                         isHidden={isHidden}

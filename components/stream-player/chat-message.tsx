@@ -3,15 +3,47 @@
 import { stringToColor } from "@/lib/utils";
 import { ReceivedChatMessage } from "@livekit/components-react";
 import {format} from "date-fns";
+import {useEffect, useState } from "react";
+import * as toxicity from '@tensorflow-models/toxicity';
+
 
 interface ChatMessageProps {
-    data: ReceivedChatMessage
+    data: ReceivedChatMessage & {isToxic: boolean}
+    // model: toxicity.ToxicityClassifier
 };
 
 export const ChatMessage = ({
     data, 
 }: ChatMessageProps) => {
-    const color = stringToColor(data.from?.name || "");
+    const [checkedMessage, setCheckedMessage] = useState(data.message);
+    const color = stringToColor(data.from?.name || "asderf");
+    
+    const threshold = 0.9;
+    const toxicityLabels = [
+        'identity_attack', 
+        'insult', 
+        'obscene', 
+        'severe_toxicity', 
+        'sexual_explicit', 
+        'threat', 
+        'toxicity'
+    ];
+
+    useEffect(() => {
+        const checkToxicity = async () => {
+            const toxicityInstance = toxicity;  
+            const model = await toxicityInstance.load(threshold, toxicityLabels); // Load the toxicity model with the required labels
+            const predictions = await model.classify(checkedMessage); // Classify the input text
+            
+            predictions.forEach(prediction => {
+                if (prediction.results[0].match) {
+                    setCheckedMessage(`Deleted due to ${prediction.label}.`)
+                    console.log(`Detected ${prediction.label}`);
+                }
+            });
+        };
+        checkToxicity();
+      }, [checkedMessage]);
 
     return (
         <div className="flex gap-2 p-2 rounded-md hover:bg.white/5">
@@ -25,7 +57,7 @@ export const ChatMessage = ({
                     </span>:
                 </p>
                 <p className="text-sm break-all">
-                    {data.message}
+                    {checkedMessage}
                 </p>
             </div>
         </div>

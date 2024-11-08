@@ -25,7 +25,8 @@ export const ChatList = ({
             {messages.map((message) =>(
                 <ChatMessage
                     key={message.timestamp}
-                    data={message} />
+                    data={{...message,
+                            isToxic: false}} />
             ))}
         </div>
     )

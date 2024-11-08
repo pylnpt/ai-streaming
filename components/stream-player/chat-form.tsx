@@ -5,13 +5,12 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ChatInfo } from "./chat-info";
-import * as toxicity from '@tensorflow-models/toxicity';
 
 
 interface ChatFormProps {
-    onSubmit: (message: Promise<string> | string) => void;
+    onSubmit: () => void;
     value: string;
-    onChange: (value: string | Promise<string>) => void;
+    onChange: (value: string) => void;
     isHidden: boolean;
     isFollowersOnly: boolean;
     isDelayed: boolean;
@@ -29,48 +28,22 @@ export const ChatForm = ({
     const [isDelayedBlocked, setIsDelayedBlocked] = useState(false);
     const isFollowersOnlyAndNotFollowing = isFollowersOnly && !isFollowing;
     const isDisabled = isHidden || isDelayedBlocked || isFollowersOnlyAndNotFollowing;
-
-    const threshold = 0.9;
-    const toxicityLabels = [
-        'identity_attack', 
-        'insult', 'obscene', 
-        'severe_toxicity', 
-        'sexual_explicit', 
-        'threat', 
-        'toxicity'
-    ]; 
     
-    const  checkToxicity = async (text: string) => {
-        let result = text;
-        const model = await toxicity.load(threshold, toxicityLabels); // Load the toxicity model with the required labels
-        const predictions = await model.classify(text); // Classify the input text
-    
-        predictions.forEach(prediction => {
-            if (prediction.results[0].match) {
-                result = `This message was deleted because ${prediction.label} was detected in it.`
-                console.log(`Detected ${prediction.label}`);
-            }
-        });
-
-        return result;
-    }
-    
-    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         e.stopPropagation();
 
         if(!value || isDisabled) return;
-        const checkedMessage = await checkToxicity(value);
         if(isDelayed && !isDelayedBlocked) {
             setIsDelayedBlocked(true);
             setTimeout(() => {
                 setIsDelayedBlocked(false);
-                onSubmit(checkedMessage);
+                onSubmit();
             }, 50000)
         } else {
-            onSubmit(checkedMessage);
+            onSubmit();
         }
-    }    
+    }
 
     if(isHidden) {
         return null;

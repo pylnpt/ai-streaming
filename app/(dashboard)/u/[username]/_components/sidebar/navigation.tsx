@@ -6,9 +6,11 @@ import {
     KeyRound,
     MessageSquare,
     Users,
-    ScanEye
+    ScanEye,
+    MessageSquareX
 } from "lucide-react";
 import { NavItem, NavItemSkeleton } from "./navitem";
+import { ToggleSkeleton } from "./toggle";
 
 export const Navigation = () => {
     const pathname = usePathname();
@@ -36,6 +38,11 @@ export const Navigation = () => {
             icon: Users
         },
         {
+            label: "Profanity Filter",
+            href: `/u/${user?.username}/aifilter`,
+            icon: MessageSquareX
+        },
+        {
             label: "Eye Tracking",
             href: `/u/${user?.username}/eyetracking`,
             icon: ScanEye
@@ -45,11 +52,11 @@ export const Navigation = () => {
 
     if(!user?.username) {
         return (
-        <ul className="space-y-2">
-            {[...Array(6)].map((_,i) => (
-                <NavItemSkeleton key={i}/>
-            ))}
-        </ul>
+            <ul className="space-y-2">
+                {[...Array(6)].map((_,i) => (
+                    <NavItemSkeleton key={i}/>
+                ))}
+            </ul>
         )
     }
 

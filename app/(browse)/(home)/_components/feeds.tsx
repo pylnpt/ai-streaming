@@ -7,7 +7,7 @@ export const Feeds = async () => {
     
     return (
         <div>
-            <h2 className="text-lg font-semibold mb-4">Currently streaming Users</h2>
+            <h2 className="text-lg font-semibold mb-4">User Feeds</h2>
             { data.length === 0 && (
                 <div className="text-muted-foreground text-sm">
                     There is no one there but crickets. Be the one who changes that.

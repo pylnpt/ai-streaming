@@ -1,7 +1,7 @@
 "use client"
 
 import {cn} from "@/lib/utils";
-import { useDashboardSideBar } from "@/store/use-dashboard-sidebar";
+import { useSettingsSideBar } from "@/store/use-settings-sidebar";
 
 interface WrapperProps {
     children: React.ReactNode
@@ -10,12 +10,12 @@ interface WrapperProps {
 export const Wrapper = ({
     children,
 }: WrapperProps) => {
-    const { collapsed } = useDashboardSideBar((state) => state)
+    const { collapsed } = useSettingsSideBar((state) => state)
 
 
     return (
         <aside className={cn(
-            "fixed left-0 flex flex-col w-60 h-full bg-background border-r border-primary z-50",
+            "fixed right-0 flex flex-col w-60 h-full bg-background border border-primary z-50",
             collapsed && "w-[70px]"
         )}>
             {children}

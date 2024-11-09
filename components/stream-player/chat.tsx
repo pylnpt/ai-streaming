@@ -5,7 +5,7 @@ import { useChat, useConnectionState, useRemoteParticipant } from "@livekit/comp
 import { ConnectionState } from "livekit-client";
 import { useEffect, useMemo, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
-import { ChatHeader } from "./chat-header";
+import { ChatHeader, ChatHeaderSkeleton } from "./chat-header";
 import { ChatForm, ChatFormSkeleton } from "./chat-form";
 import { ChatList, ChatListSkeleton } from "./chat-list";
 import { ChatCommunity } from "./chat-community";
@@ -64,8 +64,8 @@ export const Chat = ({
     };
 
     return (
-        <div className="flex flex-col bg-background border-l 
-            border-b border-primary pt-0 h-[calc(100vh-80px)]">
+        <div className="flex flex-col bg-background
+            border border-primary pt-0 h-[calc(100vh-80px)]">
             <ChatHeader />
             {type === ChatType.CHAT && (
                 <>
@@ -95,8 +95,8 @@ export const Chat = ({
 
 export const ChatSkeleton = () => {
     return (
-        <div className="flex flex-col border-l border-b pt-0 h-[calc(100vh-80px)] border-2">
-            <ChatHeader />
+        <div className="flex flex-col pt-0 h-[calc(100vh-80px)] border-2 border-primary">
+            <ChatHeaderSkeleton />
             <ChatListSkeleton />
             <ChatFormSkeleton />
         </div>)

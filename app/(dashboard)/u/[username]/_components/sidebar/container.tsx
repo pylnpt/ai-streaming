@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils";
-import { useDashboardSideBar } from "@/store/use-dashboard-sidebar";
+import { useSettingsSideBar } from "@/store/use-settings-sidebar";
 import { useEffect } from "react";
 import { useMediaQuery } from "usehooks-ts";
 
@@ -17,7 +17,7 @@ export const Container = ({
         onCollapse,
         onExpand,
         collapsed
-    } = useDashboardSideBar((state) => state);
+    } = useSettingsSideBar((state) => state);
 
     const matches = useMediaQuery(`(max-width: 1024px)`);
 
@@ -32,7 +32,7 @@ export const Container = ({
     return (
         <div className={cn(
             "flex-1",
-            collapsed ? "ml-[70px]" : "ml-[70px] lg:ml-60"
+            collapsed ? "mr-[70px]" : "mr-[70px] lg:mr-60"
         )}>
             {children}
         </div>

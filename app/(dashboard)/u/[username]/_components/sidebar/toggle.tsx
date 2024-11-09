@@ -2,15 +2,16 @@
 
 import { Hint } from "@/components/hint";
 import { Button } from "@/components/ui/button";
-import { useDashboardSideBar } from "@/store/use-dashboard-sidebar";
-import { ArrowLeftFromLine, ArrowRightFromLine } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
+import { useSettingsSideBar } from "@/store/use-settings-sidebar";
+import { ChevronsRight , ChevronsLeft  } from "lucide-react";
 
 export const Toggle = () => {
     const {
         collapsed,
         onExpand,
         onCollapse
-    } = useDashboardSideBar((state) => state);
+    } = useSettingsSideBar((state) => state);
 
     const label = collapsed ? "Expand" : "Collapse"
     return (
@@ -21,7 +22,7 @@ export const Toggle = () => {
                     <Button onClick={onExpand}
                         variant="ghost"
                         className="h-12 w-12  border-2 border-primary">
-                            <ArrowRightFromLine className="h-4 w-4"/>
+                            <ChevronsLeft className="h-4 w-4"/>
                     </Button>
                 </Hint>
             </div>
@@ -29,17 +30,26 @@ export const Toggle = () => {
         {!collapsed && (
         <div className="p-3 pl-6 mb-2 hidden lg:flex items-center w-full border border-primary">
             <p className="font-semibold text-primary">
-                Dashboard
+                Settings
             </p>
             <Hint label={label} side="right" asChild>
                 <Button onClick={onCollapse}
                     variant="ghost"
-                    className="h-auto p-2 ml-auto">
-                        <ArrowLeftFromLine className="h-4 w-4"/>
+                    className="h-auto p-2 ml-auto border-2 border-primary">
+                        <ChevronsRight className="h-4 w-4"/>
                 </Button>
             </Hint>
         </div>
         )}
         </>
       );
+}
+
+export const ToggleSkeleton = () => {
+    return (
+        <div className="p-3 pl-6 mb-2 hidden lg:flex items-center justify-between w-full">
+            <Skeleton className="h-6 w-[100px]"/>
+            <Skeleton className="h-6"/>
+        </div>
+    )
 }

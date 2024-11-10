@@ -10,7 +10,6 @@ import {
     MessageSquareX
 } from "lucide-react";
 import { NavItem, NavItemSkeleton } from "./navitem";
-import { ToggleSkeleton } from "./toggle";
 
 export const Navigation = () => {
     const pathname = usePathname();

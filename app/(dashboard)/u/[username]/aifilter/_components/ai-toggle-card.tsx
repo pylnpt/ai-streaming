@@ -1,14 +1,10 @@
 "use client"
 
 import { Switch } from "@/components/ui/switch"
-import { toast } from "sonner"
-import { useState, useTransition } from "react"
-import { updateStream } from "@/actions/stream" 
+import { useState, useTransition } from "react" 
 import { Skeleton } from "@/components/ui/skeleton"
-import { MoonStar, Sun } from 'lucide-react';  
-import MultipleSelector, { Option } from '@/components/ui/multi-select-picker';
+import { MoonStar, Sun } from 'lucide-react';
 import React from 'react';
-import { AIFilter } from "@prisma/client"
 
 interface AIToggleCardProps {
     value: boolean

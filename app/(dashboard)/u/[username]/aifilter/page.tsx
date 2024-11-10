@@ -1,15 +1,13 @@
 
 import { getSelf } from "@/lib/authservice";
-import { getStreamByUserId } from "@/lib/stream-service";
-import { AISettingsCard } from "./_components/ai-settings-card";
+import { AIToggleCard } from "./_components/ai-toggle-card";
+import { getEveryFilter, getFiltersByUserId } from "@/lib/profanity-service";
+import { AIFilterSelectCard } from "./_components/ai-fillter-select.-card";
 
 const ProfanityFilterSettings = async () => {
     const self = await getSelf();
-    const stream = await getStreamByUserId(self.id); 
-
-    if(!stream) {
-        throw new Error("Stream not found")
-    }
+    const userFilters = await getFiltersByUserId(self.id);
+    const everyFilter = await getEveryFilter();
 
     return (  
         <div className="p-20">
@@ -19,9 +17,13 @@ const ProfanityFilterSettings = async () => {
                 </h1>
             </div>
             <div className="space-y-20">
-            <AISettingsCard selectPickerChoices={["choice one", "choice two", "choice three"]}  value={false}/>
-                {/* <UrlCard value={stream.serverUrl}/>
-                <KeyCard value={stream.streamKey}/> */}
+            <AIToggleCard
+                value={false}
+            />
+            <AIFilterSelectCard  
+                everyFilter={everyFilter}
+                activeFilters={userFilters} 
+                userId={self.id}/>
             </div>
         </div>
     );

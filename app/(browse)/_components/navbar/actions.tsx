@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 import Link from "next/link";
-import { Clapperboard } from "lucide-react";
+import { Settings  } from "lucide-react";
 
 const Action = async() => {
     const user = await currentUser();
@@ -24,9 +24,9 @@ const Action = async() => {
                         className="text-primary hover:text-background" 
                         asChild>
                             <Link href={`/u/${user.username}`}>
-                                <Clapperboard className="h-5 w-5 lg:mr-2"/>
+                                <Settings className="h-5 w-5 lg:mr-2"/>
                                 <span className="hidden lg:block">
-                                    Dashboard
+                                    Settings
                                 </span>
                             </Link>
                     </Button>

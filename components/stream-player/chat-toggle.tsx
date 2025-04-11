@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowLeftFromLine, ArrowRightFromLine } from "lucide-react"
+import { ChevronsRight, ChevronsLeft } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { useChatSideBar } from "@/store/use-chat-sidebar";
@@ -13,7 +13,7 @@ export const ChatToggle = () => {
         onExpand
     } = useChatSideBar((state) => state)
 
-    const Icon = collapsed ? ArrowLeftFromLine : ArrowRightFromLine;
+    const Icon = collapsed ? ChevronsRight : ChevronsLeft;
     
     const onToggle = () => {
         if(collapsed){ onExpand() }

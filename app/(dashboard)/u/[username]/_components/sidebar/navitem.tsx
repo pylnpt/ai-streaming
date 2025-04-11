@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
-import { useDashboardSideBar } from "@/store/use-dashboard-sidebar";
+import { useSettingsSideBar } from "@/store/use-settings-sidebar";
 import { LucideIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -20,7 +20,7 @@ export const NavItem = ({
     href,
     isActive
 }: NavItemProps) => {
-    const { collapsed } = useDashboardSideBar((state) => state);
+    const { collapsed } = useSettingsSideBar((state) => state);
     
     return (
     <Button asChild 

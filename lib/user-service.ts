@@ -11,6 +11,7 @@ export const getUserByUserName = async( username: string) => {
             username: true,
             bio: true,
             imageUrl: true,
+            isUsingProfanityFilter: true,
             stream: {
                 select: {
                     id: true,

@@ -6,6 +6,8 @@ const isPublicRoute = createRouteMatcher([
   '/api/webhooks/(.*)',
   "/", 
   "/api/uploadthing",
+  "/api/userFiltersUpsert",
+  "/api/userThresholdSubmit",
   "/:username",
   "/search",
 ])

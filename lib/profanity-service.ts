@@ -2,11 +2,8 @@
 
 import { db } from "./db";
 import { revalidatePath } from "next/cache";
-import { AIFilter, User } from "@prisma/client";
-import { NextResponse } from "next/server";
+import { User } from "@prisma/client";
 import { Filter } from "./types";
-import { Decimal } from "@prisma/client/runtime/library";
-import { error } from "console";
 
 export const getFiltersByUserId = async( id: string) => {
     const userFilters = await db.user.findUnique({
@@ -109,10 +106,9 @@ export const getEveryThreshold = async () => {
 
 export const updateProfanityStatus = async (user: User , value: boolean) => {
   try {
-      const updatedUser = await updateAiStatus(user.id, value);
-      revalidatePath(`/u/${user.username}`);
-      revalidatePath(`/${user.username}`);
-
+        await updateAiStatus(user.id, value);
+        revalidatePath(`/u/${user.username}`);
+        revalidatePath(`/${user.username}`);
   } catch(err) {
     console.log(err)
       throw new Error("Internal Error");

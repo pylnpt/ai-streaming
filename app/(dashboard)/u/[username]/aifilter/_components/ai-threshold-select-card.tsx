@@ -56,7 +56,7 @@ export const AIThresholdSelectCard = ({
         startTransition(()=>{
             updateUserThreshold(userId, data.threshold)
             .then(() => { toast.success(`Threshold successfully updated.`)})
-            .catch((error) => {toast.error("Something went wrong with the update.\nPlease try again later."), console.log(error)})
+            .catch(() => {toast.error("Something went wrong with the update.\nPlease try again later.")})
         })
     } 
 

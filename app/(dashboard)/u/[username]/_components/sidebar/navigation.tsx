@@ -6,7 +6,6 @@ import {
     KeyRound,
     MessageSquare,
     Users,
-    ScanEye,
     MessageSquareX
 } from "lucide-react";
 import { NavItem, NavItemSkeleton } from "./navitem";

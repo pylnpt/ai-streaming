@@ -2,7 +2,6 @@ import { StreamPlayer } from "@/components/stream-player";
 import { getFilterValuesByUserId, getThresholdByUserId } from "@/lib/profanity-service";
 import { getUserByUserName } from "@/lib/user-service";
 import { currentUser } from "@clerk/nextjs/server";
-import { Value } from "@radix-ui/react-select";
 
 interface CreatorPageProps {
     params: {

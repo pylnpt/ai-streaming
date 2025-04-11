@@ -17,7 +17,6 @@ const useFullscreenChange = (wrapperRef: React.RefObject<HTMLDivElement>) => {
         const isCurrentlyFullscreen = document.fullscreenElement === wrapperRef.current;
         setIsFullscreen(isCurrentlyFullscreen);
     };
-
     useEffect(() => {
         document.addEventListener("fullscreenchange", handleFullscreenChange);
         return () => document.removeEventListener("fullscreenchange", handleFullscreenChange);

@@ -14,13 +14,16 @@ import {
 import { toast } from 'sonner';
 import { LoadingButton } from '@/components/ui/loading-button';
 import MultipleSelector from '@/components/ui/multi-select-picker';
-import { AIFilter } from '@prisma/client';
+import { AIFilter, User } from '@prisma/client';
 import { useState, useTransition } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { updateProfanityFilters, updateProfanityStatus } from '@/lib/profanity-service';
+import { Filter } from '@/lib/types';
 
 interface AIFilterSelectCardProps {
     everyFilter: AIFilter[]
-    activeFilters: { label: string; value: string; id: string; }[] | undefined
-    userId: string,
+    activeFilters: Filter[] | undefined
+    user: User,
 }
 
 const optionSchema = z.object({
@@ -37,10 +40,10 @@ const FormSchema = z.object({
 export const AIFilterSelectCard = ({
     everyFilter,
     activeFilters,
-    userId,
+    user,
 }: AIFilterSelectCardProps) => {
     const [isPending, startTransition] = useTransition();
-    const [selectedFilters, setSelectedFilters] = useState<{ label: string; value: string; id: string }[] | undefined>(activeFilters);
+    const [selectedFilters, setSelectedFilters] = useState<Filter[] | undefined >(activeFilters);
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema),
     });
@@ -57,78 +60,116 @@ export const AIFilterSelectCard = ({
         id: filter.id
     }));
 
-    const upsertUserFilters = async (
-        userId: string,
-        filterIds: {
-            frameworks: {
-                id: string 
-            }[] }) => {
-        try {
-            const response = await fetch('/api/userFiltersUpsert', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ userId, filterIds }),
-            });
+    // const upsertUserFilters = async (
+    //     userId: string,
+    //     filterIds: {
+    //         frameworks: {
+    //             id: string 
+    //         }[] }) => {
+    //     try {
+    //         const response = await fetch('/api/userFiltersUpsert', {
+    //             method: 'POST',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //             },
+    //             body: JSON.stringify({ userId, filterIds }),
+    //         });
     
-            if (!response.ok) {
-                throw new Error(`Failed to upsert user filters: ${response.statusText}`);
-            }
+    //         if (!response.ok) {
+    //             throw new Error(`Failed to upsert user filters: ${response.statusText}`);
+    //         }
     
-            const data = await response.json();
-            return data;
-        } catch (error) {
-            console.error('Error during API call:', error);
-            throw error;
-        }
-    };
+    //         const data = await response.json();
+    //         return data;
+    //     } catch (error) {
+    //         console.error('Error during API call:', error);
+    //         throw error;
+    //     }
+    // };
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
         startTransition(() => {
-            upsertUserFilters(userId, data)
+            // upsertUserFilters(user.id, data)
+            updateProfanityFilters(user, data)
             .then((res) => {
                 toast.success(`Filter change was successfull`)
-                setSelectedFilters(res.filters)
+                setSelectedFilters(res)
+                if(res.length === 0){
+                    updateProfanityStatus(user, false);
+                }
             })
-            .catch(() => toast.error(`Filter change was unsuccessfull`))
+            .catch((err) => {toast.error(`Filter change was unsuccessfull`) 
+                console.log(err)})
         });
     }  
 
     return (
-        <div className="rounded-xl bg-background p-6 border-2 border-primary">
-            <div className="flex items-start gap-x-10">
-                <div className="space-y-2 w-full">
-                        <Form {...form}>
-                            <form onSubmit={form.handleSubmit(onSubmit)} className="w-2/3 space-y-6">
-                                <FormField control={form.control}
-                                    name="frameworks"
-                                    render={({ field }) => (
-                                <FormItem>
-                                    <p className="font-semibold shrink-0">Select the filters</p>
-                                    <FormControl>
-                                        <MultipleSelector
-                                            {...field}
-                                            defaultOptions={OPTIONS}
-                                            value={SELECTEDOPTIONS}
-                                            hidePlaceholderWhenSelected={true}
-                                            placeholder="Select your filters..."
-                                            emptyIndicator={
-                                            <p className="text-center text-lg leading-10 text-gray-600 dark:text-gray-400">
-                                                no results found.
+        <Card className="bg-background 
+            p-6 
+            border-2 
+            border-primary 
+            w-full 
+            max-w-md 
+            min-h-[450px] 
+            rounded-lg shadow-lg">
+    <CardHeader>
+        <CardTitle>
+            Select the AI Filters
+        </CardTitle>
+    </CardHeader>
+    <CardContent>
+        <Form {...form}>
+            <form 
+                onSubmit={form.handleSubmit(onSubmit)} 
+                className="w-full flex flex-col space-y-40 justify-between h-full">
+                <div className="space-y-6">
+                    <FormField 
+                        control={form.control}
+                        name="frameworks"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormControl className="w-full">
+                                    <MultipleSelector
+                                        {...field}
+                                        defaultOptions={OPTIONS}
+                                        value={SELECTEDOPTIONS}
+                                        hidePlaceholderWhenSelected={true}
+                                        placeholder="Select your filters..."
+                                        emptyIndicator={
+                                            <p className="text-center text-lg leading-10 text-muted-foreground">
+                                                No results found.
                                             </p>
-                                        }/>
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                                )}
-                                />
-                                <LoadingButton loading={isPending} type="submit"> Submit </LoadingButton>
-                            </form>
-                        </Form>
+                                        }
+                                        className="w-full border rounded-md px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
+                                    />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
                 </div>
-            </div>
-        </div>
+
+                <div className="flex justify-center mt-64">
+                    <LoadingButton 
+                        loading={isPending} 
+                        type="submit"
+                        className="
+                            w-full 
+                            max-w-xs 
+                            bg-primary 
+                            hover:bg-primary-dark 
+                            py-2 px-4 
+                            rounded-md"
+                            >
+                        Submit
+                    </LoadingButton>
+                </div>
+            </form>
+        </Form>
+    </CardContent>
+</Card>
+
+
       );
 }
 export const AIFilterSelectCardSkeleton = () => {

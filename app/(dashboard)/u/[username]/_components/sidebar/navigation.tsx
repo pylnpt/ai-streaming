@@ -40,11 +40,6 @@ export const Navigation = () => {
             label: "Profanity Filter",
             href: `/u/${user?.username}/aifilter`,
             icon: MessageSquareX
-        },
-        {
-            label: "Eye Tracking",
-            href: `/u/${user?.username}/eyetracking`,
-            icon: ScanEye
         }
     ];
 

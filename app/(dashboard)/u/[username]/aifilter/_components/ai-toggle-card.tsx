@@ -1,31 +1,44 @@
 "use client"
 
-import { Switch } from "@/components/ui/switch"
-import { useState, useTransition } from "react" 
+import { useTransition } from "react" 
 import { Skeleton } from "@/components/ui/skeleton"
-import { MoonStar, Sun } from 'lucide-react';
 import React from 'react';
+import { toast } from "sonner";
+import { updateProfanityStatus } from "@/lib/profanity-service";
+import { User } from "@prisma/client";
+import { MoonStar, Sun } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
 
 interface AIToggleCardProps {
-    value: boolean
-}
+    value: boolean,
+    user: User
+    hasAnyFilterSelected: boolean 
+}   
 
 export const AIToggleCard = ({
-    value
+    value,
+    user,
+    hasAnyFilterSelected
 }: AIToggleCardProps) => {
     const [isPending, startTransition] = useTransition();
-    const [activeFilters, setActiveFilters] = useState<string[] | undefined>([]);
-    // setActiveFilters(selectedFilters);
-
-    // console.log(SELECTEDOPTIONS);
-
-    // const onChange = () => {
-    //     startTransition(() => {
-    //         updateStream({ : !value})
-    //         .then(() => toast.success("Chat setings updated successfully!"))
-    //         .catch(() => toast.error("Chat setings update was unsuccessfull"))
-    //     });
-    // }
+    
+    const onChange = () => {
+        startTransition(() => {
+            if(!hasAnyFilterSelected){
+                toast.error("First you have to select some filters to enable this feature.")
+            } else {
+                updateProfanityStatus(user, !value)
+                .then(() => {
+                    const toastMessage = value ? `Profanity filter in chat turned Off.` : `Profanity filter in chat turned On.`;  
+                    toast.success(toastMessage);
+                })
+                .catch((err) => {
+                    toast.error("Profanity filter update has failed.")
+                    console.log(err);
+                })
+            }
+        });
+    }
 
     return (
         <div className="rounded-xl bg-background p-6 border-2 border-primary gap-y-5">
@@ -34,8 +47,8 @@ export const AIToggleCard = ({
                 <div className="space-x-2 flex flex-row-auto">
                     <MoonStar />
                     <Switch checked={value}
-                        onCheckedChange={()=> {}}
-                        disabled={isPending}>
+                        onCheckedChange={onChange}
+                        disabled={ isPending}>
                         {value? "On" : "Off"}
                     </Switch>
                     <Sun/>

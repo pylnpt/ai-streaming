@@ -10,36 +10,22 @@ import { ChatToggle } from "./chat-toggle";
 import { StreamHeader, StreamHeaderSkeleton } from "./stream-header";
 import { StreamInfoCard } from "./stream-info";
 import { StreamerInfoCard } from "./streamer-info-card";
-
-type SecureStreamType = {
-    id: string;
-    isChatEnabled: boolean;
-    isChatDelayed: boolean;
-    isChatFollowersOnly: boolean;
-    isStreaming: boolean;
-    thumbnailUrl: string | null;
-    name: string;  
-}
-
-type NonSensitiveUserDataType = {
-    id: string;
-    username: string;
-    bio: string | null;
-    stream: SecureStreamType | null;
-    imageUrl: string;
-    _count: { follow: number }
-}
+import { NonSensitiveUserDataType, SecureStreamType } from "@/lib/types";
 
 interface StreamPlayerProps {
     user: NonSensitiveUserDataType 
     stream: SecureStreamType,
     isFollowing: boolean;
+    threshold: number;
+    filters: string[];
 }
 
 export const StreamPlayer = ({
     user,
     stream,
     isFollowing,
+    threshold,
+    filters
 }: StreamPlayerProps) => {
     const {
         token,
@@ -80,7 +66,10 @@ export const StreamPlayer = ({
                             isFollowing = {isFollowing}
                             isChatEnabled = {stream.isChatEnabled}
                             isChatDelayed = {stream.isChatDelayed}
-                            isChatFollowersOnly = {stream.isChatFollowersOnly} />
+                            isChatFollowersOnly = {stream.isChatFollowersOnly} 
+                            user={user}
+                            filters={filters}
+                            threshold={threshold}/>
                     </div>
                     <div className="space-y-4 col-span-1 lg:col-span-2 
                         xl:col-span-2 2xl:col-span-5 lg:overflow-y-auto hidden-scrollbar pb-10">

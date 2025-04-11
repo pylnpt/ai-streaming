@@ -6,44 +6,37 @@ import { format } from "date-fns";
 import { useEffect, useState } from "react";
 import * as toxicity from '@tensorflow-models/toxicity';
 
-
 interface ChatMessageProps {
-    data: ReceivedChatMessage & {isToxic: boolean}
-    // model: toxicity.ToxicityClassifier
+    data: ReceivedChatMessage & {isToxic: boolean},
+    threshold: number,
+    toxicityLabels: string [],
+    isProfFilterEnabled: boolean
 };
 
 export const ChatMessage = ({
-    data, 
+    data,
+    threshold,
+    toxicityLabels,
+    isProfFilterEnabled,
 }: ChatMessageProps) => {
     const [checkedMessage, setCheckedMessage] = useState(data.message);
     const color = stringToColor(data.from?.name || "asderf");
-    
-    const threshold = 0.9;
-    const toxicityLabels = [
-        'identity_attack', 
-        'insult', 
-        'obscene', 
-        'severe_toxicity', 
-        'sexual_explicit', 
-        'threat', 
-        'toxicity'
-    ];
 
     useEffect(() => {
-        const checkToxicity = async () => {
-            const toxicityInstance = toxicity;  
-            const model = await toxicityInstance.load(threshold, toxicityLabels); // Load the toxicity model with the required labels
-            const predictions = await model.classify(checkedMessage); // Classify the input text
-            
-            predictions.forEach(prediction => {
-                if (prediction.results[0].match) {
-                    setCheckedMessage(`Deleted due to ${prediction.label}.`)
-                    console.log(`Detected ${prediction.label}`);
-                }
-            });
-        };
-        checkToxicity();
-      }, [checkedMessage]);
+        if(isProfFilterEnabled) {
+            const checkToxicity = async () => {
+                const model = await toxicity.load(threshold, toxicityLabels); // Load the toxicity model with the required labels
+                const predictions = await model.classify(checkedMessage); // Classify the input text
+                
+                predictions.forEach(prediction => {
+                    if (prediction.results[0].match) {
+                        setCheckedMessage(`Deleted due to ${prediction.label}.`);
+                    }
+                });
+            };
+            checkToxicity();   
+        }
+    }, [isProfFilterEnabled, threshold, toxicityLabels, checkedMessage]);
 
     return (
         <div className="flex gap-2 p-2 rounded-md hover:bg.white/5">

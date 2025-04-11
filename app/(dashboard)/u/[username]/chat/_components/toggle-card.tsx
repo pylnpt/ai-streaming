@@ -6,8 +6,7 @@ import { useTransition } from "react"
 import { updateStream } from "@/actions/stream" 
 import { Skeleton } from "@/components/ui/skeleton"
 import { MoonStar, Sun } from 'lucide-react';
-
-type FieldTypes = "isChatEnabled" | "isChatDelayed" | "isChatFollowersOnly"  
+import { FieldTypes } from "@/lib/types"
 
 interface ToggleCardProps {
     field: FieldTypes,

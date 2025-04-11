@@ -7,6 +7,7 @@ const isPublicRoute = createRouteMatcher([
   "/", 
   "/api/uploadthing",
   "/api/userFiltersUpsert",
+  "/api/userThresholdSubmit",
   "/:username",
   "/search",
 ])

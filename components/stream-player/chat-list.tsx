@@ -5,12 +5,19 @@ import { Skeleton } from "../ui/skeleton"
 interface ChatListProps{
     messages: ReceivedChatMessage[],
     isHidden: boolean,
+    isUsingProfanityFilter: boolean,
+    threshold: number
+    toxicityLabels: string[]
 }
 
-export const ChatList = ({
+export const ChatList =  ({
     messages,
-    isHidden
+    isHidden,
+    isUsingProfanityFilter,
+    threshold,
+    toxicityLabels
 }: ChatListProps) => {
+
     if(isHidden || !messages || messages.length === 0) {
         return (
             <div className="flex flex-1 items-center justify-center">
@@ -26,7 +33,10 @@ export const ChatList = ({
                 <ChatMessage
                     key={message.timestamp}
                     data={{...message,
-                            isToxic: false}} />
+                            isToxic: false}}
+                    threshold={threshold}
+                    toxicityLabels={toxicityLabels}
+                    isProfFilterEnabled={isUsingProfanityFilter}/>
             ))}
         </div>
     )

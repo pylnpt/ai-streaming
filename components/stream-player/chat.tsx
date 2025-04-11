@@ -9,6 +9,7 @@ import { ChatHeader, ChatHeaderSkeleton } from "./chat-header";
 import { ChatForm, ChatFormSkeleton } from "./chat-form";
 import { ChatList, ChatListSkeleton } from "./chat-list";
 import { ChatCommunity } from "./chat-community";
+import { NonSensitiveUserDataType } from "@/lib/types";
 
 interface ChatProps {
     hostName: string;
@@ -18,6 +19,9 @@ interface ChatProps {
     isChatEnabled: boolean;
     isChatDelayed: boolean;
     isChatFollowersOnly: boolean;
+    user: NonSensitiveUserDataType,
+    threshold: number,
+    filters: string[]
 }
 
 export const Chat = ({
@@ -28,6 +32,9 @@ export const Chat = ({
     isChatEnabled,
     isChatDelayed,
     isChatFollowersOnly,
+    user,
+    threshold,
+    filters
 } : ChatProps) => {
     const matches = useMediaQuery('(max-width: 1024px)');
     const connectionState = useConnectionState();
@@ -71,7 +78,10 @@ export const Chat = ({
                 <>
                     <ChatList 
                         messages={reversedMessages}
-                        isHidden={isHidden} />
+                        isHidden={isHidden} 
+                        threshold={threshold}
+                        toxicityLabels={filters}
+                        isUsingProfanityFilter={user.isUsingProfanityFilter}/>
                     <ChatForm 
                         onSubmit={onSubmit}
                         value={value}

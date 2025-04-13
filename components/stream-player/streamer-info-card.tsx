@@ -7,7 +7,7 @@ interface StreamerInfoCardProps {
     hostName: string;
     hostIdentity: string;
     viewerIdentity: string;
-    bio: string | null;
+    bio: string ;
     followedByNum: number;
 }
 

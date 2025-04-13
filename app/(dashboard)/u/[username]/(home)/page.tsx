@@ -22,14 +22,29 @@ const CreatorPage = async({
     if(!user || user.externalUserId !== currUser?.id || !user.stream) {
         throw new Error("Unauthorized")
     }
+    const cleanedUser = {
+        ...user,
+        bio: user.bio ?? "", // Fix bio
+      
+        stream: user.stream
+          ? {
+              ...user.stream,
+              thumbnailUrl: user.stream.thumbnailUrl ?? "", // Fix stream.thumbnailUrl
+            }
+          : null,
+      };
 
     return ( 
     <div className="h-full">
-        <StreamPlayer user={user}
-            stream={user.stream}
-            isFollowing 
-            threshold={Number(threshold!.value)}
-            filters={toxicityLabels}/>
+        {cleanedUser.stream && (
+            <StreamPlayer
+              user={cleanedUser}
+              stream={cleanedUser.stream}
+              isFollowing
+              threshold={Number(threshold!.value)}
+              filters={toxicityLabels}
+            />
+    )}
 
     </div> );
 }

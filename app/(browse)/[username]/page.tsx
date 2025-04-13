@@ -27,8 +27,20 @@ const UserPage = async ({
     if(isBlocked) { throw notFound() }
     
     return ( 
-        <StreamPlayer user={user}
-            stream={user.stream}    
+        <StreamPlayer    user={{
+            ...user,
+            bio: user.bio ?? "",
+            stream: user.stream
+              ? {
+                  ...user.stream,
+                  thumbnailUrl: user.stream.thumbnailUrl ?? "", // ← 🧼 sanitize
+                }
+              : null,
+          }}
+          stream={{
+            ...user.stream,
+            thumbnailUrl: user.stream.thumbnailUrl ?? "",
+          }}
             isFollowing={isFollowing}
             threshold={Number(threshold?.value)}
             filters={toxicityLabels}/>

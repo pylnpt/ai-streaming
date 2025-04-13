@@ -1,6 +1,7 @@
 import { headers } from "next/headers";
 import { WebhookReceiver } from "livekit-server-sdk";
 import { db } from "@/lib/db";
+import { NextResponse } from "next/server";
 
 const receiver = new WebhookReceiver(
     process.env.LIVEKIT_API_KEY!,
@@ -25,6 +26,7 @@ export async  function POST(req: Request) {
                 isStreaming: true,
             },
         })
+        return new NextResponse("ok", { status: 200 });
     }
 
     if(event.event === "ingress_ended") {
@@ -36,5 +38,8 @@ export async  function POST(req: Request) {
                 isStreaming: false,
             },
         })
+        return new NextResponse("ok", { status: 200 });
     }
+
+    return new Response("ok", { status: 200 });
 }

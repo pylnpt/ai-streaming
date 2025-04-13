@@ -41,7 +41,7 @@ const CreatorPage = async({
               user={cleanedUser}
               stream={cleanedUser.stream}
               isFollowing
-              threshold={Number(threshold!.value)}
+              threshold={Number(threshold!.value ?? 0)}
               filters={toxicityLabels}
             />
     )}

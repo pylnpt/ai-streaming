@@ -86,7 +86,7 @@ export const getThresholdByUserId = async (id: string) => {
   });
 
   // Return the user's selected threshold or null if not found
-  return userThreshold?.aiThreshold || 1;
+  return userThreshold?.aiThreshold ?? 1;
 };
 
 export const getEveryThreshold = async () => {

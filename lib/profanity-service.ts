@@ -68,26 +68,44 @@ export const getEveryFilter = async () =>{
 }
 
 export const getThresholdByUserId = async (id: string) => {
-  // Fetch user and their selected threshold
-  const userThreshold = await db.user.findUnique({
+    // Fetch the user + their selected threshold
+    const userThreshold = await db.user.findUnique({
       where: { id },
       select: {
-          aiThreshold: {
-              select: {
-                  id: true,
-                  label: true,
-                  value: true,
-                  description: true,
-                  createdAt: true,
-                  updatedAt: true,
-              },
+        aiThreshold: {
+          select: {
+            id: true,
+            label: true,
+            value: true,
+            description: true,
+            createdAt: true,
+            updatedAt: true,
           },
+        },
       },
-  });
-
-  // Return the user's selected threshold or null if not found
-  return userThreshold?.aiThreshold;
-};
+    });
+  
+    // If user has a threshold, return it
+    if (userThreshold?.aiThreshold) {
+      return userThreshold.aiThreshold;
+    }
+  
+    // Otherwise, fallback to the first available threshold
+    const fallbackThreshold = await db.aIThreshold.findFirst({
+      orderBy: { value: "asc" }, // you can change this to anything else
+      select: {
+        id: true,
+        label: true,
+        value: true,
+        description: true,
+        createdAt: true,
+        updatedAt: true,
+      },
+    });
+  
+    return fallbackThreshold;
+  };
+  
 
 export const getEveryThreshold = async () => {
     const thresholds = await db.aIThreshold.findMany({

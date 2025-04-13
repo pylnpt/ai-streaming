@@ -8,7 +8,7 @@ import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
-  title: "StreamWithAA",
+  title: "StreamWithAI",
   description: "A project for my thesis",
 };
 

@@ -23,14 +23,14 @@ export type SecureStreamType = {
     isChatDelayed: boolean;
     isChatFollowersOnly: boolean;
     isStreaming: boolean;
-    thumbnailUrl: string;
+    thumbnailUrl: string ;
     name: string;  
 }
 
 export type NonSensitiveUserDataType = {
     id: string;
     username: string;
-    bio: string ;
+    bio: string;
     stream: SecureStreamType | null;
     imageUrl: string;
     _count: { follow: number }

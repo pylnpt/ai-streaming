@@ -1,0 +1,3438 @@
+
+[threshold 0.5]
+Input: You're a worthless piece of trash.
+Predictions:
+identity_attack: false (Confidence: 1.30%)
+insult: true (Confidence: 99.48%)
+obscene: false (Confidence: 1.90%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.31%)
+threat: false (Confidence: 0.55%)
+toxicity: true (Confidence: 99.44%)
+
+[threshold 0.5]
+Input: Go kill yourself.
+Predictions:
+identity_attack: false (Confidence: 5.54%)
+insult: false (Confidence: 12.11%)
+obscene: false (Confidence: 5.48%)
+severe_toxicity: false (Confidence: 0.15%)
+sexual_explicit: false (Confidence: 10.98%)
+threat: true (Confidence: 72.38%)
+toxicity: true (Confidence: 82.94%)
+
+[threshold 0.5]
+Input: No one would care if you disappeared.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.12%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 0.33%)
+
+[threshold 0.5]
+Input: You should be locked up.
+Predictions:
+identity_attack: false (Confidence: 0.17%)
+insult: false (Confidence: 0.53%)
+obscene: false (Confidence: 0.11%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.32%)
+threat: false (Confidence: 6.57%)
+toxicity: false (Confidence: 7.74%)
+
+[threshold 0.5]
+Input: You deserve to suffer.
+Predictions:
+identity_attack: false (Confidence: 0.83%)
+insult: false (Confidence: 4.09%)
+obscene: false (Confidence: 0.50%)
+severe_toxicity: false (Confidence: 0.01%)
+sexual_explicit: false (Confidence: 1.66%)
+threat: false (Confidence: 27.91%)
+toxicity: false (Confidence: 40.22%)
+
+[threshold 0.5]
+Input: You're a mistake that should've never been born.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.10%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.15%)
+
+[threshold 0.5]
+Input: You're an ugly freak.
+Predictions:
+identity_attack: false (Confidence: 1.49%)
+insult: true (Confidence: 99.38%)
+obscene: false (Confidence: 4.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.54%)
+threat: false (Confidence: 0.51%)
+toxicity: true (Confidence: 99.38%)
+
+[threshold 0.5]
+Input: You're a cancer to society.
+Predictions:
+identity_attack: false (Confidence: 0.28%)
+insult: true (Confidence: 89.13%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.10%)
+toxicity: true (Confidence: 90.54%)
+
+[threshold 0.5]
+Input: Why don't you just die already?
+Predictions:
+identity_attack: false (Confidence: 1.85%)
+insult: false (Confidence: 3.11%)
+obscene: false (Confidence: 0.77%)
+severe_toxicity: false (Confidence: 0.02%)
+sexual_explicit: false (Confidence: 2.78%)
+threat: false (Confidence: 47.61%)
+toxicity: true (Confidence: 56.68%)
+
+[threshold 0.5]
+Input: You are human garbage.
+Predictions:
+identity_attack: false (Confidence: 2.98%)
+insult: true (Confidence: 99.43%)
+obscene: false (Confidence: 1.41%)
+severe_toxicity: false (Confidence: 0.01%)
+sexual_explicit: false (Confidence: 0.34%)
+threat: false (Confidence: 0.92%)
+toxicity: true (Confidence: 99.35%)
+
+[threshold 0.5]
+Input: You're a burden to everyone around you.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.31%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.42%)
+
+[threshold 0.5]
+Input: You're nothing but filth.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 12.12%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 13.98%)
+
+[threshold 0.5]
+Input: The world would be better without you.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 0.26%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 0.56%)
+
+[threshold 0.5]
+Input: You're pathetic and disgusting.
+Predictions:
+identity_attack: false (Confidence: 1.44%)
+insult: true (Confidence: 99.55%)
+obscene: false (Confidence: 1.23%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.23%)
+threat: false (Confidence: 0.31%)
+toxicity: true (Confidence: 99.49%)
+
+[threshold 0.5]
+Input: You're a total failure.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: true (Confidence: 50.85%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: true (Confidence: 56.13%)
+
+[threshold 0.5]
+Input: You're the worst person alive.
+Predictions:
+identity_attack: false (Confidence: 0.16%)
+insult: true (Confidence: 84.89%)
+obscene: false (Confidence: 0.08%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.17%)
+toxicity: true (Confidence: 87.77%)
+
+[threshold 0.5]
+Input: You're completely useless.
+Predictions:
+identity_attack: false (Confidence: 0.26%)
+insult: true (Confidence: 98.38%)
+obscene: false (Confidence: 0.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.06%)
+toxicity: true (Confidence: 98.57%)
+
+[threshold 0.5]
+Input: Nobody will ever love you.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.62%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 0.96%)
+
+[threshold 0.5]
+Input: You're not even worth the air you breathe.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.12%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.49%)
+
+[threshold 0.5]
+Input: You're the lowest of the low.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 6.41%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 7.46%)
+
+[threshold 0.5]
+Input: You're a walking disaster.
+Predictions:
+identity_attack: false (Confidence: 0.07%)
+insult: true (Confidence: 79.15%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: true (Confidence: 81.85%)
+
+[threshold 0.5]
+Input: You're a miserable excuse for a human.
+Predictions:
+identity_attack: false (Confidence: 0.56%)
+insult: true (Confidence: 99.29%)
+obscene: false (Confidence: 0.60%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.15%)
+threat: false (Confidence: 0.25%)
+toxicity: true (Confidence: 99.25%)
+
+[threshold 0.5]
+Input: Everything about you is wrong.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.10%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.16%)
+
+[threshold 0.5]
+Input: You're a total waste of space.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 37.54%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 40.89%)
+
+[threshold 0.5]
+Input: You're the reason people lose faith in humanity.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.66%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.97%)
+
+[threshold 0.5]
+Input: You're so dumb it's painful.
+Predictions:
+identity_attack: false (Confidence: 0.77%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 0.57%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.13%)
+threat: false (Confidence: 0.18%)
+toxicity: true (Confidence: 99.55%)
+
+[threshold 0.5]
+Input: You're a stain on this earth.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 17.91%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 21.20%)
+
+[threshold 0.5]
+Input: You're a plague.
+Predictions:
+identity_attack: false (Confidence: 0.16%)
+insult: true (Confidence: 63.10%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.06%)
+toxicity: true (Confidence: 65.45%)
+
+[threshold 0.5]
+Input: You're worse than trash.
+Predictions:
+identity_attack: false (Confidence: 0.60%)
+insult: true (Confidence: 98.55%)
+obscene: false (Confidence: 0.19%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.06%)
+threat: false (Confidence: 0.18%)
+toxicity: true (Confidence: 98.69%)
+
+[threshold 0.5]
+Input: You're an abomination.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: true (Confidence: 51.53%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.02%)
+toxicity: true (Confidence: 56.59%)
+
+[threshold 0.5]
+Input: You should be ashamed of existing.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 0.60%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.09%)
+toxicity: false (Confidence: 1.45%)
+
+[threshold 0.5]
+Input: Your life is a joke.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.60%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.14%)
+
+[threshold 0.5]
+Input: You ruin everything you touch.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 0.68%)
+obscene: false (Confidence: 0.05%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.08%)
+threat: false (Confidence: 0.54%)
+toxicity: false (Confidence: 2.87%)
+
+[threshold 0.5]
+Input: You’re a disgrace to humanity.
+Predictions:
+identity_attack: false (Confidence: 0.10%)
+insult: true (Confidence: 72.63%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: true (Confidence: 73.23%)
+
+[threshold 0.5]
+Input: You're rotten to the core.
+Predictions:
+identity_attack: false (Confidence: 0.09%)
+insult: true (Confidence: 77.53%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: true (Confidence: 78.79%)
+
+[threshold 0.5]
+Input: You're unbearable.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 31.03%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 34.65%)
+
+[threshold 0.5]
+Input: You're hideous and stupid.
+Predictions:
+identity_attack: false (Confidence: 1.22%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 0.84%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.20%)
+threat: false (Confidence: 0.29%)
+toxicity: true (Confidence: 99.51%)
+
+[threshold 0.5]
+Input: You are unwanted.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 13.17%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 15.82%)
+
+[threshold 0.5]
+Input: You're mentally broken.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: true (Confidence: 61.08%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: true (Confidence: 65.48%)
+
+[threshold 0.5]
+Input: You're toxic to everyone.
+Predictions:
+identity_attack: false (Confidence: 0.49%)
+insult: false (Confidence: 5.57%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.14%)
+toxicity: false (Confidence: 11.34%)
+
+[threshold 0.5]
+Input: You're pathetic and weak.
+Predictions:
+identity_attack: false (Confidence: 1.35%)
+insult: true (Confidence: 99.51%)
+obscene: false (Confidence: 1.40%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.30%)
+threat: false (Confidence: 0.48%)
+toxicity: true (Confidence: 99.43%)
+
+[threshold 0.5]
+Input: You're the worst mistake ever made.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 8.45%)
+obscene: false (Confidence: 0.05%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 11.34%)
+
+[threshold 0.5]
+Input: You're not worth anyone’s time.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.43%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.5]
+Input: You're a total embarrassment.
+Predictions:
+identity_attack: false (Confidence: 0.08%)
+insult: true (Confidence: 90.29%)
+obscene: false (Confidence: 0.14%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.03%)
+toxicity: true (Confidence: 91.76%)
+
+[threshold 0.5]
+Input: You don’t deserve to be heard.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.35%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.5]
+Input: You're a lost cause.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.50%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.70%)
+
+[threshold 0.5]
+Input: You're a nightmare.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 21.08%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 23.49%)
+
+[threshold 0.5]
+Input: You spread misery wherever you go.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.44%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.5]
+Input: You're evil.
+Predictions:
+identity_attack: false (Confidence: 0.22%)
+insult: false (Confidence: 48.90%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.11%)
+toxicity: true (Confidence: 54.54%)
+
+[threshold 0.5]
+Input: You're hopeless.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 17.86%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 21.01%)
+
+[threshold 0.5]
+Input: You're a parasite.
+Predictions:
+identity_attack: false (Confidence: 1.60%)
+insult: true (Confidence: 99.35%)
+obscene: false (Confidence: 0.70%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.25%)
+threat: false (Confidence: 0.62%)
+toxicity: true (Confidence: 99.24%)
+
+[threshold 0.5]
+Input: You're a joke and no one laughs.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 9.88%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 11.56%)
+
+[threshold 0.5]
+Input: You're completely broken.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.78%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 1.08%)
+
+[threshold 0.5]
+Input: You're not needed.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.14%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.21%)
+
+[threshold 0.5]
+Input: You're unwanted trash.
+Predictions:
+identity_attack: false (Confidence: 0.50%)
+insult: true (Confidence: 98.84%)
+obscene: false (Confidence: 0.38%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.11%)
+threat: false (Confidence: 0.32%)
+toxicity: true (Confidence: 98.98%)
+
+[threshold 0.5]
+Input: You're a pathetic shell of a person.
+Predictions:
+identity_attack: false (Confidence: 0.85%)
+insult: true (Confidence: 99.51%)
+obscene: false (Confidence: 1.35%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.25%)
+threat: false (Confidence: 0.32%)
+toxicity: true (Confidence: 99.46%)
+
+[threshold 0.5]
+Input: You're scum.
+Predictions:
+identity_attack: false (Confidence: 0.85%)
+insult: true (Confidence: 99.46%)
+obscene: false (Confidence: 1.39%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.26%)
+toxicity: true (Confidence: 99.46%)
+
+[threshold 0.5]
+Input: You're a waste of resources.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 10.47%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 11.88%)
+
+[threshold 0.5]
+Input: You're a horrible human being.
+Predictions:
+identity_attack: false (Confidence: 1.43%)
+insult: true (Confidence: 99.35%)
+obscene: false (Confidence: 0.81%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.15%)
+threat: false (Confidence: 0.46%)
+toxicity: true (Confidence: 99.28%)
+
+[threshold 0.5]
+Input: You're a burden to this planet.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.19%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.63%)
+
+[threshold 0.5]
+Input: You're a piece of garbage.
+Predictions:
+identity_attack: false (Confidence: 1.32%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 1.13%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.20%)
+threat: false (Confidence: 0.37%)
+toxicity: true (Confidence: 99.49%)
+
+[threshold 0.5]
+Input: You're a total trainwreck.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 8.24%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 10.22%)
+
+[threshold 0.5]
+Input: You're what’s wrong with the world.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 2.01%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 2.99%)
+
+[threshold 0.5]
+Input: You're absolutely revolting.
+Predictions:
+identity_attack: false (Confidence: 1.29%)
+insult: true (Confidence: 97.76%)
+obscene: false (Confidence: 0.30%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.83%)
+toxicity: true (Confidence: 98.14%)
+
+[threshold 0.5]
+Input: You're the embodiment of failure.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 4.41%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 5.30%)
+
+[threshold 0.5]
+Input: You're irredeemable.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.94%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.51%)
+
+[threshold 0.5]
+Input: You're a human disaster.
+Predictions:
+identity_attack: false (Confidence: 0.34%)
+insult: true (Confidence: 92.10%)
+obscene: false (Confidence: 0.17%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.06%)
+threat: false (Confidence: 0.29%)
+toxicity: true (Confidence: 93.63%)
+
+[threshold 0.5]
+Input: You're complete filth.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 11.10%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 13.81%)
+
+[threshold 0.5]
+Input: You're worthless beyond measure.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: true (Confidence: 63.70%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: true (Confidence: 67.29%)
+
+[threshold 0.5]
+Input: You're hated by everyone.
+Predictions:
+identity_attack: false (Confidence: 0.10%)
+insult: false (Confidence: 21.65%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.04%)
+toxicity: false (Confidence: 25.48%)
+
+[threshold 0.5]
+Input: You're nothing but pain to others.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.55%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.77%)
+
+[threshold 0.5]
+Input: You're an emotional vampire.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: false (Confidence: 14.96%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 17.25%)
+
+[threshold 0.5]
+Input: You're beyond help.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.04%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.06%)
+
+[threshold 0.5]
+Input: You're a freak show.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 20.22%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 24.84%)
+
+[threshold 0.5]
+Input: You're garbage with legs.
+Predictions:
+identity_attack: false (Confidence: 1.17%)
+insult: true (Confidence: 99.15%)
+obscene: false (Confidence: 0.71%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.31%)
+threat: false (Confidence: 0.67%)
+toxicity: true (Confidence: 99.09%)
+
+[threshold 0.5]
+Input: You're an empty shell.
+Predictions:
+identity_attack: false (Confidence: 0.05%)
+insult: false (Confidence: 39.83%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 43.29%)
+
+[threshold 0.5]
+Input: You're poison.
+Predictions:
+identity_attack: false (Confidence: 0.09%)
+insult: false (Confidence: 22.49%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.19%)
+toxicity: false (Confidence: 26.94%)
+
+[threshold 0.5]
+Input: You're toxic waste.
+Predictions:
+identity_attack: false (Confidence: 0.18%)
+insult: false (Confidence: 27.26%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.14%)
+toxicity: false (Confidence: 33.35%)
+
+[threshold 0.5]
+Input: You're a glitch in the system.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 12.04%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 13.95%)
+
+[threshold 0.5]
+Input: You're a failed experiment.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.59%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.12%)
+
+[threshold 0.5]
+Input: You're defective.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.42%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.92%)
+
+[threshold 0.5]
+Input: You're irrelevant.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.23%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.71%)
+
+[threshold 0.5]
+Input: You're a nuisance.
+Predictions:
+identity_attack: false (Confidence: 0.05%)
+insult: false (Confidence: 36.31%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 39.17%)
+
+[threshold 0.5]
+Input: You're nothing but a problem.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.65%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.87%)
+
+[threshold 0.5]
+Input: You're an insult to existence.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 4.31%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 5.14%)
+
+[threshold 0.5]
+Input: You're an absolute mistake.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.19%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.32%)
+
+[threshold 0.5]
+Input: You're total trash.
+Predictions:
+identity_attack: false (Confidence: 0.87%)
+insult: true (Confidence: 99.43%)
+obscene: false (Confidence: 0.49%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.11%)
+threat: false (Confidence: 0.26%)
+toxicity: true (Confidence: 99.42%)
+
+[threshold 0.5]
+Input: You're sickening.
+Predictions:
+identity_attack: false (Confidence: 0.24%)
+insult: true (Confidence: 91.87%)
+obscene: false (Confidence: 0.08%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.12%)
+toxicity: true (Confidence: 92.73%)
+
+[threshold 0.5]
+Input: You're disgusting and vile.
+Predictions:
+identity_attack: false (Confidence: 0.80%)
+insult: true (Confidence: 99.41%)
+obscene: false (Confidence: 0.60%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.10%)
+threat: false (Confidence: 0.14%)
+toxicity: true (Confidence: 99.41%)
+
+[threshold 0.5]
+Input: You're completely useless.
+Predictions:
+identity_attack: false (Confidence: 0.26%)
+insult: true (Confidence: 98.38%)
+obscene: false (Confidence: 0.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.06%)
+toxicity: true (Confidence: 98.57%)
+
+[threshold 0.5]
+Input: You're not worth saving.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.23%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.34%)
+
+[threshold 0.5]
+Input: You're a walking disgrace.
+Predictions:
+identity_attack: false (Confidence: 0.11%)
+insult: true (Confidence: 91.01%)
+obscene: false (Confidence: 0.15%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.04%)
+toxicity: true (Confidence: 91.87%)
+
+[threshold 0.5]
+Input: You're unwanted and unloved.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 22.29%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 25.56%)
+
+[threshold 0.5]
+Input: You're detestable.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 7.58%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 9.05%)
+
+[threshold 0.5]
+Input: You're the lowest form of life.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 2.06%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.68%)
+
+[threshold 0.5]
+Input: You're a total loser.
+Predictions:
+identity_attack: false (Confidence: 0.84%)
+insult: true (Confidence: 99.48%)
+obscene: false (Confidence: 0.72%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.28%)
+toxicity: true (Confidence: 99.45%)
+
+[threshold 0.5]
+Input: You're a disaster.
+Predictions:
+identity_attack: false (Confidence: 0.08%)
+insult: true (Confidence: 80.15%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: true (Confidence: 83.17%)
+
+[threshold 0.5]
+Input: You're a black hole of negativity.
+Predictions:
+identity_attack: false (Confidence: 1.13%)
+insult: false (Confidence: 42.42%)
+obscene: false (Confidence: 0.09%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.07%)
+toxicity: true (Confidence: 58.13%)
+
+[threshold 0.5]
+Input: You're a human mistake.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.11%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.58%)
+
+[threshold 0.5]
+Input: You're a worthless being.
+Predictions:
+identity_attack: false (Confidence: 0.17%)
+insult: true (Confidence: 97.45%)
+obscene: false (Confidence: 0.23%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.07%)
+toxicity: true (Confidence: 97.80%)
+
+[threshold 0.5]
+Input: You're trash that talks.
+Predictions:
+identity_attack: false (Confidence: 0.77%)
+insult: true (Confidence: 99.04%)
+obscene: false (Confidence: 0.27%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.07%)
+threat: false (Confidence: 0.16%)
+toxicity: true (Confidence: 99.13%)
+
+[threshold 0.5]
+Input: You're the worst of the worst.
+Predictions:
+identity_attack: false (Confidence: 0.13%)
+insult: true (Confidence: 91.12%)
+obscene: false (Confidence: 0.28%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.07%)
+toxicity: true (Confidence: 93.08%)
+
+[threshold 0.5]
+Input: You're absolute filth.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: false (Confidence: 27.44%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 33.38%)
+
+[threshold 0.5]
+Input: You're a disgrace to your species.
+Predictions:
+identity_attack: false (Confidence: 0.38%)
+insult: true (Confidence: 96.82%)
+obscene: false (Confidence: 0.15%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.10%)
+toxicity: true (Confidence: 96.94%)
+
+[threshold 0.7]
+Input: You're a worthless piece of trash.
+Predictions:
+identity_attack: false (Confidence: 1.30%)
+insult: true (Confidence: 99.48%)
+obscene: false (Confidence: 1.90%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.31%)
+threat: false (Confidence: 0.55%)
+toxicity: true (Confidence: 99.44%)
+
+[threshold 0.7]
+Input: Go kill yourself.
+Predictions:
+identity_attack: false (Confidence: 5.54%)
+insult: false (Confidence: 12.11%)
+obscene: false (Confidence: 5.48%)
+severe_toxicity: false (Confidence: 0.15%)
+sexual_explicit: false (Confidence: 10.98%)
+threat: true (Confidence: 72.38%)
+toxicity: true (Confidence: 82.94%)
+
+[threshold 0.7]
+Input: No one would care if you disappeared.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.12%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 0.33%)
+
+[threshold 0.7]
+Input: You should be locked up.
+Predictions:
+identity_attack: false (Confidence: 0.17%)
+insult: false (Confidence: 0.53%)
+obscene: false (Confidence: 0.11%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.32%)
+threat: false (Confidence: 6.57%)
+toxicity: false (Confidence: 7.74%)
+
+[threshold 0.7]
+Input: You deserve to suffer.
+Predictions:
+identity_attack: false (Confidence: 0.83%)
+insult: false (Confidence: 4.09%)
+obscene: false (Confidence: 0.50%)
+severe_toxicity: false (Confidence: 0.01%)
+sexual_explicit: false (Confidence: 1.66%)
+threat: false (Confidence: 27.91%)
+toxicity: null (Confidence: 40.22%)
+
+[threshold 0.7]
+Input: You're a mistake that should've never been born.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.10%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.15%)
+
+[threshold 0.7]
+Input: You're an ugly freak.
+Predictions:
+identity_attack: false (Confidence: 1.49%)
+insult: true (Confidence: 99.38%)
+obscene: false (Confidence: 4.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.54%)
+threat: false (Confidence: 0.51%)
+toxicity: true (Confidence: 99.38%)
+
+[threshold 0.7]
+Input: You're a cancer to society.
+Predictions:
+identity_attack: false (Confidence: 0.28%)
+insult: true (Confidence: 89.13%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.10%)
+toxicity: true (Confidence: 90.54%)
+
+[threshold 0.7]
+Input: Why don't you just die already?
+Predictions:
+identity_attack: false (Confidence: 1.85%)
+insult: false (Confidence: 3.11%)
+obscene: false (Confidence: 0.77%)
+severe_toxicity: false (Confidence: 0.02%)
+sexual_explicit: false (Confidence: 2.78%)
+threat: null (Confidence: 47.61%)
+toxicity: null (Confidence: 56.68%)
+
+[threshold 0.7]
+Input: You are human garbage.
+Predictions:
+identity_attack: false (Confidence: 2.98%)
+insult: true (Confidence: 99.43%)
+obscene: false (Confidence: 1.41%)
+severe_toxicity: false (Confidence: 0.01%)
+sexual_explicit: false (Confidence: 0.34%)
+threat: false (Confidence: 0.92%)
+toxicity: true (Confidence: 99.35%)
+
+[threshold 0.7]
+Input: You're a burden to everyone around you.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.31%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.42%)
+
+[threshold 0.7]
+Input: You're nothing but filth.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 12.12%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 13.98%)
+
+[threshold 0.7]
+Input: The world would be better without you.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 0.26%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 0.56%)
+
+[threshold 0.7]
+Input: You're pathetic and disgusting.
+Predictions:
+identity_attack: false (Confidence: 1.44%)
+insult: true (Confidence: 99.55%)
+obscene: false (Confidence: 1.23%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.23%)
+threat: false (Confidence: 0.31%)
+toxicity: true (Confidence: 99.49%)
+
+[threshold 0.7]
+Input: You're a total failure.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 50.85%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 56.13%)
+
+[threshold 0.7]
+Input: You're the worst person alive.
+Predictions:
+identity_attack: false (Confidence: 0.16%)
+insult: true (Confidence: 84.89%)
+obscene: false (Confidence: 0.08%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.17%)
+toxicity: true (Confidence: 87.77%)
+
+[threshold 0.7]
+Input: You're completely useless.
+Predictions:
+identity_attack: false (Confidence: 0.26%)
+insult: true (Confidence: 98.38%)
+obscene: false (Confidence: 0.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.06%)
+toxicity: true (Confidence: 98.57%)
+
+[threshold 0.7]
+Input: Nobody will ever love you.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.62%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 0.96%)
+
+[threshold 0.7]
+Input: You're not even worth the air you breathe.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.12%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.49%)
+
+[threshold 0.7]
+Input: You're the lowest of the low.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 6.41%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 7.46%)
+
+[threshold 0.7]
+Input: You're a walking disaster.
+Predictions:
+identity_attack: false (Confidence: 0.07%)
+insult: true (Confidence: 79.15%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: true (Confidence: 81.85%)
+
+[threshold 0.7]
+Input: You're a miserable excuse for a human.
+Predictions:
+identity_attack: false (Confidence: 0.56%)
+insult: true (Confidence: 99.29%)
+obscene: false (Confidence: 0.60%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.15%)
+threat: false (Confidence: 0.25%)
+toxicity: true (Confidence: 99.25%)
+
+[threshold 0.7]
+Input: Everything about you is wrong.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.10%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.16%)
+
+[threshold 0.7]
+Input: You're a total waste of space.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: null (Confidence: 37.54%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 40.89%)
+
+[threshold 0.7]
+Input: You're the reason people lose faith in humanity.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.66%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.97%)
+
+[threshold 0.7]
+Input: You're so dumb it's painful.
+Predictions:
+identity_attack: false (Confidence: 0.77%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 0.57%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.13%)
+threat: false (Confidence: 0.18%)
+toxicity: true (Confidence: 99.55%)
+
+[threshold 0.7]
+Input: You're a stain on this earth.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 17.91%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 21.20%)
+
+[threshold 0.7]
+Input: You're a plague.
+Predictions:
+identity_attack: false (Confidence: 0.16%)
+insult: null (Confidence: 63.10%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.06%)
+toxicity: null (Confidence: 65.45%)
+
+[threshold 0.7]
+Input: You're worse than trash.
+Predictions:
+identity_attack: false (Confidence: 0.60%)
+insult: true (Confidence: 98.55%)
+obscene: false (Confidence: 0.19%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.06%)
+threat: false (Confidence: 0.18%)
+toxicity: true (Confidence: 98.69%)
+
+[threshold 0.7]
+Input: You're an abomination.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 51.53%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 56.59%)
+
+[threshold 0.7]
+Input: You should be ashamed of existing.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 0.60%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.09%)
+toxicity: false (Confidence: 1.45%)
+
+[threshold 0.7]
+Input: Your life is a joke.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.60%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.14%)
+
+[threshold 0.7]
+Input: You ruin everything you touch.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 0.68%)
+obscene: false (Confidence: 0.05%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.08%)
+threat: false (Confidence: 0.54%)
+toxicity: false (Confidence: 2.87%)
+
+[threshold 0.7]
+Input: You’re a disgrace to humanity.
+Predictions:
+identity_attack: false (Confidence: 0.10%)
+insult: true (Confidence: 72.63%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: true (Confidence: 73.23%)
+
+[threshold 0.7]
+Input: You're rotten to the core.
+Predictions:
+identity_attack: false (Confidence: 0.09%)
+insult: true (Confidence: 77.53%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: true (Confidence: 78.79%)
+
+[threshold 0.7]
+Input: You're unbearable.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 31.03%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 34.65%)
+
+[threshold 0.7]
+Input: You're hideous and stupid.
+Predictions:
+identity_attack: false (Confidence: 1.22%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 0.84%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.20%)
+threat: false (Confidence: 0.29%)
+toxicity: true (Confidence: 99.51%)
+
+[threshold 0.7]
+Input: You are unwanted.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 13.17%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 15.82%)
+
+[threshold 0.7]
+Input: You're mentally broken.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 61.08%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 65.48%)
+
+[threshold 0.7]
+Input: You're toxic to everyone.
+Predictions:
+identity_attack: false (Confidence: 0.49%)
+insult: false (Confidence: 5.57%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.14%)
+toxicity: false (Confidence: 11.34%)
+
+[threshold 0.7]
+Input: You're pathetic and weak.
+Predictions:
+identity_attack: false (Confidence: 1.35%)
+insult: true (Confidence: 99.51%)
+obscene: false (Confidence: 1.40%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.30%)
+threat: false (Confidence: 0.48%)
+toxicity: true (Confidence: 99.43%)
+
+[threshold 0.7]
+Input: You're the worst mistake ever made.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 8.45%)
+obscene: false (Confidence: 0.05%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 11.34%)
+
+[threshold 0.7]
+Input: You're not worth anyone’s time.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.43%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.7]
+Input: You're a total embarrassment.
+Predictions:
+identity_attack: false (Confidence: 0.08%)
+insult: true (Confidence: 90.29%)
+obscene: false (Confidence: 0.14%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.03%)
+toxicity: true (Confidence: 91.76%)
+
+[threshold 0.7]
+Input: You don’t deserve to be heard.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.35%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.7]
+Input: You're a lost cause.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.50%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.70%)
+
+[threshold 0.7]
+Input: You're a nightmare.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 21.08%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 23.49%)
+
+[threshold 0.7]
+Input: You spread misery wherever you go.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.44%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.7]
+Input: You're evil.
+Predictions:
+identity_attack: false (Confidence: 0.22%)
+insult: null (Confidence: 48.90%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.11%)
+toxicity: null (Confidence: 54.54%)
+
+[threshold 0.7]
+Input: You're hopeless.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 17.86%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 21.01%)
+
+[threshold 0.7]
+Input: You're a parasite.
+Predictions:
+identity_attack: false (Confidence: 1.60%)
+insult: true (Confidence: 99.35%)
+obscene: false (Confidence: 0.70%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.25%)
+threat: false (Confidence: 0.62%)
+toxicity: true (Confidence: 99.24%)
+
+[threshold 0.7]
+Input: You're a joke and no one laughs.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 9.88%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 11.56%)
+
+[threshold 0.7]
+Input: You're completely broken.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.78%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 1.08%)
+
+[threshold 0.7]
+Input: You're not needed.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.14%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.21%)
+
+[threshold 0.7]
+Input: You're unwanted trash.
+Predictions:
+identity_attack: false (Confidence: 0.50%)
+insult: true (Confidence: 98.84%)
+obscene: false (Confidence: 0.38%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.11%)
+threat: false (Confidence: 0.32%)
+toxicity: true (Confidence: 98.98%)
+
+[threshold 0.7]
+Input: You're a pathetic shell of a person.
+Predictions:
+identity_attack: false (Confidence: 0.85%)
+insult: true (Confidence: 99.51%)
+obscene: false (Confidence: 1.35%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.25%)
+threat: false (Confidence: 0.32%)
+toxicity: true (Confidence: 99.46%)
+
+[threshold 0.7]
+Input: You're scum.
+Predictions:
+identity_attack: false (Confidence: 0.85%)
+insult: true (Confidence: 99.46%)
+obscene: false (Confidence: 1.39%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.26%)
+toxicity: true (Confidence: 99.46%)
+
+[threshold 0.7]
+Input: You're a waste of resources.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 10.47%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 11.88%)
+
+[threshold 0.7]
+Input: You're a horrible human being.
+Predictions:
+identity_attack: false (Confidence: 1.43%)
+insult: true (Confidence: 99.35%)
+obscene: false (Confidence: 0.81%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.15%)
+threat: false (Confidence: 0.46%)
+toxicity: true (Confidence: 99.28%)
+
+[threshold 0.7]
+Input: You're a burden to this planet.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.19%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.63%)
+
+[threshold 0.7]
+Input: You're a piece of garbage.
+Predictions:
+identity_attack: false (Confidence: 1.32%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 1.13%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.20%)
+threat: false (Confidence: 0.37%)
+toxicity: true (Confidence: 99.49%)
+
+[threshold 0.7]
+Input: You're a total trainwreck.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 8.24%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 10.22%)
+
+[threshold 0.7]
+Input: You're what’s wrong with the world.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 2.01%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 2.99%)
+
+[threshold 0.7]
+Input: You're absolutely revolting.
+Predictions:
+identity_attack: false (Confidence: 1.29%)
+insult: true (Confidence: 97.76%)
+obscene: false (Confidence: 0.30%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.83%)
+toxicity: true (Confidence: 98.14%)
+
+[threshold 0.7]
+Input: You're the embodiment of failure.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 4.41%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 5.30%)
+
+[threshold 0.7]
+Input: You're irredeemable.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.94%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.51%)
+
+[threshold 0.7]
+Input: You're a human disaster.
+Predictions:
+identity_attack: false (Confidence: 0.34%)
+insult: true (Confidence: 92.10%)
+obscene: false (Confidence: 0.17%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.06%)
+threat: false (Confidence: 0.29%)
+toxicity: true (Confidence: 93.63%)
+
+[threshold 0.7]
+Input: You're complete filth.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 11.10%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 13.81%)
+
+[threshold 0.7]
+Input: You're worthless beyond measure.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: null (Confidence: 63.70%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 67.29%)
+
+[threshold 0.7]
+Input: You're hated by everyone.
+Predictions:
+identity_attack: false (Confidence: 0.10%)
+insult: false (Confidence: 21.65%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.04%)
+toxicity: false (Confidence: 25.48%)
+
+[threshold 0.7]
+Input: You're nothing but pain to others.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.55%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.77%)
+
+[threshold 0.7]
+Input: You're an emotional vampire.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: false (Confidence: 14.96%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 17.25%)
+
+[threshold 0.7]
+Input: You're beyond help.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.04%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.06%)
+
+[threshold 0.7]
+Input: You're a freak show.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 20.22%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 24.84%)
+
+[threshold 0.7]
+Input: You're garbage with legs.
+Predictions:
+identity_attack: false (Confidence: 1.17%)
+insult: true (Confidence: 99.15%)
+obscene: false (Confidence: 0.71%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.31%)
+threat: false (Confidence: 0.67%)
+toxicity: true (Confidence: 99.09%)
+
+[threshold 0.7]
+Input: You're an empty shell.
+Predictions:
+identity_attack: false (Confidence: 0.05%)
+insult: null (Confidence: 39.83%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: null (Confidence: 43.29%)
+
+[threshold 0.7]
+Input: You're poison.
+Predictions:
+identity_attack: false (Confidence: 0.09%)
+insult: false (Confidence: 22.49%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.19%)
+toxicity: false (Confidence: 26.94%)
+
+[threshold 0.7]
+Input: You're toxic waste.
+Predictions:
+identity_attack: false (Confidence: 0.18%)
+insult: false (Confidence: 27.26%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.14%)
+toxicity: null (Confidence: 33.35%)
+
+[threshold 0.7]
+Input: You're a glitch in the system.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 12.04%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 13.95%)
+
+[threshold 0.7]
+Input: You're a failed experiment.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.59%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.12%)
+
+[threshold 0.7]
+Input: You're defective.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.42%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.92%)
+
+[threshold 0.7]
+Input: You're irrelevant.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.23%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.71%)
+
+[threshold 0.7]
+Input: You're a nuisance.
+Predictions:
+identity_attack: false (Confidence: 0.05%)
+insult: null (Confidence: 36.31%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 39.17%)
+
+[threshold 0.7]
+Input: You're nothing but a problem.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.65%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.87%)
+
+[threshold 0.7]
+Input: You're an insult to existence.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 4.31%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 5.14%)
+
+[threshold 0.7]
+Input: You're an absolute mistake.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.19%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.32%)
+
+[threshold 0.7]
+Input: You're total trash.
+Predictions:
+identity_attack: false (Confidence: 0.87%)
+insult: true (Confidence: 99.43%)
+obscene: false (Confidence: 0.49%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.11%)
+threat: false (Confidence: 0.26%)
+toxicity: true (Confidence: 99.42%)
+
+[threshold 0.7]
+Input: You're sickening.
+Predictions:
+identity_attack: false (Confidence: 0.24%)
+insult: true (Confidence: 91.87%)
+obscene: false (Confidence: 0.08%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.12%)
+toxicity: true (Confidence: 92.73%)
+
+[threshold 0.7]
+Input: You're disgusting and vile.
+Predictions:
+identity_attack: false (Confidence: 0.80%)
+insult: true (Confidence: 99.41%)
+obscene: false (Confidence: 0.60%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.10%)
+threat: false (Confidence: 0.14%)
+toxicity: true (Confidence: 99.41%)
+
+[threshold 0.7]
+Input: You're completely useless.
+Predictions:
+identity_attack: false (Confidence: 0.26%)
+insult: true (Confidence: 98.38%)
+obscene: false (Confidence: 0.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.06%)
+toxicity: true (Confidence: 98.57%)
+
+[threshold 0.7]
+Input: You're not worth saving.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.23%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.34%)
+
+[threshold 0.7]
+Input: You're a walking disgrace.
+Predictions:
+identity_attack: false (Confidence: 0.11%)
+insult: true (Confidence: 91.01%)
+obscene: false (Confidence: 0.15%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.04%)
+toxicity: true (Confidence: 91.87%)
+
+[threshold 0.7]
+Input: You're unwanted and unloved.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 22.29%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 25.56%)
+
+[threshold 0.7]
+Input: You're detestable.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 7.58%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 9.05%)
+
+[threshold 0.7]
+Input: You're the lowest form of life.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 2.06%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.68%)
+
+[threshold 0.7]
+Input: You're a total loser.
+Predictions:
+identity_attack: false (Confidence: 0.84%)
+insult: true (Confidence: 99.48%)
+obscene: false (Confidence: 0.72%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.28%)
+toxicity: true (Confidence: 99.45%)
+
+[threshold 0.7]
+Input: You're a disaster.
+Predictions:
+identity_attack: false (Confidence: 0.08%)
+insult: true (Confidence: 80.15%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: true (Confidence: 83.17%)
+
+[threshold 0.7]
+Input: You're a black hole of negativity.
+Predictions:
+identity_attack: false (Confidence: 1.13%)
+insult: null (Confidence: 42.42%)
+obscene: false (Confidence: 0.09%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.07%)
+toxicity: null (Confidence: 58.13%)
+
+[threshold 0.7]
+Input: You're a human mistake.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.11%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.58%)
+
+[threshold 0.7]
+Input: You're a worthless being.
+Predictions:
+identity_attack: false (Confidence: 0.17%)
+insult: true (Confidence: 97.45%)
+obscene: false (Confidence: 0.23%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.07%)
+toxicity: true (Confidence: 97.80%)
+
+[threshold 0.7]
+Input: You're trash that talks.
+Predictions:
+identity_attack: false (Confidence: 0.77%)
+insult: true (Confidence: 99.04%)
+obscene: false (Confidence: 0.27%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.07%)
+threat: false (Confidence: 0.16%)
+toxicity: true (Confidence: 99.13%)
+
+[threshold 0.7]
+Input: You're the worst of the worst.
+Predictions:
+identity_attack: false (Confidence: 0.13%)
+insult: true (Confidence: 91.12%)
+obscene: false (Confidence: 0.28%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.07%)
+toxicity: true (Confidence: 93.08%)
+
+[threshold 0.7]
+Input: You're absolute filth.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: false (Confidence: 27.44%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 33.38%)
+
+[threshold 0.7]
+Input: You're a disgrace to your species.
+Predictions:
+identity_attack: false (Confidence: 0.38%)
+insult: true (Confidence: 96.82%)
+obscene: false (Confidence: 0.15%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.10%)
+toxicity: true (Confidence: 96.94%)
+
+[threshold 0.9]
+Input: You're a worthless piece of trash.
+Predictions:
+identity_attack: false (Confidence: 1.30%)
+insult: true (Confidence: 99.48%)
+obscene: false (Confidence: 1.90%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.31%)
+threat: false (Confidence: 0.55%)
+toxicity: true (Confidence: 99.44%)
+
+[threshold 0.9]
+Input: Go kill yourself.
+Predictions:
+identity_attack: false (Confidence: 5.54%)
+insult: null (Confidence: 12.11%)
+obscene: false (Confidence: 5.48%)
+severe_toxicity: false (Confidence: 0.15%)
+sexual_explicit: null (Confidence: 10.98%)
+threat: null (Confidence: 72.38%)
+toxicity: null (Confidence: 82.94%)
+
+[threshold 0.9]
+Input: No one would care if you disappeared.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.12%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 0.33%)
+
+[threshold 0.9]
+Input: You should be locked up.
+Predictions:
+identity_attack: false (Confidence: 0.17%)
+insult: false (Confidence: 0.53%)
+obscene: false (Confidence: 0.11%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.32%)
+threat: false (Confidence: 6.57%)
+toxicity: false (Confidence: 7.74%)
+
+[threshold 0.9]
+Input: You deserve to suffer.
+Predictions:
+identity_attack: false (Confidence: 0.83%)
+insult: false (Confidence: 4.09%)
+obscene: false (Confidence: 0.50%)
+severe_toxicity: false (Confidence: 0.01%)
+sexual_explicit: false (Confidence: 1.66%)
+threat: null (Confidence: 27.91%)
+toxicity: null (Confidence: 40.22%)
+
+[threshold 0.9]
+Input: You're a mistake that should've never been born.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.10%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.15%)
+
+[threshold 0.9]
+Input: You're an ugly freak.
+Predictions:
+identity_attack: false (Confidence: 1.49%)
+insult: true (Confidence: 99.38%)
+obscene: false (Confidence: 4.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.54%)
+threat: false (Confidence: 0.51%)
+toxicity: true (Confidence: 99.38%)
+
+[threshold 0.9]
+Input: You're a cancer to society.
+Predictions:
+identity_attack: false (Confidence: 0.28%)
+insult: null (Confidence: 89.13%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.10%)
+toxicity: true (Confidence: 90.54%)
+
+[threshold 0.9]
+Input: Why don't you just die already?
+Predictions:
+identity_attack: false (Confidence: 1.85%)
+insult: false (Confidence: 3.11%)
+obscene: false (Confidence: 0.77%)
+severe_toxicity: false (Confidence: 0.02%)
+sexual_explicit: false (Confidence: 2.78%)
+threat: null (Confidence: 47.61%)
+toxicity: null (Confidence: 56.68%)
+
+[threshold 0.9]
+Input: You are human garbage.
+Predictions:
+identity_attack: false (Confidence: 2.98%)
+insult: true (Confidence: 99.43%)
+obscene: false (Confidence: 1.41%)
+severe_toxicity: false (Confidence: 0.01%)
+sexual_explicit: false (Confidence: 0.34%)
+threat: false (Confidence: 0.92%)
+toxicity: true (Confidence: 99.35%)
+
+[threshold 0.9]
+Input: You're a burden to everyone around you.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.31%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.42%)
+
+[threshold 0.9]
+Input: You're nothing but filth.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: null (Confidence: 12.12%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: null (Confidence: 13.98%)
+
+[threshold 0.9]
+Input: The world would be better without you.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 0.26%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.03%)
+toxicity: false (Confidence: 0.56%)
+
+[threshold 0.9]
+Input: You're pathetic and disgusting.
+Predictions:
+identity_attack: false (Confidence: 1.44%)
+insult: true (Confidence: 99.55%)
+obscene: false (Confidence: 1.23%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.23%)
+threat: false (Confidence: 0.31%)
+toxicity: true (Confidence: 99.49%)
+
+[threshold 0.9]
+Input: You're a total failure.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 50.85%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 56.13%)
+
+[threshold 0.9]
+Input: You're the worst person alive.
+Predictions:
+identity_attack: false (Confidence: 0.16%)
+insult: null (Confidence: 84.89%)
+obscene: false (Confidence: 0.08%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.17%)
+toxicity: null (Confidence: 87.77%)
+
+[threshold 0.9]
+Input: You're completely useless.
+Predictions:
+identity_attack: false (Confidence: 0.26%)
+insult: true (Confidence: 98.38%)
+obscene: false (Confidence: 0.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.06%)
+toxicity: true (Confidence: 98.57%)
+
+[threshold 0.9]
+Input: Nobody will ever love you.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.62%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 0.96%)
+
+[threshold 0.9]
+Input: You're not even worth the air you breathe.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.12%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.49%)
+
+[threshold 0.9]
+Input: You're the lowest of the low.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 6.41%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 7.46%)
+
+[threshold 0.9]
+Input: You're a walking disaster.
+Predictions:
+identity_attack: false (Confidence: 0.07%)
+insult: null (Confidence: 79.15%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: null (Confidence: 81.85%)
+
+[threshold 0.9]
+Input: You're a miserable excuse for a human.
+Predictions:
+identity_attack: false (Confidence: 0.56%)
+insult: true (Confidence: 99.29%)
+obscene: false (Confidence: 0.60%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.15%)
+threat: false (Confidence: 0.25%)
+toxicity: true (Confidence: 99.25%)
+
+[threshold 0.9]
+Input: Everything about you is wrong.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.10%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.16%)
+
+[threshold 0.9]
+Input: You're a total waste of space.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: null (Confidence: 37.54%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 40.89%)
+
+[threshold 0.9]
+Input: You're the reason people lose faith in humanity.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.66%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.97%)
+
+[threshold 0.9]
+Input: You're so dumb it's painful.
+Predictions:
+identity_attack: false (Confidence: 0.77%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 0.57%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.13%)
+threat: false (Confidence: 0.18%)
+toxicity: true (Confidence: 99.55%)
+
+[threshold 0.9]
+Input: You're a stain on this earth.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 17.91%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: null (Confidence: 21.20%)
+
+[threshold 0.9]
+Input: You're a plague.
+Predictions:
+identity_attack: false (Confidence: 0.16%)
+insult: null (Confidence: 63.10%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.06%)
+toxicity: null (Confidence: 65.45%)
+
+[threshold 0.9]
+Input: You're worse than trash.
+Predictions:
+identity_attack: false (Confidence: 0.60%)
+insult: true (Confidence: 98.55%)
+obscene: false (Confidence: 0.19%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.06%)
+threat: false (Confidence: 0.18%)
+toxicity: true (Confidence: 98.69%)
+
+[threshold 0.9]
+Input: You're an abomination.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 51.53%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 56.59%)
+
+[threshold 0.9]
+Input: You should be ashamed of existing.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 0.60%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.09%)
+toxicity: false (Confidence: 1.45%)
+
+[threshold 0.9]
+Input: Your life is a joke.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.60%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.14%)
+
+[threshold 0.9]
+Input: You ruin everything you touch.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: false (Confidence: 0.68%)
+obscene: false (Confidence: 0.05%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.08%)
+threat: false (Confidence: 0.54%)
+toxicity: false (Confidence: 2.87%)
+
+[threshold 0.9]
+Input: You’re a disgrace to humanity.
+Predictions:
+identity_attack: false (Confidence: 0.10%)
+insult: null (Confidence: 72.63%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: null (Confidence: 73.23%)
+
+[threshold 0.9]
+Input: You're rotten to the core.
+Predictions:
+identity_attack: false (Confidence: 0.09%)
+insult: null (Confidence: 77.53%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: null (Confidence: 78.79%)
+
+[threshold 0.9]
+Input: You're unbearable.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 31.03%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 34.65%)
+
+[threshold 0.9]
+Input: You're hideous and stupid.
+Predictions:
+identity_attack: false (Confidence: 1.22%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 0.84%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.20%)
+threat: false (Confidence: 0.29%)
+toxicity: true (Confidence: 99.51%)
+
+[threshold 0.9]
+Input: You are unwanted.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: null (Confidence: 13.17%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 15.82%)
+
+[threshold 0.9]
+Input: You're mentally broken.
+Predictions:
+identity_attack: false (Confidence: 0.04%)
+insult: null (Confidence: 61.08%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 65.48%)
+
+[threshold 0.9]
+Input: You're toxic to everyone.
+Predictions:
+identity_attack: false (Confidence: 0.49%)
+insult: false (Confidence: 5.57%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.14%)
+toxicity: null (Confidence: 11.34%)
+
+[threshold 0.9]
+Input: You're pathetic and weak.
+Predictions:
+identity_attack: false (Confidence: 1.35%)
+insult: true (Confidence: 99.51%)
+obscene: false (Confidence: 1.40%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.30%)
+threat: false (Confidence: 0.48%)
+toxicity: true (Confidence: 99.43%)
+
+[threshold 0.9]
+Input: You're the worst mistake ever made.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 8.45%)
+obscene: false (Confidence: 0.05%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 11.34%)
+
+[threshold 0.9]
+Input: You're not worth anyone’s time.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.43%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.9]
+Input: You're a total embarrassment.
+Predictions:
+identity_attack: false (Confidence: 0.08%)
+insult: true (Confidence: 90.29%)
+obscene: false (Confidence: 0.14%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.03%)
+toxicity: true (Confidence: 91.76%)
+
+[threshold 0.9]
+Input: You don’t deserve to be heard.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.35%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.9]
+Input: You're a lost cause.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.50%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.70%)
+
+[threshold 0.9]
+Input: You're a nightmare.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: null (Confidence: 21.08%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: null (Confidence: 23.49%)
+
+[threshold 0.9]
+Input: You spread misery wherever you go.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.44%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.61%)
+
+[threshold 0.9]
+Input: You're evil.
+Predictions:
+identity_attack: false (Confidence: 0.22%)
+insult: null (Confidence: 48.90%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.11%)
+toxicity: null (Confidence: 54.54%)
+
+[threshold 0.9]
+Input: You're hopeless.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: null (Confidence: 17.86%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: null (Confidence: 21.01%)
+
+[threshold 0.9]
+Input: You're a parasite.
+Predictions:
+identity_attack: false (Confidence: 1.60%)
+insult: true (Confidence: 99.35%)
+obscene: false (Confidence: 0.70%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.25%)
+threat: false (Confidence: 0.62%)
+toxicity: true (Confidence: 99.24%)
+
+[threshold 0.9]
+Input: You're a joke and no one laughs.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 9.88%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: null (Confidence: 11.56%)
+
+[threshold 0.9]
+Input: You're completely broken.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.78%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 1.08%)
+
+[threshold 0.9]
+Input: You're not needed.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.14%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.21%)
+
+[threshold 0.9]
+Input: You're unwanted trash.
+Predictions:
+identity_attack: false (Confidence: 0.50%)
+insult: true (Confidence: 98.84%)
+obscene: false (Confidence: 0.38%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.11%)
+threat: false (Confidence: 0.32%)
+toxicity: true (Confidence: 98.98%)
+
+[threshold 0.9]
+Input: You're a pathetic shell of a person.
+Predictions:
+identity_attack: false (Confidence: 0.85%)
+insult: true (Confidence: 99.51%)
+obscene: false (Confidence: 1.35%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.25%)
+threat: false (Confidence: 0.32%)
+toxicity: true (Confidence: 99.46%)
+
+[threshold 0.9]
+Input: You're scum.
+Predictions:
+identity_attack: false (Confidence: 0.85%)
+insult: true (Confidence: 99.46%)
+obscene: false (Confidence: 1.39%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.26%)
+toxicity: true (Confidence: 99.46%)
+
+[threshold 0.9]
+Input: You're a waste of resources.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: null (Confidence: 10.47%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: null (Confidence: 11.88%)
+
+[threshold 0.9]
+Input: You're a horrible human being.
+Predictions:
+identity_attack: false (Confidence: 1.43%)
+insult: true (Confidence: 99.35%)
+obscene: false (Confidence: 0.81%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.15%)
+threat: false (Confidence: 0.46%)
+toxicity: true (Confidence: 99.28%)
+
+[threshold 0.9]
+Input: You're a burden to this planet.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.19%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.63%)
+
+[threshold 0.9]
+Input: You're a piece of garbage.
+Predictions:
+identity_attack: false (Confidence: 1.32%)
+insult: true (Confidence: 99.54%)
+obscene: false (Confidence: 1.13%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.20%)
+threat: false (Confidence: 0.37%)
+toxicity: true (Confidence: 99.49%)
+
+[threshold 0.9]
+Input: You're a total trainwreck.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 8.24%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 10.22%)
+
+[threshold 0.9]
+Input: You're what’s wrong with the world.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: false (Confidence: 2.01%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.02%)
+toxicity: false (Confidence: 2.99%)
+
+[threshold 0.9]
+Input: You're absolutely revolting.
+Predictions:
+identity_attack: false (Confidence: 1.29%)
+insult: true (Confidence: 97.76%)
+obscene: false (Confidence: 0.30%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.83%)
+toxicity: true (Confidence: 98.14%)
+
+[threshold 0.9]
+Input: You're the embodiment of failure.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 4.41%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 5.30%)
+
+[threshold 0.9]
+Input: You're irredeemable.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.94%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.51%)
+
+[threshold 0.9]
+Input: You're a human disaster.
+Predictions:
+identity_attack: false (Confidence: 0.34%)
+insult: true (Confidence: 92.10%)
+obscene: false (Confidence: 0.17%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.06%)
+threat: false (Confidence: 0.29%)
+toxicity: true (Confidence: 93.63%)
+
+[threshold 0.9]
+Input: You're complete filth.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: null (Confidence: 11.10%)
+obscene: false (Confidence: 0.07%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 13.81%)
+
+[threshold 0.9]
+Input: You're worthless beyond measure.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: null (Confidence: 63.70%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 67.29%)
+
+[threshold 0.9]
+Input: You're hated by everyone.
+Predictions:
+identity_attack: false (Confidence: 0.10%)
+insult: null (Confidence: 21.65%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.04%)
+toxicity: null (Confidence: 25.48%)
+
+[threshold 0.9]
+Input: You're nothing but pain to others.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.55%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 0.77%)
+
+[threshold 0.9]
+Input: You're an emotional vampire.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: null (Confidence: 14.96%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: null (Confidence: 17.25%)
+
+[threshold 0.9]
+Input: You're beyond help.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.04%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.06%)
+
+[threshold 0.9]
+Input: You're a freak show.
+Predictions:
+identity_attack: false (Confidence: 0.03%)
+insult: null (Confidence: 20.22%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: null (Confidence: 24.84%)
+
+[threshold 0.9]
+Input: You're garbage with legs.
+Predictions:
+identity_attack: false (Confidence: 1.17%)
+insult: true (Confidence: 99.15%)
+obscene: false (Confidence: 0.71%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.31%)
+threat: false (Confidence: 0.67%)
+toxicity: true (Confidence: 99.09%)
+
+[threshold 0.9]
+Input: You're an empty shell.
+Predictions:
+identity_attack: false (Confidence: 0.05%)
+insult: null (Confidence: 39.83%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.03%)
+toxicity: null (Confidence: 43.29%)
+
+[threshold 0.9]
+Input: You're poison.
+Predictions:
+identity_attack: false (Confidence: 0.09%)
+insult: null (Confidence: 22.49%)
+obscene: false (Confidence: 0.03%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.19%)
+toxicity: null (Confidence: 26.94%)
+
+[threshold 0.9]
+Input: You're toxic waste.
+Predictions:
+identity_attack: false (Confidence: 0.18%)
+insult: null (Confidence: 27.26%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.14%)
+toxicity: null (Confidence: 33.35%)
+
+[threshold 0.9]
+Input: You're a glitch in the system.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: null (Confidence: 12.04%)
+obscene: false (Confidence: 0.02%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.01%)
+toxicity: null (Confidence: 13.95%)
+
+[threshold 0.9]
+Input: You're a failed experiment.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.59%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.12%)
+
+[threshold 0.9]
+Input: You're defective.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.42%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.92%)
+
+[threshold 0.9]
+Input: You're irrelevant.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.23%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.71%)
+
+[threshold 0.9]
+Input: You're a nuisance.
+Predictions:
+identity_attack: false (Confidence: 0.05%)
+insult: null (Confidence: 36.31%)
+obscene: false (Confidence: 0.04%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 39.17%)
+
+[threshold 0.9]
+Input: You're nothing but a problem.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 0.65%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.87%)
+
+[threshold 0.9]
+Input: You're an insult to existence.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 4.31%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 5.14%)
+
+[threshold 0.9]
+Input: You're an absolute mistake.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.19%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.32%)
+
+[threshold 0.9]
+Input: You're total trash.
+Predictions:
+identity_attack: false (Confidence: 0.87%)
+insult: true (Confidence: 99.43%)
+obscene: false (Confidence: 0.49%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.11%)
+threat: false (Confidence: 0.26%)
+toxicity: true (Confidence: 99.42%)
+
+[threshold 0.9]
+Input: You're sickening.
+Predictions:
+identity_attack: false (Confidence: 0.24%)
+insult: true (Confidence: 91.87%)
+obscene: false (Confidence: 0.08%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.12%)
+toxicity: true (Confidence: 92.73%)
+
+[threshold 0.9]
+Input: You're disgusting and vile.
+Predictions:
+identity_attack: false (Confidence: 0.80%)
+insult: true (Confidence: 99.41%)
+obscene: false (Confidence: 0.60%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.10%)
+threat: false (Confidence: 0.14%)
+toxicity: true (Confidence: 99.41%)
+
+[threshold 0.9]
+Input: You're completely useless.
+Predictions:
+identity_attack: false (Confidence: 0.26%)
+insult: true (Confidence: 98.38%)
+obscene: false (Confidence: 0.18%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.06%)
+toxicity: true (Confidence: 98.57%)
+
+[threshold 0.9]
+Input: You're not worth saving.
+Predictions:
+identity_attack: false (Confidence: 0.00%)
+insult: false (Confidence: 0.23%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.00%)
+toxicity: false (Confidence: 0.34%)
+
+[threshold 0.9]
+Input: You're a walking disgrace.
+Predictions:
+identity_attack: false (Confidence: 0.11%)
+insult: true (Confidence: 91.01%)
+obscene: false (Confidence: 0.15%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.03%)
+threat: false (Confidence: 0.04%)
+toxicity: true (Confidence: 91.87%)
+
+[threshold 0.9]
+Input: You're unwanted and unloved.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: null (Confidence: 22.29%)
+obscene: false (Confidence: 0.06%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 25.56%)
+
+[threshold 0.9]
+Input: You're detestable.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 7.58%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 9.05%)
+
+[threshold 0.9]
+Input: You're the lowest form of life.
+Predictions:
+identity_attack: false (Confidence: 0.02%)
+insult: false (Confidence: 2.06%)
+obscene: false (Confidence: 0.00%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 2.68%)
+
+[threshold 0.9]
+Input: You're a total loser.
+Predictions:
+identity_attack: false (Confidence: 0.84%)
+insult: true (Confidence: 99.48%)
+obscene: false (Confidence: 0.72%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.19%)
+threat: false (Confidence: 0.28%)
+toxicity: true (Confidence: 99.45%)
+
+[threshold 0.9]
+Input: You're a disaster.
+Predictions:
+identity_attack: false (Confidence: 0.08%)
+insult: null (Confidence: 80.15%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.05%)
+toxicity: null (Confidence: 83.17%)
+
+[threshold 0.9]
+Input: You're a black hole of negativity.
+Predictions:
+identity_attack: false (Confidence: 1.13%)
+insult: null (Confidence: 42.42%)
+obscene: false (Confidence: 0.09%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.02%)
+threat: false (Confidence: 0.07%)
+toxicity: null (Confidence: 58.13%)
+
+[threshold 0.9]
+Input: You're a human mistake.
+Predictions:
+identity_attack: false (Confidence: 0.01%)
+insult: false (Confidence: 1.11%)
+obscene: false (Confidence: 0.01%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.00%)
+threat: false (Confidence: 0.01%)
+toxicity: false (Confidence: 1.58%)
+
+[threshold 0.9]
+Input: You're a worthless being.
+Predictions:
+identity_attack: false (Confidence: 0.17%)
+insult: true (Confidence: 97.45%)
+obscene: false (Confidence: 0.23%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.07%)
+toxicity: true (Confidence: 97.80%)
+
+[threshold 0.9]
+Input: You're trash that talks.
+Predictions:
+identity_attack: false (Confidence: 0.77%)
+insult: true (Confidence: 99.04%)
+obscene: false (Confidence: 0.27%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.07%)
+threat: false (Confidence: 0.16%)
+toxicity: true (Confidence: 99.13%)
+
+[threshold 0.9]
+Input: You're the worst of the worst.
+Predictions:
+identity_attack: false (Confidence: 0.13%)
+insult: true (Confidence: 91.12%)
+obscene: false (Confidence: 0.28%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.07%)
+toxicity: true (Confidence: 93.08%)
+
+[threshold 0.9]
+Input: You're absolute filth.
+Predictions:
+identity_attack: false (Confidence: 0.06%)
+insult: null (Confidence: 27.44%)
+obscene: false (Confidence: 0.10%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.01%)
+threat: false (Confidence: 0.02%)
+toxicity: null (Confidence: 33.38%)
+
+[threshold 0.9]
+Input: You're a disgrace to your species.
+Predictions:
+identity_attack: false (Confidence: 0.38%)
+insult: true (Confidence: 96.82%)
+obscene: false (Confidence: 0.15%)
+severe_toxicity: false (Confidence: 0.00%)
+sexual_explicit: false (Confidence: 0.04%)
+threat: false (Confidence: 0.10%)
+toxicity: true (Confidence: 96.94%)
+
+[SUMMARY]
+Matches per threshold:
+Threshold 0.5: 45 matches
+Threshold 0.7: 37 matches
+Threshold 0.9: 31 matches

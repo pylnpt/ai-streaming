@@ -37,9 +37,11 @@ export const UserItem = ({
                     "flex items-center w-full gap-x-4",
                     collapsed && "justify-center"
                 )}>
-                    <UserAvatar image={image}
+                    <UserAvatar
+                        image={image}
                         username={username}
                         isStreaming={isStreaming}
+                        showBadge
                         />
                         {!collapsed && (
                             <p className="truncate">{username}</p>

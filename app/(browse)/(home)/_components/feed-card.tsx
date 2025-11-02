@@ -27,9 +27,12 @@ export const FeedCard = async ({
                     />
                     
                     <div className="flex-gap-x-3">
-                        <UserAvatar username={data.user.username}
+                        <UserAvatar
+                            username={data.user.username}
                             image={data.user.image || ""}
-                            isStreaming={data.isStreaming}/>
+                            isStreaming={data.isStreaming}
+                            showBadge
+                        />
                     </div>
                     <div className="flex flex-col text-sm overflow-hidden">
                         <p className="truncate font semibold hover:text-primary">{data.name}</p>

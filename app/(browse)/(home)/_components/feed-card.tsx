@@ -21,14 +21,14 @@ export const FeedCard = async ({
             <div className="h-full w-full space-y-4">
                 <Thumbnail 
                     src={data.thumbnailUrl}
-                    fallback={data.user.imageUrl}
+                    fallback={data.user.image}
                     isStreaming={data.isStreaming}
                     username={data.user.username}
                     />
                     
                     <div className="flex-gap-x-3">
                         <UserAvatar username={data.user.username}
-                            imageUrl={data.user.imageUrl}
+                            image={data.user.image}
                             isStreaming={data.isStreaming}/>
                     </div>
                     <div className="flex flex-col text-sm overflow-hidden">

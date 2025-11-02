@@ -11,7 +11,7 @@ interface StreamHeaderProps {
     hostName: string;
     hostIdentity: string
     viewerIdentity: string;
-    imageUrl: string;
+    image: string;
     isFollowing: boolean
     name: string
 }
@@ -20,7 +20,7 @@ export const StreamHeader = ({
     hostName,
     hostIdentity,
     viewerIdentity,
-    imageUrl,
+    image,
     isFollowing,
     name,
 }: StreamHeaderProps) => {
@@ -29,15 +29,15 @@ export const StreamHeader = ({
 
     const isStreaming = !!participant;
     const participantCount = participants.length - 1;
-    
+
     const hostAsViewer = `host-${hostIdentity}`;
     const isHost = viewerIdentity === hostAsViewer;
 
     return (
         <div className="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 items-start justify-between px-4">
             <div className="flex items-center gap-x-3">
-                <UserAvatar 
-                    imageUrl={imageUrl} 
+                <UserAvatar
+                    image={image} 
                     username={hostName}
                     size="lg"
                     isStreaming={isStreaming}

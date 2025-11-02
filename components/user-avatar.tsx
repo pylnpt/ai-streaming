@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage} from "./ui/avatar";
 import { LiveBadge } from "./ui/live-badge";
 
 interface UserAvatarProps extends VariantProps<typeof avatarSizes>{
-    imageUrl:string,
+    image:string,
     username: string,
     isStreaming?:boolean,
     showBadge?:boolean,
@@ -17,7 +17,7 @@ const avatarSizes = cva(
         variants: {
             size: {
                 default: "h-8 w-8",
-                lg: "h-14 w-14" 
+                lg: "h-14 w-14"
             },
         },
         defaultVariants: {
@@ -27,7 +27,7 @@ const avatarSizes = cva(
 )
 
 export const UserAvatar = ({
-    imageUrl,
+    image,
     username,
     isStreaming,
     showBadge,
@@ -40,7 +40,7 @@ export const UserAvatar = ({
                 isStreaming && "ring-2 ring-primary border border-background",
                 avatarSizes({ size })
             )}>
-                <AvatarImage src={imageUrl} className="object-cover"/>
+                <AvatarImage src={image} className="object-cover"/>
                 <AvatarFallback>
                     {username[0]}
                     {username[username.length - 1]}

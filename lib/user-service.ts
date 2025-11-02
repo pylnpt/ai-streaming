@@ -7,10 +7,10 @@ export const getUserByUserName = async( username: string) => {
         },
         select: {
             id: true,
-            externalUserId: true,
             username: true,
             bio: true,
-            imageUrl: true,
+            image: true,
+            email: true,
             isUsingProfanityFilter: true,
             stream: {
                 select: {

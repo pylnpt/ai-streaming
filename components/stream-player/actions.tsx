@@ -1,6 +1,6 @@
 "use client"
 
-import { useAuth } from "@clerk/nextjs";
+import { useSession } from "next-auth/react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { Heart } from "lucide-react";
@@ -22,7 +22,8 @@ export const Actions = ({
     isHost,
 }: ActionsProps) => {
     const [isPending, startTransition] = useTransition();
-    const { userId }  = useAuth();
+    const { data: session } = useSession();
+    const userId = session?.user?.id;
     const  router  = useRouter();
 
     const handleFollow = () =>{

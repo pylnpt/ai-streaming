@@ -1,5 +1,5 @@
 "use client"
-import { useUser } from "@clerk/nextjs";
+import { useSession } from "next-auth/react";
 import { usePathname } from "next/navigation";
 import {
     Fullscreen,
@@ -12,7 +12,8 @@ import { NavItem, NavItemSkeleton } from "./navitem";
 
 export const Navigation = () => {
     const pathname = usePathname();
-    const {user} = useUser();
+    const { data: session } = useSession();
+    const user = session?.user;
 
     const routes = [
         {

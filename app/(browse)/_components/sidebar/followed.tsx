@@ -31,10 +31,10 @@ const Followed = ({
             )}
             <ul className="space-y-2 px-2">
                 {data.map((user) => (
-                    <UserItem 
+                    <UserItem
                         key={user.following.id}
                         username={user.following.username}
-                        imageUrl={user.following.imageUrl}
+                        image={user.following.image || ""}
                         isStreaming={user.following.stream?.isStreaming}/>
                 ))}
             </ul>

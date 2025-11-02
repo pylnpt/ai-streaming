@@ -20,7 +20,7 @@ export const columns: ColumnDef<BlockedUserType>[] = [
       <div className="flex items-center gap-x-4">
           <UserAvatar 
             username={row.original.username}
-            imageUrl={row.original.imageUrl}/>
+            image={row.original.image}/>
             <span>{row.original.username}</span>
       </div>
     )

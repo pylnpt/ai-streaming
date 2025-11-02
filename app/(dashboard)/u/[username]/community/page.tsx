@@ -8,7 +8,7 @@ const Community = async () => {
     const tableData = data.map((blockedUser) => ({
         ...blockedUser,
         userId: blockedUser.blocked.id,
-        imageUrl: blockedUser.blocked.imageUrl,
+        image: blockedUser.blocked.image,
         username: blockedUser.blocked.username,
         createdAt: format(new Date(blockedUser.blocked.createdAt), "yyyy/MM/dd ")
     }))

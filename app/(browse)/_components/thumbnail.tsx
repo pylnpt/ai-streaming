@@ -25,7 +25,7 @@ export const Thumbnail = ({
                     <UserAvatar showBadge
                         size="lg"
                         username={username}
-                        imageUrl={fallback}
+                        image={fallback}
                         isStreaming={isStreaming} />
             </div>
         )

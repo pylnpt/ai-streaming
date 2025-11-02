@@ -28,10 +28,10 @@ const Recommended = ({
             )}
             <ul className="space-y-2 px-2">
                 {data.map((user) => (
-                    <UserItem 
+                    <UserItem
                         key={user.id}
                         username={user.username}
-                        imageUrl={user.imageUrl}
+                        image={user.image || ""}
                         isStreaming={user.stream?.isStreaming}/>
                 ))}
             </ul>

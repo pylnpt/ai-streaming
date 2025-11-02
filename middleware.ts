@@ -1,23 +1,38 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+import { auth } from "@/auth";
+import { NextResponse } from "next/server";
 
-const isPublicRoute = createRouteMatcher([
-  '/sign-in(.*)',
-  '/sign-up(.*)',
-  '/api/webhooks/(.*)',
-  "/", 
-  "/api/uploadthing",
-  "/api/userFiltersUpsert",
-  "/api/userThresholdSubmit",
-  "/:username",
-  "/search",
-])
+const publicRoutes = [
+  '/sign-in',
+  '/sign-up',
+  '/api/webhooks',
+  '/',
+  '/api/uploadthing',
+  '/api/userFiltersUpsert',
+  '/api/userThresholdSubmit',
+  '/api/auth',
+  '/search',
+];
 
-export default clerkMiddleware((auth, request) => {
-  if (!isPublicRoute(request)) {
-    auth().protect()
+const isDynamicUserRoute = (pathname: string) => {
+  // Check if it's a dynamic user route like /:username
+  const segments = pathname.split('/').filter(Boolean);
+  return segments.length === 1 && !publicRoutes.includes(`/${segments[0]}`);
+};
+
+export default auth((req) => {
+  const { nextUrl } = req;
+  const isLoggedIn = !!req.auth;
+
+  const isPublicRoute =
+    publicRoutes.some(route => nextUrl.pathname.startsWith(route)) ||
+    isDynamicUserRoute(nextUrl.pathname);
+
+  if (!isPublicRoute && !isLoggedIn) {
+    return NextResponse.redirect(new URL('/sign-in', nextUrl));
   }
-})
 
+  return NextResponse.next();
+});
 
 export const config = {
   matcher: [
@@ -26,4 +41,4 @@ export const config = {
     // Always run for API routes
     '/(api|trpc)(.*)',
   ],
-}
+};

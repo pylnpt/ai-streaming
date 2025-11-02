@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { dark } from '@clerk/themes';
-import {
-  ClerkProvider,
-} from '@clerk/nextjs'
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
+import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   title: "StreamWithAI",
@@ -18,23 +15,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider appearance={{baseTheme:dark}}>
-      <html lang="en">
-        <body>
-          
+    <html lang="en">
+      <body>
+        <SessionProvider>
           <ThemeProvider
-              attribute="class"
-              forcedTheme="dark"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-            >
-              <Toaster theme="light"
-                position="bottom-right"/>
-              {children}
-            </ThemeProvider>
-          </body>
-      </html>     
-    </ClerkProvider>
+            attribute="class"
+            forcedTheme="dark"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Toaster theme="light" position="bottom-right" />
+            {children}
+          </ThemeProvider>
+        </SessionProvider>
+      </body>
+    </html>
   );
 }

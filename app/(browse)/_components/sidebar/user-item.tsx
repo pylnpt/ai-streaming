@@ -11,12 +11,12 @@ import { LiveBadge } from "@/components/ui/live-badge";
 
 interface UserItemProps {
     username: string;
-    imageUrl: string;
+    image: string;
     isStreaming?: boolean;
 }
 export const UserItem = ({
     username,
-    imageUrl,
+    image,
     isStreaming
 }: UserItemProps) => {
     const pathName = usePathname();
@@ -37,7 +37,7 @@ export const UserItem = ({
                     "flex items-center w-full gap-x-4",
                     collapsed && "justify-center"
                 )}>
-                    <UserAvatar imageUrl={imageUrl}
+                    <UserAvatar image={image}
                         username={username}
                         isStreaming={isStreaming}
                         />

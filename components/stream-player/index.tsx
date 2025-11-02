@@ -12,12 +12,19 @@ import { StreamInfoCard } from "./stream-info";
 import { StreamerInfoCard } from "./streamer-info-card";
 import { NonSensitiveUserDataType, SecureStreamType } from "@/lib/types";
 
+interface CustomWord {
+    word: string;
+    caseSensitive: boolean;
+}
+
 interface StreamPlayerProps {
-    user: NonSensitiveUserDataType 
+    user: NonSensitiveUserDataType
     stream: SecureStreamType,
     isFollowing: boolean;
     threshold: number;
     filters: string[];
+    whitelist: CustomWord[];
+    blacklist: CustomWord[];
 }
 
 export const StreamPlayer = ({
@@ -25,7 +32,9 @@ export const StreamPlayer = ({
     stream,
     isFollowing,
     threshold,
-    filters
+    filters,
+    whitelist,
+    blacklist
 }: StreamPlayerProps) => {
     const {
         token,
@@ -66,10 +75,12 @@ export const StreamPlayer = ({
                             isFollowing = {isFollowing}
                             isChatEnabled = {stream.isChatEnabled}
                             isChatDelayed = {stream.isChatDelayed}
-                            isChatFollowersOnly = {stream.isChatFollowersOnly} 
+                            isChatFollowersOnly = {stream.isChatFollowersOnly}
                             user={user}
                             filters={filters}
-                            threshold={threshold}/>
+                            threshold={threshold}
+                            whitelist={whitelist}
+                            blacklist={blacklist}/>
                     </div>
                     <div className="space-y-4 col-span-1 lg:col-span-2 
                         xl:col-span-2 2xl:col-span-5 lg:overflow-y-auto hidden-scrollbar pb-10">
@@ -79,7 +90,7 @@ export const StreamPlayer = ({
                             hostName={user.username}
                             hostIdentity={user.id}
                             viewerIdentity={identity}
-                            image={user.image}
+                            image={user.image || ""}
                             isFollowing={isFollowing}
                             name={stream.name}
                             />

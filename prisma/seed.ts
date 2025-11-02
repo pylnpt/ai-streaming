@@ -4,13 +4,13 @@ const prisma = new PrismaClient();
 
 async function main() {
   const aiFilters = [
-    { label: 'Identity Attack', value: 'identity_attack' },
-    { label: 'Insult', value: 'insult' },
-    { label: 'Obscene content', value: 'obscene' },
-    { label: 'Severe Toxicity', value: 'severe_toxicity' },
-    { label: 'Sexual Explicit', value: 'sexual_explicit' },
-    { label: 'Threat', value: 'threat' },
-    { label: 'Toxicity', value: 'toxicity' },
+    { label: 'Hate Speech & Identity Attacks', value: 'identity_attack' },
+    { label: 'Insults & Name-Calling', value: 'insult' },
+    { label: 'Obscenities & Profanity', value: 'obscene' },
+    { label: 'Extremely Toxic Content', value: 'severe_toxicity' },
+    { label: 'Sexual Content', value: 'sexual_explicit' },
+    { label: 'Threats & Violence', value: 'threat' },
+    { label: 'General Toxicity', value: 'toxicity' },
   ];
 
   for (const filter of aiFilters) {
@@ -26,9 +26,11 @@ async function main() {
 
 
   const aiThresholds = [
-    { name: "95%", value: 0.95,description: "The most strict choice. More 'false negative' cases may occur." },             
-    { name: "90%", value: 0.9, description: "Optimal. False negatives / positives may still occur." },             
-    { name: "80%", value: 0.8, description: "The most lenient choice. More 'false positive' cases may occur." }             
+    { name: "Very Lenient (95%)", value: 0.95, description: "Only blocks extremely obvious toxic content - fewer messages filtered" },
+    { name: "Balanced (90%)", value: 0.9, description: "Recommended - good balance between protection and false positives" },
+    { name: "Moderate (85%)", value: 0.85, description: "Moderate filtering - catches most toxic content with minimal false positives" },
+    { name: "Strict (80%)", value: 0.8, description: "Blocks more aggressively - some harmless messages may be filtered" },
+    { name: "Very Strict (70%)", value: 0.7, description: "Maximum filtering - blocks anything remotely questionable" }
   ];
 
   for (const threshold of aiThresholds) {

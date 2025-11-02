@@ -55,17 +55,20 @@ export const AIThresholdSelectCard = ({
     const onSubmit = (data: z.infer<typeof FormSchema>) => {
         startTransition(()=>{
             updateUserThreshold(userId, data.threshold)
-            .then(() => { toast.success(`Threshold successfully updated.`)})
-            .catch(() => {toast.error("Something went wrong with the update.\nPlease try again later.")})
+            .then(() => { toast.success(`Filter sensitivity updated successfully`)})
+            .catch(() => {toast.error("Failed to update sensitivity. Please try again.")})
         })
     } 
 
     return (
-        <Card className="w-full max-w-md p-6 min-h-[450px] border-2 border-primary rounded">
+        <Card className="w-full border-2 border-primary rounded-lg">
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)}>
                     <CardHeader>
-                        <CardTitle>Select AI Threshold</CardTitle>
+                        <CardTitle>Filter Sensitivity</CardTitle>
+                        <p className="text-sm text-muted-foreground mt-2">
+                            Choose how strictly to filter messages
+                        </p>
                     </CardHeader>
                     <CardContent>
                         <FormField 
@@ -81,17 +84,19 @@ export const AIThresholdSelectCard = ({
                                     className="flex flex-col space-y-4"
                                 >
                                     {everyThreshold.map((threshold) => (
-                                        <FormItem key={threshold.value.toString()} className="flex items-center space-x-3">
-                                            <FormControl>
-                                                <RadioGroupItem
-                                                    value={threshold.value.toString()}
-                                                    id={threshold.value.toString()}
-                                                />
-                                            </FormControl>
-                                            <FormLabel htmlFor={threshold.value.toString()} className="font-medium text-primary">
-                                                {threshold.label}
-                                            </FormLabel>
-                                            <p className="ml-6 text-sm text-muted-foreground">
+                                        <FormItem key={threshold.value.toString()} className="flex flex-col space-y-2">
+                                            <div className="flex items-center space-x-3">
+                                                <FormControl>
+                                                    <RadioGroupItem
+                                                        value={threshold.value.toString()}
+                                                        id={threshold.value.toString()}
+                                                    />
+                                                </FormControl>
+                                                <FormLabel htmlFor={threshold.value.toString()} className="font-medium text-primary">
+                                                    {threshold.label}
+                                                </FormLabel>
+                                            </div>
+                                            <p className="ml-8 text-sm text-muted-foreground">
                                                 {threshold.description}
                                             </p>
                                         </FormItem>
@@ -99,10 +104,12 @@ export const AIThresholdSelectCard = ({
                                 </RadioGroup>
                             )}
                         />
+                        <div className="flex justify-center mt-6">
+                            <Button type="submit" className="w-full" disabled={isPending}>
+                                Submit
+                            </Button>
+                        </div>
                     </CardContent>
-                    <Button type="submit" className="mt-4 w-full" disabled={isPending}>
-                        Submit
-                    </Button>
                 </form>
             </Form>
         </Card>

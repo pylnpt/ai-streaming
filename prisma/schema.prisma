@@ -41,6 +41,8 @@ model User {
   filters                 UserFilters[] // Linking to the join table for filters
   isUsingProfanityFilter  Boolean @default(false)
   stream                  Stream?
+  filteredMessages        FilteredMessage[] // Log of filtered messages
+  customWords             CustomWord[] // Whitelist/blacklist words
 }
 
 model Account {
@@ -173,4 +175,35 @@ model UserFilters {
   @@unique([userId, filterId]) // Ensuring unique user-filter combinations
   @@index([userId])
   @@index([filterId])
+}
+
+model FilteredMessage {
+  id                      String     @id @default(uuid())
+  userId                  String     // Stream owner
+  senderUsername          String?    // Who sent the message
+  message                 String     @db.Text
+  filteredCategory        String     // Which category triggered (toxicity, insult, etc.)
+  confidence              Decimal    // Confidence score from model
+  wasRestored             Boolean    @default(false) // If moderator restored it
+  createdAt               DateTime   @default(now())
+
+  user                    User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+model CustomWord {
+  id                      String     @id @default(uuid())
+  userId                  String     // Stream owner
+  word                    String     // The word/phrase
+  type                    String     // "whitelist" or "blacklist"
+  caseSensitive           Boolean    @default(false)
+  createdAt               DateTime   @default(now())
+
+  user                    User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, word, type]) // Same word can't be added twice for same user and type
+  @@index([userId])
+  @@index([type])
 }

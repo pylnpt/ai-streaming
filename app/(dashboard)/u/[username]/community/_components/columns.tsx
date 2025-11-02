@@ -18,9 +18,9 @@ export const columns: ColumnDef<BlockedUserType>[] = [
     ),
     cell: ({ row }) => (
       <div className="flex items-center gap-x-4">
-          <UserAvatar 
+          <UserAvatar
             username={row.original.username}
-            image={row.original.image}/>
+            image={row.original.image || ""}/>
             <span>{row.original.username}</span>
       </div>
     )

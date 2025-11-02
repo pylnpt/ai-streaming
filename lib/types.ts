@@ -12,7 +12,7 @@ export type FieldTypes =
 export type BlockedUserType = {
     id: string
     userId: string
-    image: string
+    image: string | null
     username: string
     createdAt: string
 }
@@ -32,7 +32,7 @@ export type NonSensitiveUserDataType = {
     username: string;
     bio: string;
     stream: SecureStreamType | null;
-    image: string;
+    image: string | null;
     _count: { follow: number }
     isUsingProfanityFilter: boolean;
 }

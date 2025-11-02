@@ -37,7 +37,7 @@ export const Navigation = () => {
             icon: Users
         },
         {
-            label: "Profanity Filter",
+            label: "Content Filter",
             href: `/u/${user?.username}/aifilter`,
             icon: MessageSquareX
         }

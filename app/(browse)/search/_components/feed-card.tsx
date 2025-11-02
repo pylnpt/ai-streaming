@@ -24,9 +24,9 @@ export const FeedCard = ({
         <Link href={`/${data.user.username}`}>
             <div className=" w-full flex gap-x-4">
                 <div className="relative h-[9rem] w-[16rem]">
-                    <Thumbnail 
+                    <Thumbnail
                         src={data.thumbnailUrl}
-                        fallback={data.user.image}
+                        fallback={data.user.image || ""}
                         isStreaming={data.isStreaming}
                         username={data.name}
                         />

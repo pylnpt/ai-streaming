@@ -5,6 +5,7 @@ import { StreamPlayer } from "@/components/stream-player";
 
 import { notFound } from "next/navigation";
 import { getFilterValuesByUserId, getThresholdByUserId } from "@/lib/profanity-service";
+import { getWhitelistByUserId, getBlacklistByUserId } from "@/lib/custom-words-service";
 
 interface UserPageProps {
     params: {
@@ -23,10 +24,12 @@ const UserPage = async ({
 
     const threshold = await getThresholdByUserId(user.id);
     const toxicityLabels = await getFilterValuesByUserId(user.id);
+    const whitelist = await getWhitelistByUserId(user.id);
+    const blacklist = await getBlacklistByUserId(user.id);
 
     if(isBlocked) { throw notFound() }
-    
-    return ( 
+
+    return (
         <StreamPlayer    user={{
             ...user,
             bio: user.bio ?? "",
@@ -43,7 +46,9 @@ const UserPage = async ({
           }}
             isFollowing={isFollowing}
             threshold={Number(threshold?.value)}
-            filters={toxicityLabels}/>
+            filters={toxicityLabels}
+            whitelist={whitelist}
+            blacklist={blacklist}/>
         )   
 }
  

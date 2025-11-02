@@ -19,16 +19,16 @@ export const FeedCard = async ({
     return (
         <Link href={`/${data.user.username}`}>
             <div className="h-full w-full space-y-4">
-                <Thumbnail 
+                <Thumbnail
                     src={data.thumbnailUrl}
-                    fallback={data.user.image}
+                    fallback={data.user.image || ""}
                     isStreaming={data.isStreaming}
                     username={data.user.username}
                     />
                     
                     <div className="flex-gap-x-3">
                         <UserAvatar username={data.user.username}
-                            image={data.user.image}
+                            image={data.user.image || ""}
                             isStreaming={data.isStreaming}/>
                     </div>
                     <div className="flex flex-col text-sm overflow-hidden">

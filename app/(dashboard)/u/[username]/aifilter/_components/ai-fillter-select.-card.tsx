@@ -89,40 +89,35 @@ export const AIFilterSelectCard = ({
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
         startTransition(() => {
-            // upsertUserFilters(user.id, data)
             updateProfanityFilters(user, data)
             .then((res) => {
-                toast.success(`Filter change was successfull`)
+                toast.success(`Content filter types updated successfully`)
                 setSelectedFilters(res)
                 if(res.length === 0){
                     updateProfanityStatus(user, false);
                 }
             })
-            .catch((err) => {toast.error(`Filter change was unsuccessfull`) 
+            .catch((err) => {toast.error(`Failed to update filter types`)
                 console.log(err)})
         });
     }  
 
     return (
-        <Card className="bg-background 
-            p-6 
-            border-2 
-            border-primary 
-            w-full 
-            max-w-md 
-            min-h-[450px] 
-            rounded-lg shadow-lg">
+        <Card className="w-full border-2 border-primary rounded-lg">
     <CardHeader>
         <CardTitle>
-            Select the AI Filters
+            Content Types to Filter
         </CardTitle>
+        <p className="text-sm text-muted-foreground mt-2">
+            Select which types of inappropriate content to automatically filter
+        </p>
     </CardHeader>
     <CardContent>
         <Form {...form}>
-            <form 
-                onSubmit={form.handleSubmit(onSubmit)} 
-                className="w-full flex flex-col space-y-40 justify-between h-full">
-                <div className="space-y-6">
+            <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="w-full flex flex-col space-y-6 h-full">
+                <div className="space-y-4">
                     <FormField 
                         control={form.control}
                         name="frameworks"
@@ -134,10 +129,10 @@ export const AIFilterSelectCard = ({
                                         defaultOptions={OPTIONS}
                                         value={SELECTEDOPTIONS}
                                         hidePlaceholderWhenSelected={true}
-                                        placeholder="Select your filters..."
+                                        placeholder="Choose content types to filter..."
                                         emptyIndicator={
                                             <p className="text-center text-lg leading-10 text-muted-foreground">
-                                                No results found.
+                                                No content types found
                                             </p>
                                         }
                                         className="w-full border rounded-md px-4 py-2 focus:ring-2 focus:ring-primary focus:outline-none"
@@ -149,17 +144,11 @@ export const AIFilterSelectCard = ({
                     />
                 </div>
 
-                <div className="flex justify-center mt-64">
-                    <LoadingButton 
-                        loading={isPending} 
+                <div className="flex justify-center">
+                    <LoadingButton
+                        loading={isPending}
                         type="submit"
-                        className="
-                            w-full 
-                            max-w-xs 
-                            bg-primary 
-                            hover:bg-primary-dark 
-                            py-2 px-4 
-                            rounded-md"
+                        className="w-full"
                             >
                         Submit
                     </LoadingButton>

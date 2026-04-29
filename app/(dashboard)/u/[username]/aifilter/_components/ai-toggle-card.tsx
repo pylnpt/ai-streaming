@@ -25,15 +25,15 @@ export const AIToggleCard = ({
     const onChange = () => {
         startTransition(() => {
             if(!hasAnyFilterSelected){
-                toast.error("First you have to select some filters to enable this feature.")
+                toast.error("Please select at least one content type to filter before enabling.")
             } else {
                 updateProfanityStatus(user, !value)
                 .then(() => {
-                    const toastMessage = value ? `Profanity filter in chat turned Off.` : `Profanity filter in chat turned On.`;  
+                    const toastMessage = value ? `Content filter disabled` : `Content filter enabled`;
                     toast.success(toastMessage);
                 })
                 .catch((err) => {
-                    toast.error("Profanity filter update has failed.")
+                    toast.error("Failed to update content filter settings")
                     console.log(err);
                 })
             }
@@ -43,7 +43,10 @@ export const AIToggleCard = ({
     return (
         <div className="rounded-xl bg-background p-6 border-2 border-primary gap-y-5">
             <div className="flex items-center justify-between">
-                <p className="font-semibold shrink-0">Toggle AI</p>
+                <div className="flex flex-col gap-1">
+                    <p className="font-semibold shrink-0">Enable Content Filter</p>
+                    <p className="text-sm text-muted-foreground">Filter inappropriate messages automatically</p>
+                </div>
                 <div className="space-x-2 flex flex-row-auto">
                     <MoonStar />
                     <Switch checked={value}

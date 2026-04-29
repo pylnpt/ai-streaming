@@ -24,24 +24,30 @@ export const StreamHeader = ({
     isFollowing,
     name,
 }: StreamHeaderProps) => {
-    const participants = useParticipants();
-    const participant = useRemoteParticipant(hostIdentity);
-
-    const isStreaming = !!participant;
-    const participantCount = participants.length - 1;
-
     const hostAsViewer = `host-${hostIdentity}`;
     const isHost = viewerIdentity === hostAsViewer;
+
+    const participants = useParticipants();
+    // Use the correct host identity (host-${hostIdentity})
+    const participant = useRemoteParticipant(hostAsViewer);
+
+    const isStreaming = !!participant;
+
+    // Filter out the host from participant count (both as streamer and viewer)
+    // Host can be present as "host-${id}" (streaming) AND "${id}" (viewing own stream in another tab)
+    const participantCount = participants.filter(
+        (p) => p.identity !== hostAsViewer && p.identity !== hostIdentity
+    ).length;
 
     return (
         <div className="flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 items-start justify-between px-4">
             <div className="flex items-center gap-x-3">
                 <UserAvatar
-                    image={image} 
+                    image={image}
                     username={hostName}
                     size="lg"
                     isStreaming={isStreaming}
-                    showBadge/>
+                    showBadge={isHost}/>
            
             <div className="space-y-1">
                 <div className="flex items-center gap-x-2">

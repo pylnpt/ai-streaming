@@ -2,12 +2,20 @@ import { ReceivedChatMessage } from "@livekit/components-react"
 import { ChatMessage } from "./chat-message"
 import { Skeleton } from "../ui/skeleton"
 
+interface CustomWord {
+    word: string;
+    caseSensitive: boolean;
+}
+
 interface ChatListProps{
     messages: ReceivedChatMessage[],
     isHidden: boolean,
     isUsingProfanityFilter: boolean,
     threshold: number
-    toxicityLabels: string[]
+    toxicityLabels: string[],
+    whitelist: CustomWord[],
+    blacklist: CustomWord[],
+    userId: string
 }
 
 export const ChatList =  ({
@@ -15,7 +23,10 @@ export const ChatList =  ({
     isHidden,
     isUsingProfanityFilter,
     threshold,
-    toxicityLabels
+    toxicityLabels,
+    whitelist,
+    blacklist,
+    userId
 }: ChatListProps) => {
 
     if(isHidden || !messages || messages.length === 0) {
@@ -36,7 +47,10 @@ export const ChatList =  ({
                             isToxic: false}}
                     threshold={threshold}
                     toxicityLabels={toxicityLabels}
-                    isProfFilterEnabled={isUsingProfanityFilter}/>
+                    isProfFilterEnabled={isUsingProfanityFilter}
+                    whitelist={whitelist}
+                    blacklist={blacklist}
+                    userId={userId}/>
             ))}
         </div>
     )

@@ -11,6 +11,11 @@ import { ChatList, ChatListSkeleton } from "./chat-list";
 import { ChatCommunity } from "./chat-community";
 import { NonSensitiveUserDataType } from "@/lib/types";
 
+interface CustomWord {
+    word: string;
+    caseSensitive: boolean;
+}
+
 interface ChatProps {
     hostName: string;
     hostidentity: string;
@@ -21,7 +26,9 @@ interface ChatProps {
     isChatFollowersOnly: boolean;
     user: NonSensitiveUserDataType,
     threshold: number,
-    filters: string[]
+    filters: string[],
+    whitelist: CustomWord[],
+    blacklist: CustomWord[]
 }
 
 export const Chat = ({
@@ -34,7 +41,9 @@ export const Chat = ({
     isChatFollowersOnly,
     user,
     threshold,
-    filters
+    filters,
+    whitelist,
+    blacklist
 } : ChatProps) => {
     const matches = useMediaQuery('(max-width: 1024px)');
     const connectionState = useConnectionState();
@@ -76,12 +85,15 @@ export const Chat = ({
             <ChatHeader />
             {type === ChatType.CHAT && (
                 <>
-                    <ChatList 
+                    <ChatList
                         messages={reversedMessages}
-                        isHidden={isHidden} 
+                        isHidden={isHidden}
                         threshold={threshold}
                         toxicityLabels={filters}
-                        isUsingProfanityFilter={user.isUsingProfanityFilter}/>
+                        isUsingProfanityFilter={user.isUsingProfanityFilter}
+                        whitelist={whitelist}
+                        blacklist={blacklist}
+                        userId={user.id}/>
                     <ChatForm 
                         onSubmit={onSubmit}
                         value={value}

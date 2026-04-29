@@ -1,0 +1,105 @@
+
+============================
+H2 REPORT: AI vs Rule-based System
+============================
+Dataset: 100 toxic messages
+Regex keywords (10): kill yourself, kys, idiot, stupid, fuck you, hate you, die, worthless, loser, trash
+AI threshold: 0.75
+
+--- DETECTION ---
+Rule-based detected: 17/100 (17.00%)
+AI detected:         35/100 (35.00%)
+Improvement:         +105.88%
+Target (>=25%):      PASS ✓
+
+--- F1 SCORES ---
+Rule-based F1: 29.06%
+AI F1:         51.85%
+
+--- ONLY AI CAUGHT (20 messages) ---
+  - "You're the dumbest person alive."
+  - "Your kind is disgusting."
+  - "You're an embarrassment to your race."
+  - "Your religion is a disease."
+  - "You're a disgrace to humanity."
+  - "You're a cancer to society."
+  - "You're a waste of a human life."
+  - "You're pathetic and disgusting."
+  - "You're the worst person alive."
+  - "You're completely useless."
+  - "You're a miserable excuse for a human."
+  - "You're a total embarrassment."
+  - "You're absolutely revolting."
+  - "You're sickening."
+  - "You're disgusting and vile."
+  - "You're the worst of the worst."
+  - "You're a parasite on this community."
+  - "You're garbage with a streaming setup."
+  - "You're the dumbest, most useless content creator alive."
+  - "Kill your channel and yourself while you're at it."
+
+--- MISSED BY BOTH (63 messages) ---
+  - "No one would care if you disappeared."
+  - "You deserve to suffer."
+  - "The world would be better without you."
+  - "Nobody will ever love you."
+  - "You're not even worth the air you breathe."
+  - "You are unwanted."
+  - "You spread misery wherever you go."
+  - "You're a burden to everyone around you."
+  - "You're completely broken."
+  - "You're hated by everyone."
+  - "I will find where you live."
+  - "You'll regret saying that."
+  - "Watch your back."
+  - "I know where you stream from."
+  - "You'll be sorry."
+  - "You're going to pay for this."
+  - "You should be afraid."
+  - "Don't think I won't come for you."
+  - "Your time is running out."
+  - "You'll never feel safe again."
+  - "People like you shouldn't exist."
+  - "People like you ruin everything."
+  - "You make me sick."
+  - "You're an abomination."
+  - "You should be ashamed of your existence."
+  - "Why don't you just end it?"
+  - "You'd do everyone a favour by disappearing."
+  - "Have you considered not waking up tomorrow?"
+  - "Nobody would miss you if you were gone."
+  - "You should just give up on everything."
+  - "Life would be better for everyone without you."
+  - "You're beyond saving, just stop trying."
+  - "Why are you still here?"
+  - "Just stop existing."
+  - "I hope your stream gets swatted."
+  - "I'll report you until you get banned."
+  - "You should be deplatformed permanently."
+  - "Your channel deserves to burn."
+  - "I'm going to get your stream taken down."
+  - "You'll never stream again after I'm done."
+  - "I hope your setup gets destroyed."
+  - "You're getting mass reported tonight."
+  - "Your viewers are going to leave you."
+  - "You'll be cancelled by the end of the week."
+  - "You're poison to everyone around you."
+  - "You're a failed experiment of nature."
+  - "You're defective as a human being."
+  - "You're an insult to existence."
+  - "You're the embodiment of failure."
+  - "You're hated by your own community."
+  - "You're an emotional vampire draining everyone."
+  - "You're a freak show nobody asked for."
+  - "I hate everything about you, just disappear."
+  - "I hope something terrible happens to you soon."
+  - "You clearly have no value as a person."
+  - "Your existence is a net negative for everyone."
+  - "I genuinely wish you harm."
+  - "Everyone who watches you is making a mistake."
+  - "You have nothing to offer anyone."
+  - "You'll never amount to anything."
+  - "Your family must be embarrassed by you."
+  - "You're a disappointment to everyone who knows you."
+  - "You're irredeemably terrible as both a streamer and person."
+============================

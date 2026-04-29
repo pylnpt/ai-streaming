@@ -9,7 +9,7 @@ export const {
   signIn,
   signOut,
 } = NextAuth({
-  adapter: PrismaAdapter(db),
+  adapter: PrismaAdapter(db) as any,
   session: { strategy: "jwt" },
   pages: {
     signIn: "/sign-in",
@@ -125,7 +125,7 @@ export const {
                 token_type: account.token_type,
                 scope: account.scope,
                 id_token: account.id_token,
-                session_state: account.session_state,
+                session_state: account.session_state as string | null,
               },
             });
           }

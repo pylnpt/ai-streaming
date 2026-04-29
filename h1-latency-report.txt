@@ -1,0 +1,61 @@
+
+============================
+H1 LATENCY & DETECTION REPORT
+============================
+Dataset: 100 messages (50 toxic, 50 safe)
+Threshold: 0.75
+
+--- LATENCY ---
+Average:        152.50 ms
+Min:            80.36 ms
+Max:            318.65 ms
+Std Dev:        37.98 ms
+95th pct:       218.33 ms
+Target (<500ms): PASS ✓
+
+--- DETECTION ---
+Toxic detected: 23/50
+Detection rate: 46.00%
+Target (>40%):  PASS ✓
+
+--- CONFUSION MATRIX ---
+TP: 23  FP: 2
+FN: 27  TN: 48
+
+Precision: 92.00%
+Recall:    46.00%
+F1 Score:  61.33%
+
+--- FALSE NEGATIVES (missed toxic) ---
+  - "No one would care if you disappeared."
+  - "You deserve to suffer."
+  - "Why don't you just die already?"
+  - "You're nothing but filth."
+  - "The world would be better without you."
+  - "Nobody will ever love you."
+  - "You're not even worth the air you breathe."
+  - "You're a total waste of space."
+  - "You're a stain on this earth."
+  - "You should be ashamed of existing."
+  - "Your life is a joke."
+  - "You are unwanted."
+  - "You're toxic to everyone."
+  - "You're the worst mistake ever made."
+  - "You're a lost cause."
+  - "You spread misery wherever you go."
+  - "You're completely broken."
+  - "You're a burden to this planet."
+  - "You're the embodiment of failure."
+  - "You're complete filth."
+  - "You're hated by everyone."
+  - "You're an emotional vampire."
+  - "You're a freak show."
+  - "You're poison."
+  - "You're a failed experiment."
+  - "You're defective."
+  - "You're an insult to existence."
+
+--- FALSE POSITIVES (wrongly blocked safe) ---
+  - "damnit I missed the stream start"
+  - "kick ass run so far"
+============================

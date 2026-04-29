@@ -29,6 +29,7 @@ export const createViewerToken = async (hostIdentity: string) =>{
     }
     
     const isHost = self.id === host.id;
+
     const token = new AccessToken(
         process.env.LIVEKIT_API_KEY!,
         process.env.LIVEKIT_API_SECRET!,

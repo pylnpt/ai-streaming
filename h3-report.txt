@@ -1,0 +1,114 @@
+
+============================
+H3 REPORT: Hybrid System Validation
+============================
+Dataset: 28 streaming-specific messages
+  - Toxic: 13
+  - Safe:  15
+
+Blacklist keywords: kys, swatted, swat you, dox, doxx, i will find you
+Whitelist keywords: hell yeah, damnit, kick ass, rekt, rekt him, destroy you in this match, this game is trash
+AI threshold: 0.75
+
+--- CONFUSION MATRIX ---
+             AI-only    Hybrid
+TP:                   1  8
+FP:                   2  0
+TN:                  13  15
+FN:                  12  5
+
+--- METRICS ---
+             AI-only    Hybrid
+Precision:   33.33%    100.00%
+Recall:      7.69%    61.54%
+F1 Score:    12.50%    76.19%
+
+F1 Improvement: +509.52%
+Target (>=25%): PASS ✓
+
+--- CASE-BY-CASE BREAKDOWN ---
+[SAFE ] "hell yeah that was an amazing play!"
+         AI-only: SAFE | Hybrid: SAFE (WHITELIST: "hell yeah")
+         AI ✓ | Hybrid ✓
+[SAFE ] "damnit I missed the stream start again"
+         AI-only: TOXIC | Hybrid: SAFE (WHITELIST: "damnit")
+         AI ✗ | Hybrid ✓
+[SAFE ] "kick ass run so far, keep it up!"
+         AI-only: TOXIC | Hybrid: SAFE (WHITELIST: "kick ass")
+         AI ✗ | Hybrid ✓
+[SAFE ] "rekt him lmao gg"
+         AI-only: SAFE | Hybrid: SAFE (WHITELIST: "rekt")
+         AI ✓ | Hybrid ✓
+[SAFE ] "I'll destroy you in this match lol"
+         AI-only: SAFE | Hybrid: SAFE (WHITELIST: "destroy you in this match")
+         AI ✓ | Hybrid ✓
+[SAFE ] "this game is trash but you make it fun"
+         AI-only: SAFE | Hybrid: SAFE (WHITELIST: "this game is trash")
+         AI ✓ | Hybrid ✓
+[TOXIC] "just kys already"
+         AI-only: SAFE | Hybrid: TOXIC (BLACKLIST: "kys")
+         AI ✗ | Hybrid ✓
+[TOXIC] "you'll be swatted soon"
+         AI-only: SAFE | Hybrid: TOXIC (BLACKLIST: "swatted")
+         AI ✗ | Hybrid ✓
+[TOXIC] "I'm going to swat you tonight"
+         AI-only: SAFE | Hybrid: TOXIC (BLACKLIST: "swat you")
+         AI ✗ | Hybrid ✓
+[TOXIC] "I will dox you if you don't stop"
+         AI-only: SAFE | Hybrid: TOXIC (BLACKLIST: "dox")
+         AI ✗ | Hybrid ✓
+[TOXIC] "I'm going to doxx your address"
+         AI-only: SAFE | Hybrid: TOXIC (BLACKLIST: "dox")
+         AI ✗ | Hybrid ✓
+[TOXIC] "I will find you and make you regret this"
+         AI-only: SAFE | Hybrid: TOXIC (BLACKLIST: "i will find you")
+         AI ✗ | Hybrid ✓
+[TOXIC] "swat you and your whole family"
+         AI-only: SAFE | Hybrid: TOXIC (BLACKLIST: "swat you")
+         AI ✗ | Hybrid ✓
+[TOXIC] "you're worthless and nobody likes you"
+         AI-only: TOXIC | Hybrid: TOXIC (AI: TOXIC)
+         AI ✓ | Hybrid ✓
+[TOXIC] "the world would be better without streamers like you"
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✗ | Hybrid ✗
+[TOXIC] "nobody watches you because you have no talent"
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✗ | Hybrid ✗
+[TOXIC] "you'll never be a real streamer"
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✗ | Hybrid ✗
+[TOXIC] "I hope your stream crashes and never comes back"
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✗ | Hybrid ✗
+[TOXIC] "you deserve to lose all your followers"
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✗ | Hybrid ✗
+[SAFE ] "Great stream, see you next time!"
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+[SAFE ] "Can't believe how good you're getting at this game."
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+[SAFE ] "First time here, already subscribed."
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+[SAFE ] "Your community is honestly the best."
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+[SAFE ] "That was genuinely impressive gameplay."
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+[SAFE ] "I've been watching for months, never gets old."
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+[SAFE ] "This stream always cheers me up after a bad day."
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+[SAFE ] "You make gaming look so fun."
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+[SAFE ] "Anyone else think this streamer is criminally underrated?"
+         AI-only: SAFE | Hybrid: SAFE (AI: SAFE)
+         AI ✓ | Hybrid ✓
+============================

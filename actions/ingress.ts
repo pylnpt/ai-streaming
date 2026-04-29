@@ -21,7 +21,7 @@ import { revalidatePath } from "next/cache";
 const roomservice = new RoomServiceClient(
     process.env.LIVEKIT_API_URL!,
     process.env.LIVEKIT_API_KEY!,
-    process.env.LIVEKIT_SECRET!
+    process.env.LIVEKIT_API_SECRET!
 );
 
 const ingressClient = new IngressClient(

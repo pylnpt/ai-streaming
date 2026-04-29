@@ -66,15 +66,16 @@ describe("Chat component", () => {
       username: "Kyle",
       bio: "I'm not fat, I'm big-boned.",
       stream: null,
-      profilePicture: "",
+      image: "",
       isUsingProfanityFilter: true,
-      imageUrl: "",
       _count: {
         follow: 0,
       },
     },
     threshold: 0.7,
     filters: ["toxicity"],
+    whitelist: [],
+    blacklist: [],
   };
 
   beforeEach(() => {

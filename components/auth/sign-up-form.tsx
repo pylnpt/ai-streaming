@@ -18,6 +18,7 @@ export const SignUpForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async (e: React.FormEvent) => {
@@ -25,6 +26,11 @@ export const SignUpForm = () => {
 
     if (password !== confirmPassword) {
       toast.error("Passwords don't match");
+      return;
+    }
+
+    if (!acceptedTerms) {
+      toast.error("El kell fogadnod az ÁSZF-et és az adatvédelmi tájékoztatót");
       return;
     }
 
@@ -162,7 +168,29 @@ export const SignUpForm = () => {
             minLength={6}
           />
         </div>
-        <Button type="submit" className="w-full" disabled={isLoading}>
+        <div className="flex items-start gap-2">
+          <input
+            id="terms"
+            type="checkbox"
+            checked={acceptedTerms}
+            onChange={(e) => setAcceptedTerms(e.target.checked)}
+            disabled={isLoading}
+            required
+            className="mt-1 h-4 w-4 shrink-0 rounded border-input bg-background accent-primary cursor-pointer"
+          />
+          <Label htmlFor="terms" className="text-xs text-muted-foreground font-normal leading-relaxed cursor-pointer">
+            Elfogadom az{" "}
+            <Link href="/terms" target="_blank" className="text-primary underline hover:no-underline">
+              ÁSZF
+            </Link>
+            -et és az{" "}
+            <Link href="/privacy" target="_blank" className="text-primary underline hover:no-underline">
+              adatvédelmi tájékoztatót
+            </Link>
+            .
+          </Label>
+        </div>
+        <Button type="submit" className="w-full" disabled={isLoading || !acceptedTerms}>
           {isLoading ? "Creating account..." : "Create account"}
         </Button>
       </form>

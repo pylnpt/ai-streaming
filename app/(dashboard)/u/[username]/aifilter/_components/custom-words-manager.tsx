@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -8,63 +8,55 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { X, Plus, Shield, Ban } from "lucide-react";
 import { toast } from "sonner";
-import { addCustomWord, deleteCustomWord } from "@/lib/custom-words-service";
-import { useRouter } from "next/navigation";
 import { Switch } from "@/components/ui/switch";
+import { useCustomWords } from "@/hooks/use-custom-words";
+import type { WordTypeLiteral } from "@/lib/custom-words-utils";
 
 interface CustomWord {
   id: string;
   word: string;
-  type: string;
+  type: WordTypeLiteral;
   caseSensitive: boolean;
 }
 
-interface AICustomWordsCardProps {
+interface CustomWordsManagerProps {
   userId: string;
   customWords: CustomWord[];
 }
 
-export const AICustomWordsCard = ({
+export const CustomWordsManager = ({
   userId,
   customWords,
-}: AICustomWordsCardProps) => {
+}: CustomWordsManagerProps) => {
   const [newWord, setNewWord] = useState("");
   const [caseSensitive, setCaseSensitive] = useState(false);
-  const [isPending, startTransition] = useTransition();
-  const router = useRouter();
+  const { add, remove, isPending } = useCustomWords(userId);
 
-  const whitelist = customWords.filter((w) => w.type === "whitelist");
-  const blacklist = customWords.filter((w) => w.type === "blacklist");
+  const whitelist = customWords.filter((w) => w.type === "WHITELIST");
+  const blacklist = customWords.filter((w) => w.type === "BLACKLIST");
 
-  const handleAdd = (type: "whitelist" | "blacklist") => {
+  const handleAdd = async (type: WordTypeLiteral) => {
     if (!newWord.trim()) {
       toast.error("Please enter a word");
       return;
     }
-
-    startTransition(async () => {
-      try {
-        await addCustomWord(userId, newWord.trim(), type, caseSensitive);
-        toast.success(`Added to ${type}`);
-        setNewWord("");
-        setCaseSensitive(false);
-        router.refresh();
-      } catch {
-        toast.error(`Failed to add word`);
-      }
-    });
+    try {
+      await add(newWord.trim(), type, caseSensitive);
+      toast.success(`Added to ${type.toLowerCase()}`);
+      setNewWord("");
+      setCaseSensitive(false);
+    } catch {
+      toast.error("Failed to add word");
+    }
   };
 
-  const handleDelete = (wordId: string) => {
-    startTransition(async () => {
-      try {
-        await deleteCustomWord(wordId, userId);
-        toast.success("Word removed");
-        router.refresh();
-      } catch {
-        toast.error("Failed to remove word");
-      }
-    });
+  const handleDelete = async (wordId: string) => {
+    try {
+      await remove(wordId);
+      toast.success("Word removed");
+    } catch {
+      toast.error("Failed to remove word");
+    }
   };
 
   return (
@@ -103,12 +95,12 @@ export const AICustomWordsCard = ({
                   value={newWord}
                   onChange={(e) => setNewWord(e.target.value)}
                   onKeyDown={(e) => {
-                    if (e.key === "Enter") handleAdd("whitelist");
+                    if (e.key === "Enter") handleAdd("WHITELIST");
                   }}
                   disabled={isPending}
                 />
                 <Button
-                  onClick={() => handleAdd("whitelist")}
+                  onClick={() => handleAdd("WHITELIST")}
                   disabled={!newWord.trim() || isPending}
                   size="icon"
                 >
@@ -174,12 +166,12 @@ export const AICustomWordsCard = ({
                   value={newWord}
                   onChange={(e) => setNewWord(e.target.value)}
                   onKeyDown={(e) => {
-                    if (e.key === "Enter") handleAdd("blacklist");
+                    if (e.key === "Enter") handleAdd("BLACKLIST");
                   }}
                   disabled={isPending}
                 />
                 <Button
-                  onClick={() => handleAdd("blacklist")}
+                  onClick={() => handleAdd("BLACKLIST")}
                   disabled={!newWord.trim() || isPending}
                   size="icon"
                 >

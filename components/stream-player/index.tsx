@@ -2,7 +2,7 @@
 
 import { useViewerToken } from "@/hooks/use-viewer-token";
 import { LiveKitRoom } from "@livekit/components-react" 
-import { Video, VideoSkeleton } from "./video";
+import { VideoPlayer, VideoPlayerSkeleton } from "./video-player";
 import { useChatSideBar } from "@/store/use-chat-sidebar";
 import { cn } from "@/lib/utils";
 import { Chat, ChatSkeleton } from "./chat";
@@ -84,7 +84,7 @@ export const StreamPlayer = ({
                     </div>
                     <div className="space-y-4 col-span-1 lg:col-span-2 
                         xl:col-span-2 2xl:col-span-5 lg:overflow-y-auto hidden-scrollbar pb-10">
-                        <Video hostName={user.username} 
+                        <VideoPlayer hostName={user.username}
                             hostIdentity={user.id}/>
                         <StreamHeader
                             hostName={user.username}
@@ -122,7 +122,7 @@ export const StreamPlayerSkeleton = () => {
                 <ChatSkeleton/>
             </div>
             <div className="space-y-4 col-span-1 lg:col-span-2 xl:col-span-2 2xl:col-span-5 lg:overflow-y-auto hidden-scrollbar pb-10">
-                <VideoSkeleton />
+                <VideoPlayerSkeleton />
                 <StreamHeaderSkeleton />
             </div>
         </div>

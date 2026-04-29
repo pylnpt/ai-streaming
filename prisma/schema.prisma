@@ -197,7 +197,7 @@ model CustomWord {
   id                      String     @id @default(uuid())
   userId                  String     // Stream owner
   word                    String     // The word/phrase
-  type                    String     // "whitelist" or "blacklist"
+  type                    WordType   // BLACKLIST vagy WHITELIST
   caseSensitive           Boolean    @default(false)
   createdAt               DateTime   @default(now())
 
@@ -206,4 +206,9 @@ model CustomWord {
   @@unique([userId, word, type]) // Same word can't be added twice for same user and type
   @@index([userId])
   @@index([type])
+}
+
+enum WordType {
+  WHITELIST
+  BLACKLIST
 }

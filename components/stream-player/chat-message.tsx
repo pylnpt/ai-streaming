@@ -5,8 +5,8 @@ import { ReceivedChatMessage } from "@livekit/components-react";
 import { format } from "date-fns";
 import { useEffect, useState } from "react";
 import { useToxicityModel } from "@/hooks/use-toxicity-model";
+import { useFilteredMessages } from "@/hooks/use-filtered-messages";
 import { checkCustomWords } from "@/lib/custom-words-utils";
-import { logFilteredMessage } from "@/lib/filtered-messages-service";
 
 interface CustomWord {
     word: string;
@@ -41,6 +41,7 @@ export const ChatMessage = ({
         threshold,
         toxicityLabels
     );
+    const { log: logFiltered } = useFilteredMessages(userId);
 
     // Only check once per message
     useEffect(() => {
@@ -55,23 +56,22 @@ export const ChatMessage = ({
             // Step 1: Check blacklist first
             const customWordCheck = checkCustomWords(data.message, whitelist, blacklist);
 
-            if (customWordCheck.shouldFilter && customWordCheck.type === "blacklist") {
+            if (customWordCheck.shouldFilter && customWordCheck.type === "BLACKLIST") {
                 // Blacklist match - filter immediately
                 setCheckedMessage(`[Blocked: ${customWordCheck.matchedWord}]`);
                 // Log the filtered message (fire and forget - don't await)
-                logFilteredMessage(
-                    userId,
+                logFiltered(
                     data.from?.name || null,
                     data.message,
                     `blacklist:${customWordCheck.matchedWord}`,
                     1.0 // 100% confidence for blacklist
-                ).catch((err) => console.error("Failed to log filtered message:", err));
+                );
                 setIsChecking(false);
                 return;
             }
 
             // Step 2: Check whitelist - if matched, skip AI filtering
-            if (customWordCheck.matchedWord && customWordCheck.type === "whitelist") {
+            if (customWordCheck.matchedWord && customWordCheck.type === "WHITELIST") {
                 setIsChecking(false);
                 return; // Message is safe, don't filter
             }
@@ -96,20 +96,19 @@ export const ChatMessage = ({
                 const confidence = matchedPrediction?.probabilities[1] || 0.9;
 
                 // Log (fire and forget - don't await)
-                logFilteredMessage(
-                    userId,
+                logFiltered(
                     data.from?.name || null,
                     data.message,
                     result.label,
                     confidence
-                ).catch((err) => console.error("Failed to log filtered message:", err));
+                );
             }
 
             setIsChecking(false);
         };
 
         performCheck();
-    }, [isProfFilterEnabled, data.message, data.from?.name, modelLoading, checkToxicity, isChecking, checkedMessage, whitelist, blacklist, userId]);
+    }, [isProfFilterEnabled, data.message, data.from?.name, modelLoading, checkToxicity, isChecking, checkedMessage, whitelist, blacklist, logFiltered]);
 
     return (
         <div className="flex gap-2 p-2 rounded-md hover:bg.white/5">

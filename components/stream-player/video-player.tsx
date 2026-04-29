@@ -11,15 +11,15 @@ import { Loading } from "./loading-video";
 import { Live } from "./live";
 import { Skeleton } from "../ui/skeleton";
 
-interface VideoProps {
+interface VideoPlayerProps {
     hostName: string;
     hostIdentity: string,
 }
 
-export const Video = ({
+export const VideoPlayer = ({
     hostName,
-    hostIdentity    
-}: VideoProps) => {
+    hostIdentity
+}: VideoPlayerProps) => {
     const connectionState = useConnectionState();
     const participant = useRemoteParticipant(hostIdentity);
     const tracks = useTracks ([
@@ -44,7 +44,7 @@ export const Video = ({
     )
 }
 
-export const VideoSkeleton = () => {
+export const VideoPlayerSkeleton = () => {
     return (
         <div className="aspect-video border-x border-background">
             <Skeleton className="h-full w-full rounded-none"/> 

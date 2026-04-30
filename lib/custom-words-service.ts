@@ -2,6 +2,7 @@
 
 import { db } from "./db";
 import { revalidatePath } from "next/cache";
+import { WordType } from "@prisma/client";
 
 export const getCustomWordsByUserId = async (userId: string) => {
   const words = await db.customWord.findMany({
@@ -15,7 +16,7 @@ export const getWhitelistByUserId = async (userId: string) => {
   const words = await db.customWord.findMany({
     where: {
       userId,
-      type: "whitelist"
+      type: WordType.WHITELIST
     },
     select: { word: true, caseSensitive: true },
   });
@@ -26,7 +27,7 @@ export const getBlacklistByUserId = async (userId: string) => {
   const words = await db.customWord.findMany({
     where: {
       userId,
-      type: "blacklist"
+      type: WordType.BLACKLIST
     },
     select: { word: true, caseSensitive: true },
   });
@@ -36,7 +37,7 @@ export const getBlacklistByUserId = async (userId: string) => {
 export const addCustomWord = async (
   userId: string,
   word: string,
-  type: "whitelist" | "blacklist",
+  type: WordType,
   caseSensitive: boolean = false
 ) => {
   try {
@@ -71,4 +72,3 @@ export const deleteCustomWord = async (wordId: string, userId: string) => {
     throw new Error("Failed to delete custom word");
   }
 };
-

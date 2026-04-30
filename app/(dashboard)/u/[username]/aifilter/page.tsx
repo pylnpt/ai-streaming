@@ -14,7 +14,7 @@ import { AIFilterSelectCard } from "./_components/ai-fillter-select.-card";
 import { AIThresholdSelectCard } from "./_components/ai-threshold-select-card";
 import { AITestMessageCard } from "./_components/ai-test-message-card";
 import { AIStatisticsCard } from "./_components/ai-statistics-card";
-import { AICustomWordsCard } from "./_components/ai-custom-words-card";
+import { CustomWordsManager } from "./_components/custom-words-manager";
 import { Button } from "@/components/ui/button";
 import { History } from "lucide-react";
 import Link from "next/link";
@@ -84,7 +84,7 @@ const ProfanityFilterSettings = async () => {
 
                 {/* Custom Words Management */}
                 {hasAnyFilterSelected && (
-                    <AICustomWordsCard userId={self.id} customWords={customWords} />
+                    <CustomWordsManager userId={self.id} customWords={customWords} />
                 )}
             </div>
 
